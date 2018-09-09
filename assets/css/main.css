@@ -397,7 +397,8 @@ body::-webkit-scrollbar-thumb {
 .projects__item {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
-	grid-gap: 10px;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
 }
 
 .projects__item--img {
