@@ -71,7 +71,7 @@ function scrollToTopBtn() {
 
 	topBtn.addEventListener('click', function() {
 		navLinks[0].classList.add('active');
-		navLinks[5].classList.remove('active');
+		navLinks[6].classList.remove('active');
 	});
 }
 
