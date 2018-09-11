@@ -138,6 +138,10 @@ body::-webkit-scrollbar-thumb {
 .grid__content {
 	grid-column: 2;
 	grid-row: 2 / 3;
+	overflow: auto;
+	-webkit-scroll-snap-type: mandatory;
+	-ms-scroll-snap-type: mandatory;
+	scroll-snap-type: mandatory;
 }
 
 .resume__section {
@@ -145,6 +149,7 @@ body::-webkit-scrollbar-thumb {
 	min-height: 90vh;
 	padding: 10% 5% 5% 5%;
 	border-bottom: 1px solid var(--light-gray);
+	scroll-snap-align: start;
 }
 
 /*About Section*/
