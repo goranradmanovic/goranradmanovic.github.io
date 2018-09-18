@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	addActiveClass();
 
 	//addMenuActiveClassOnScrolling();
+	
 	scrollToTopBtn();
 
 	toggleMobileNav();
@@ -42,14 +43,25 @@ function toggleMobileNav() {
 
 	//Getting the elements
 	let hamburgerBtn = document.getElementById('mobileNav'),
-		navigation = document.getElementsByClassName('grid__header--nav');
+		navigation = document.querySelector('.grid__header--nav'),
+		mobileNavLink = document.querySelectorAll('.grid__header--nav--item');
 
 	//Adding click event on the mobile menu button
 	hamburgerBtn.addEventListener('click', function() {
 		//Toggle classes on the mobile menu btn and main navigation
 		hamburgerBtn.classList.toggle('active-mobile');
-		navigation[0].classList.toggle('open');
+		navigation.classList.toggle('open');
 	});
+
+	//Looping thrught all navigation link and adding click event on them
+	for (let i = 0; i < mobileNavLink.length; i++) {
+		
+		mobileNavLink[i].addEventListener('click', function() {
+			//On click on the nav link remove open and active menu class
+			navigation.classList.remove('open');
+			hamburgerBtn.classList.remove('active-mobile');
+		});
+	}
 }
 
 //Function for seting date to the page
