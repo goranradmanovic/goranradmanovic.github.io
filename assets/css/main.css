@@ -47,8 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 html, body {
-	width: auto;
-	height: auto;
+	overflow-y: hidden;
 }
 
 /*Main grid wrapper*/
