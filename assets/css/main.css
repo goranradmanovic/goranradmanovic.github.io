@@ -813,6 +813,7 @@ html, body {
 	/*About Section*/
 	.about__title--animation {
 		width: 100%;
+		text-align: center;
 	}
 
 	.about__heading {
