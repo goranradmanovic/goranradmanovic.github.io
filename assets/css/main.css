@@ -35,7 +35,7 @@
 
 /*Browser scroller bar*/
 body::-webkit-scrollbar {
-	width: .8em;
+	width: 10px;
 }
 
 body::-webkit-scrollbar-track {
@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 html, body {
-	overflow-x: hidden;
+	width: calc(100vw - 10px); /*Calcualte working width of the page (10px widtho of scrollbar)*/
 }
 
 /*Main grid wrapper*/
@@ -180,11 +180,42 @@ html, body {
 	padding-top: 0;
 }
 
+.about__title--animation {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.about__title--animation:before, .about__title--animation:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: 10;
+	content: '';
+	-webkit-clip-path: polygon(33% 1%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(33% 1%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.about__title--animation:before {
+	background-color: rgba(189, 93, 56, .8);
+	animation: showText 1200ms forwards;
+}
+
+.about__title--animation:after {
+	background-color: rgba(0, 0, 0, .8);
+	animation-delay: 200ms;
+	animation: showText 900ms forwards;
+}
+
 .about__heading {
+	opacity: 0;
 	font-family: 'Saira Extra Condensed', sans-serif;
 	font-size: 6em;
 	font-weight: var(--font-extrabold);
 	text-transform: uppercase;
+	animation: animateText 700ms forwards;
+	animation-delay: 250ms;
 }
 
 .about__heading--highlight {
@@ -626,27 +657,43 @@ html, body {
 	text-decoration: underline;
 }
 
-/*Bouncing up animation*/
-@keyframes bounce {
-	
-    10% { transform: scale(1.1, .8) translateY(5%) }
+/*Animation Section*/
 
-    15% { transform: scale(.9, 1.1) translateY(-40%) }
+/*Animation for Heading text fade out*/
+@keyframes animateText {
+	0% {
+		opacity: 0;
+	}
 
-    25% { transform: scale(1.05, .9) translateY(-60%) }
+	50% {
+		text-shadow: 1px 0px 15px rgba(150, 150, 150, 1);
+	}
 
-    30% { transform: scale(1) translateY(-40%) }
-
-    40% { transform: scale(1.05, 1) translateY(0) }
-
-    41% { transform: scale(1.1, .9) }
-
-    50% { transform: translateY(-15%) }
- 
-    60% { transform: translateY(0) }
+	100% {
+		text-shadow: none;
+		opacity: 1;
+	}
 }
 
+/*Animation for two sliding overlay on the heading text*/
+@keyframes showText {
+	0% {
+		width: 0;
+		left: 0;
+		transform: translateX(0%);
+	}
 
+	50% {
+		width: 100%;
+		transform: translateX(85%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+/*Animation for showing overlay in project section*/
 @-webkit-keyframes flipInX {
 	from {
 		-webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -681,8 +728,38 @@ html, body {
 }
 
 
+/*Bouncing up animation*/
+@keyframes bounce {
+	
+    10% { transform: scale(1.1, .8) translateY(5%) }
+
+    15% { transform: scale(.9, 1.1) translateY(-40%) }
+
+    25% { transform: scale(1.05, .9) translateY(-60%) }
+
+    30% { transform: scale(1) translateY(-40%) }
+
+    40% { transform: scale(1.05, 1) translateY(0) }
+
+    41% { transform: scale(1.1, .9) }
+
+    50% { transform: translateY(-15%) }
+ 
+    60% { transform: translateY(0) }
+}
+
+
 /*Media query for responsive designe*/
 @media only screen and (max-width: 425px), (max-width: 375px), (max-width: 320px) {
+
+	/*Hide scrollbar on mobile devices*/
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	html, body {
+		width: 100vw;
+	}
 
 	/*Grid Wrapper*/
 	.grid {
