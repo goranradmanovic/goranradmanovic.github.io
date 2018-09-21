@@ -769,6 +769,7 @@ html, body {
 	/*Header*/
 	.grid__header {
 		position: fixed;
+		z-index: 1;
 		width: 100%;
 		height: 80px;
 		grid-column: span 2;
