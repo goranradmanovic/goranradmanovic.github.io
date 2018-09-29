@@ -455,6 +455,11 @@ html, body {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	content: "\f00c";
+	transition: color 400ms ease-in;
+}
+
+.skills__item--content--list--li:hover.skills__item--content--list--li:before {
+	color: var(--bg-primary);
 }
 
 /*Projects*/
