@@ -1,6 +1,12 @@
 //Waiting for the HTML document to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
+	//Calling sal function
+	sal({
+		threshold: 1,
+		once: true,
+	});
+
 	//Calling the funcitons
 	addActiveClass();
 
