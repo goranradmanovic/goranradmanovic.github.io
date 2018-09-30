@@ -117,9 +117,12 @@ function removeCSSLink() {
 		} else {
 
 			let documentMainCSSLink = document.querySelector('#main'),
+				domSalStyleLink = document.querySelector('#sal'),
 				salStyleLink = '<link rel="stylesheet" href="assets/css/sal.css" id="sal">';
 
-			documentMainCSSLink.insertAdjacentHTML('beforebegin', salStyleLink);
+			if (!domSalStyleLink) {
+				documentMainCSSLink.insertAdjacentHTML('beforebegin', salStyleLink);
+			}
 		}
 	});
 }
