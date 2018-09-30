@@ -106,7 +106,9 @@ function removeCSSLink() {
 	if((window.innerWidth <= 425)) {
 		let salStyleLink = document.querySelector('#sal');
 
-		salStyleLink.remove();
+		if (salStyleLink) {
+			salStyleLink.remove();
+		}
 	}
 
 	window.addEventListener('resize', function() {
