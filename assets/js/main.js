@@ -1,12 +1,15 @@
 //Waiting for the HTML document to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-	//Calling sal function
+	//Remove sal css link
+	removeCSSLink();
+
+	//Sal function
 	sal({
 		threshold: 1,
 		once: true,
-	});
-
+	})
+	
 	//Calling the funcitons
 	addActiveClass();
 
@@ -93,6 +96,33 @@ function scrollToTopBtn() {
 	});
 }
 
+//Remove css link for sal.css on mobile devices
+function removeCSSLink() {
+
+	/*console.log(window.innerWidth)
+	console.log(navigator.userAgent)
+	console.log((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)))*/
+
+	if((window.innerWidth <= 425)) {
+		let salStyleLink = document.querySelector('#sal');
+
+		salStyleLink.remove();
+	}
+
+	window.addEventListener('resize', function() {
+		if((window.innerWidth <= 425)) {
+			let salStyleLink = document.querySelector('#sal');
+
+			salStyleLink.remove();
+		} else {
+
+			let documentMainCSSLink = document.querySelector('#main'),
+				salStyleLink = '<link rel="stylesheet" href="assets/css/sal.css" id="sal">';
+
+			documentMainCSSLink.insertAdjacentHTML('beforebegin', salStyleLink);
+		}
+	});
+}
 
 //Adding/removing actve class to the menu items when page is scrolling
 /*function addMenuActiveClassOnScrolling() {
