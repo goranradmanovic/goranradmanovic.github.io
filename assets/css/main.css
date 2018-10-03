@@ -869,10 +869,14 @@ html, body {
 		width: 100%;
 	}
 
-	.experience__item--date, .education__item--date {
-		height: 5vh;
-		margin-top: 10px;
+	.experience__item--date {
+		height: auto;
+		margin-top: 5px;
 		text-align: left;
+	}
+
+	.experience__item--date {
+		display: block;
 	}
 
 	/*Skils*/
