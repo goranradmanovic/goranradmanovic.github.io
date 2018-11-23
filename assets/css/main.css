@@ -16,6 +16,7 @@
 	--bg-primary: #bd5d38;
 	--opacity-white: rgba(255, 255, 255, 0.7);
 	--light-gray: #dee2e6;
+	--error-red: #DC143C; /*crimson*/
 
 	/*Text colors*/
 	--white-color: #FFFFFF;
@@ -29,7 +30,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif, Arial;
 	scroll-behavior: smooth; /*Dodati naknadno na kraju da se dobije smooth scroling*/
 }
 
@@ -298,8 +299,8 @@ html, body {
 	width: 70%;
 }
 
-.experience__heading, .experience__item--content--header, .experience__item--content--subheader, 
-.education__heading, .education__item--content--header, .education__item--content--subheader, 
+.experience__heading, .experience__item--content--header, .experience__item--content--subheader,
+.education__heading, .education__item--content--header, .education__item--content--subheader,
 .projects__heading, .skills__heading, .skills__item--content--subheader, .interests__heading,
 .contact__heading, .contact__item--content--subheader {
 	font-family: 'Saira Extra Condensed', sans-serif;
@@ -530,7 +531,7 @@ html, body {
 
 .projects__item--img:hover .projects__item--img--overlay {
 	opacity: 1;
-	animation: flipInX 1s; 
+	animation: flipInX 1s;
 }
 
 .projects__item--text {
@@ -597,6 +598,11 @@ html, body {
 	font-size: 0.8em;
 }
 
+/*Input error class*/
+.input__error, .input__error:focus {
+	border-bottom-color: var(--error-red);
+}
+
 .contact__item--form--button {
 	width: 25%;
 	height: 50px;
@@ -638,7 +644,7 @@ html, body {
 	width: 100%;
 	height: auto;
 	font-size: 0.9em;
-	color: white;
+	color: var(--white-color);
 	text-align: center;
 	background-color: var(--header-color);
 }
@@ -654,7 +660,7 @@ html, body {
 	border-top-left-radius: 35px;
 	border-top-right-radius: 35px;
 	text-decoration: none;
-	color: white;
+	color: var(--white-color);
 	background-color: var(--bg-primary);
 }
 
@@ -668,7 +674,7 @@ html, body {
 	margin: 15px auto;
 	font-style: italic;
 	text-decoration: none;
-	color: white;
+	color: var(--white-color);
 	transition: color 300ms ease-in-out;
 }
 
@@ -750,7 +756,7 @@ html, body {
 
 /*Bouncing up animation*/
 @keyframes bounce {
-	
+
     10% { transform: scale(1.1, .8) translateY(5%) }
 
     15% { transform: scale(.9, 1.1) translateY(-40%) }
@@ -764,7 +770,7 @@ html, body {
     41% { transform: scale(1.1, .9) }
 
     50% { transform: translateY(-15%) }
- 
+
     60% { transform: translateY(0) }
 }
 
