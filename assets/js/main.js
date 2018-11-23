@@ -9,15 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		threshold: 1,
 		once: true,
 	})
-	
+
 	//Calling the funcitons
 	addActiveClass();
 
 	//addMenuActiveClassOnScrolling();
-	
+
 	scrollToTopBtn();
 
 	toggleMobileNav();
+
+	validateContact();
 
 	getYear();
 
@@ -64,7 +66,7 @@ function toggleMobileNav() {
 
 	//Looping thrught all navigation link and adding click event on them
 	for (let i = 0; i < mobileNavLink.length; i++) {
-		
+
 		mobileNavLink[i].addEventListener('click', function() {
 			//On click on the nav link remove open and active menu class
 			navigation.classList.remove('open');
@@ -131,6 +133,29 @@ function removeCSSLink() {
 	});
 }
 
+
+//Function for validationg contact form
+function validateContact() {
+
+	let formInputs = document.querySelectorAll('#name, #email, #message');
+
+	for (let i = 0; i < formInputs.length; i++) {
+		//Add event listener for watching for changes in the input field (changes of value)
+		formInputs[i].addEventListener('input', function() {
+
+				//If field is empty and entered value is smaller then 3 char.  If field has pattern attr and if RegExp is different from true (regexp is false)
+				if (this.value.trim() == '' || this.value.length < 3 || (this.getAttribute("pattern") && !new RegExp(this.getAttribute("pattern")).test(this.value))) {
+					console.log('Adding error class');
+					this.classList.add('input__error');
+				} else {
+					console.log('Removing error class');
+					this.classList.remove('input__error');
+				}
+		});
+	}
+}
+
+
 //Adding/removing actve class to the menu items when page is scrolling
 /*function addMenuActiveClassOnScrolling() {
 
@@ -143,10 +168,10 @@ function removeCSSLink() {
 		for (let i = 0; i < pageSections.length; i++) {
 
 			if (pageSections[i].offsetTop <= scrollDistance) {
-				
+
 				$('.grid__header--nav .grid__header--nav--item.active').removeClass('active');
 				$('.grid__header--nav .grid__header--nav--item').eq(i).addClass('active');
-			} 
+			}
 		}
 
 
@@ -168,7 +193,7 @@ $(window).scroll(function() {
 		//} else {
 		//		$('nav').fadeOut("fast");
 		//}
-	
+
 		// Assign active class to nav links while scolling
 		$('.resume__section').each(function(i) {
 			if ($(this).position().top <= scrollDistance) {
