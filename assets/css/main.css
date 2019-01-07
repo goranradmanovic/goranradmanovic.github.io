@@ -506,6 +506,10 @@ html, body {
 	background-image: url('../images/projects/dynamic-layout.webp');
 }
 
+.projects__item--img:nth-child(8) {
+	background-image: url('../images/projects/chatty.webp');
+}
+
 .projects__item--img--overlay {
 	display: flex;
 	justify-content: center;
