@@ -410,21 +410,24 @@
 		<script rel="preload" as="script" type="text/javascript" src="assets/js/main.min.js" crossorigin="anonymous"></script>
 		<!-- Install Service Worker -->
 		<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('./serviceworker.min.js').then(reg => {
+			window.addEventListener('load', () => {
+				if ('serviceWorker' in navigator) {
 
-					if (reg.installing) {
-						console.log('Service Worker is installing');
-					} else if (reg.waiting) {
-						console.log('Service Worker is waiting');
-					} else if (reg.active) {
-						console.log('Service Worker is activated');
-					}
-				}).catch(error => {
-					//Registration failed
-					console.log('Registration failed with ' + error);
-				});
-			}
+					navigator.serviceWorker.register('./serviceworker.min.js').then(reg => {
+
+						if (reg.installing) {
+							console.log('Service Worker is installing');
+						} else if (reg.waiting) {
+							console.log('Service Worker is waiting');
+						} else if (reg.active) {
+							console.log('Service Worker is activated');
+						}
+					}).catch(error => {
+						//Registration failed
+						console.log('Registration failed with ' + error);
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
