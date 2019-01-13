@@ -20,6 +20,7 @@
 	--header-color: #343a40;
 	--text-color: #868e96;
 	--text-address-color: #757575;
+	--text-address-email-color: #A96347;
 	--icon-color: #495057;
 }
 
@@ -235,12 +236,12 @@ html, body {
 .about__address--email {
 	text-transform: lowercase;
 	text-decoration: none;
-	color: var(--bg-primary);
+	color: var(--text-address-email-color);
 }
 
 .about__address--email:hover {
 	text-decoration: underline;
-	opacity: .85;
+	opacity: .95;
 }
 
 .about__subheading {
