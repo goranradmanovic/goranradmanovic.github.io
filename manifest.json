@@ -1,6 +1,13 @@
 {
-  "short_name": "Goran Radmanovic",
+  "short_name": "GR",
   "name": "Goran Radmanovic",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "scope": "/",
+  "description": "Goran Radmanovic Portfolio Website",
+  "theme_color": "#bd5d38",
+  "background_color": "#FFFFFF",
+
   "icons": [
     {
       "src": "./assets/images/icons/icons-144.png",
@@ -22,10 +29,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#bd5d38",
-  "background_color": "#FFFFFF"
+  ]
 }
