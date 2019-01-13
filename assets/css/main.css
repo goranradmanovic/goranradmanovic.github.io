@@ -584,7 +584,7 @@ html, body {
 }
 
 .contact__item--form--textlabel {
-	display: none;
+	visibility: hidden;
 }
 
 .contact__item--form--text {
