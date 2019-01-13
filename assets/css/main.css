@@ -19,6 +19,7 @@
 	--white-color: #FFFFFF;
 	--header-color: #343a40;
 	--text-color: #868e96;
+	--text-address-color: #757575;
 	--icon-color: #495057;
 }
 
@@ -228,7 +229,7 @@ html, body {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: var(--font-bolder);
-	color: var(--text-color);
+	color: var(--text-address-color);
 }
 
 .about__address--email {
