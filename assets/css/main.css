@@ -679,6 +679,10 @@ html, body {
 	background-image: url('../images/projects/chatty.webp');
 }
 
+.projects__item--img:nth-child(9) {
+	background-image: url('../images/projects/mondrian.webp');
+}
+
 .projects__item--img--overlay {
 	display: flex;
 	justify-content: center;
