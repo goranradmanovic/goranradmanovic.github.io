@@ -683,6 +683,10 @@ html, body {
 	background-image: url('../images/projects/mondrian.webp');
 }
 
+.projects__item--img:nth-child(10) {
+	background-image: url('../images/projects/hydrometeorological-institute.webp');
+}
+
 .projects__item--img--overlay {
 	display: flex;
 	justify-content: center;
