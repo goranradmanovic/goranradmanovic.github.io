@@ -222,6 +222,10 @@ html, body {
 	display: grid;
 	grid-template-columns: 270px 1fr;
 	grid-template-rows: 100px 1fr auto;
+	margin-top: env(safe-area-inset-top);
+	margin-left: env(safe-area-inset-left);
+	margin-bottom: env(safe-area-inset-bottom);
+	margin-right: env(safe-area-inset-right);
 }
 
 /*Header Section*/
