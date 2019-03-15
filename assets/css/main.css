@@ -444,9 +444,36 @@ html, body {
 }
 
 .about__social--link--icon {
-	font-size: 2em;
-	color: var(--white-color);
+	width: 60%;
+	height: 60%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	transition: all 400ms ease-in-out;
+}
+
+.about__social--link--icon.linkedin {
+	background-image: url('../images/icons/social-media/linkedin.svg');
+}
+
+.about__social--link--icon.skype {
+	background-image: url('../images/icons/social-media/skype.svg');
+}
+
+.about__social--link--icon.envelope {
+	background-image: url('../images/icons/social-media/envelope.svg');
+}
+
+.about__social--link--icon.github {
+	background-image: url('../images/icons/social-media/github.svg');
+}
+
+.about__social--link--icon.twitter {
+	background-image: url('../images/icons/social-media/twitter.svg');
+}
+
+.about__social--link--icon.facebook {
+	background-image: url('../images/icons/social-media/facebook.svg');
 }
 
 .about__social--link:hover {
@@ -454,7 +481,7 @@ html, body {
 }
 
 .about__social--link:hover .about__social--link--icon {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 /*Experience, Education, Projects, Skills*/
@@ -550,57 +577,57 @@ html, body {
 
 /*HTML5*/
 .skills__item--content--tools--i:nth-child(1):before {
-	background-image: url('../images/icons-rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 /*CSS3*/
 .skills__item--content--tools--i:nth-child(2):before {
-	background-image: url('../images/icons-rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 /*SASS*/
 .skills__item--content--tools--i:nth-child(3):before {
-	background-image: url('../images/icons-rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 /*JavaScript*/
 .skills__item--content--tools--i:nth-child(4):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*Gulp*/
 .skills__item--content--tools--i:nth-child(5):before {
-	background-image: url('../images/icons-rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 /*PHP*/
 .skills__item--content--tools--i:nth-child(6):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*Laravel*/
 .skills__item--content--tools--i:nth-child(7):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*VueJS*/
 .skills__item--content--tools--i:nth-child(8):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*GIT*/
 .skills__item--content--tools--i:nth-child(9):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*Code*/
 .skills__item--content--tools--i:nth-child(10):before {
-	background-image: url('../images/icons-rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*Responsive*/
 .skills__item--content--tools--i:nth-child(11):before {
-	background-image: url('../images/icons-rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 .skills__item--content--tools--i--icon {
@@ -623,15 +650,19 @@ html, body {
 
 .skills__item--content--list--li:before {
 	display: inline-block;
-	padding-right: 5px;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	content: "\f00c";
+	width: 10px;
+	height: 14px;
+	content: '';
+	padding-right: 15px;
+	background-image: url('../images/icons/addition/check-mark.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 	transition: color 400ms ease-in;
 }
 
 .skills__item--content--list--li:hover.skills__item--content--list--li:before {
-	color: var(--bg-primary);
+	filter: invert(43%) sepia(50%) saturate(739%) hue-rotate(331deg) brightness(89%) contrast(85%);
 }
 
 /*Projects*/
@@ -800,7 +831,7 @@ html, body {
 	border-style: none;
 	font-size: 1.2em;
 	text-transform: uppercase;
-	background-image: url('../images/icons/glint.svg');
+	background-image: url('../images/icons/addition/glint.svg');
 	background-size: contain;
 	background-position: -200px center;
 	background-repeat: no-repeat;
@@ -842,7 +873,9 @@ html, body {
 .grid__footer--link {
 	position: relative;
 	top: -35px;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 70px;
 	height: 35px;
 	margin: 0 auto;
@@ -852,6 +885,16 @@ html, body {
 	text-decoration: none;
 	color: var(--white-color);
 	background-color: var(--bg-primary);
+}
+
+.grid__footer--link--icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../images/icons/addition/caret-up.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .grid__footer--link:hover > .grid__footer--link--icon {
