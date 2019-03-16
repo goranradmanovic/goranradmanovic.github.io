@@ -39,6 +39,19 @@ const version = '1.0.0',
 	  	'/assets/images/icons/social-media/linkedin.svg',
 	  	'/assets/images/icons/social-media/skype.svg',
 	  	'/assets/images/icons/social-media/twitter.svg',
+	  	'/assets/images/icons/skills/api.svg',
+	  	'/assets/images/icons/skills/code.svg',
+	  	'/assets/images/icons/skills/css3.svg',
+	  	'/assets/images/icons/skills/git.svg',
+	  	'/assets/images/icons/skills/gulp.svg',
+	  	'/assets/images/icons/skills/html5.svg',
+	  	'/assets/images/icons/skills/js.svg',
+	  	'/assets/images/icons/skills/laravel.svg',
+	  	'/assets/images/icons/skills/php.svg',
+	  	'/assets/images/icons/skills/pug.svg',
+	  	'/assets/images/icons/skills/responsive-design.svg',
+	  	'/assets/images/icons/skills/sass.svg',
+	  	'/assets/images/icons/skills/vuejs.svg',
 	  	'/assets/images/meta/gr-thumbnail.jpg',
 	  	'/assets/images/profile/goran.webp',
 	  	'/assets/images/projects/betting-panel.webp',
@@ -81,7 +94,7 @@ function clearOldCaches() {
 
 
 //Is image URL
-let iExt = ['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp'].map(f => '.' + f); //Add dot before image extension
+let iExt = ['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg'].map(f => '.' + f); //Add dot before image extension
 
 function isImage(url) {
 	return iExt.reduce((ret, ext) => ret || url.endsWith(ext), false);
