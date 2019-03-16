@@ -24,6 +24,27 @@
 	--icon-color: #495057;
 }
 
+/*Selection colors (easy to forget)*/
+::selection {
+  background: #eee;
+}
+
+::-moz-selection {
+  background: #eee;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: #eee;
+}
+
 /*Font faces*/
 
 /* saira-extra-condensed-regular - latin */
@@ -542,7 +563,7 @@ html, body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 85%;
+	width: 100%;
 	height: 50px;
 	margin-bottom: 50px;
 }
@@ -615,29 +636,94 @@ html, body {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*GIT*/
+/*Pug Template Engine*/
 .skills__item--content--tools--i:nth-child(9):before {
-	background-image: url('../images/icons/rating/star-4.svg');
+	background-image: url('../images/icons/rating/star-5.svg');
 }
 
-/*Code*/
+/*GIT*/
 .skills__item--content--tools--i:nth-child(10):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Responsive*/
+/*API*/
 .skills__item--content--tools--i:nth-child(11):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Code*/
+.skills__item--content--tools--i:nth-child(12):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Responsive*/
+.skills__item--content--tools--i:nth-child(13):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 .skills__item--content--tools--i--icon {
-	font-size: 2.4em;
-	color: var(--text-color);
-	transition: color 400ms ease-in-out;
+	width: 45px;
+	height: 45px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: filter 150ms ease-in-out;
+}
+
+.skills__item--content--tools--i--icon.html5 {
+	background-image: url('../images/icons/skills/html5.svg');
+}
+
+.skills__item--content--tools--i--icon.css3 {
+	background-image: url('../images/icons/skills/css3.svg');
+}
+
+.skills__item--content--tools--i--icon.sass {
+	background-image: url('../images/icons/skills/sass.svg');
+}
+
+.skills__item--content--tools--i--icon.js {
+	background-image: url('../images/icons/skills/js.svg');
+}
+
+.skills__item--content--tools--i--icon.gulp {
+	background-image: url('../images/icons/skills/gulp.svg');
+}
+
+.skills__item--content--tools--i--icon.php {
+	background-image: url('../images/icons/skills/php.svg');
+}
+
+.skills__item--content--tools--i--icon.laravel {
+	background-image: url('../images/icons/skills/laravel.svg');
+}
+
+.skills__item--content--tools--i--icon.vuejs {
+	background-image: url('../images/icons/skills/vuejs.svg');
+}
+
+.skills__item--content--tools--i--icon.pug {
+	background-image: url('../images/icons/skills/pug.svg');
+}
+
+.skills__item--content--tools--i--icon.git {
+	background-image: url('../images/icons/skills/git.svg');
+}
+
+.skills__item--content--tools--i--icon.api {
+	background-image: url('../images/icons/skills/api.svg');
+}
+
+.skills__item--content--tools--i--icon.code {
+	background-image: url('../images/icons/skills/code.svg');
+}
+
+.skills__item--content--tools--i--icon.responsive-design {
+	background-image: url('../images/icons/skills/responsive-design.svg');
 }
 
 .skills__item--content--tools--i--icon:hover {
-	color: var(--bg-primary);
+	filter: invert(43%) sepia(50%) saturate(739%) hue-rotate(331deg) brightness(89%) contrast(85%);
 }
 
 .skills__item--content--list {
@@ -658,7 +744,7 @@ html, body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	transition: color 400ms ease-in;
+	transition: filter 400ms ease-in;
 }
 
 .skills__item--content--list--li:hover.skills__item--content--list--li:before {
@@ -1121,7 +1207,6 @@ html, body {
 	/*Skils*/
 	.skills__item--content--tools {
 		flex-wrap: wrap;
-		width: 100%;
 		height: auto;
 	}
 
