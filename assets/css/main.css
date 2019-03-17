@@ -288,13 +288,13 @@ html, body {
 
 /*Navigations links*/
 .grid__header--nav--item {
-	display: block;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	height: 40px;
 	padding: 2px;
 	font-size: 1em;
 	font-weight: var(--font-bold);
-	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: var(--opacity-white);
@@ -302,12 +302,23 @@ html, body {
 	transition: color 200ms ease-in;
 }
 
+.grid__header--nav--item--icon.pdf, .grid__footer--link--download--icon.pdf {
+	display: inline;
+	width: 15px;
+	height: 20px;
+	margin-left: 2%;
+	background-image: url('../images/icons/addition/pdf.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 /*Mobilenavigation buttno*/
 .grid__header--nav--item--mobile {
 	display: none;
 	flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
+  	justify-content: flex-end;
+  	align-items: center;
 	width: 50px;
 	height: 50px;
 	margin: 5% 6% 0 0;
@@ -988,7 +999,9 @@ html, body {
 }
 
 .grid__footer--link--download {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 	width: 200px;
 	margin: 15px auto;
 	font-style: italic;
@@ -1001,6 +1014,12 @@ html, body {
 	color: var(--bg-primary);
 	text-decoration: underline;
 }
+
+.grid__footer--link--download--icon.pdf {
+	width: 14px;
+	height: 17px;
+}
+
 
 /*Animation Section*/
 
