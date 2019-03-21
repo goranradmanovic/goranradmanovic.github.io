@@ -24,27 +24,6 @@
 	--icon-color: #495057;
 }
 
-/*Selection colors (easy to forget)*/
-::selection {
-  background: #eee;
-}
-
-::-moz-selection {
-  background: #eee;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: #eee;
-}
-
 /*Font faces*/
 
 /* saira-extra-condensed-regular - latin */
@@ -221,6 +200,23 @@ body {
 	scroll-behavior: smooth; /*smooth scroling*/
 }
 
+/*Selection colors (easy to forget)*/
+::selection {
+  background: #eee;
+}
+
+::-moz-selection {
+  background: #eee;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
 /*Browser scroller bar*/
 body::-webkit-scrollbar {
 	width: 10px;
@@ -236,6 +232,8 @@ body::-webkit-scrollbar-thumb {
 
 html, body {
 	width: calc(100vw - 10px); /*Calcualte working width of the page (10px widtho of scrollbar)*/
+	-webkit-tap-highlight-color: #eee;
+	overflow-x: hidden;
 }
 
 /*Main grid wrapper*/
