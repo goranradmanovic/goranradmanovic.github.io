@@ -632,43 +632,53 @@ html, body {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
-/*PHP*/
+/*Webpack*/
 .skills__item--content--tools--i:nth-child(6):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Laravel*/
+/*PHP*/
 .skills__item--content--tools--i:nth-child(7):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*VueJS*/
+/*Laravel*/
 .skills__item--content--tools--i:nth-child(8):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Pug Template Engine*/
+/*VueJS*/
 .skills__item--content--tools--i:nth-child(9):before {
-	background-image: url('../images/icons/rating/star-5.svg');
-}
-
-/*GIT*/
-.skills__item--content--tools--i:nth-child(10):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*API*/
+/*Pug Template Engine*/
+.skills__item--content--tools--i:nth-child(10):before {
+	background-image: url('../images/icons/rating/star-5.svg');
+}
+
+/*PWA*/
 .skills__item--content--tools--i:nth-child(11):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Code*/
+/*GIT*/
 .skills__item--content--tools--i:nth-child(12):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Responsive*/
+/*API*/
 .skills__item--content--tools--i:nth-child(13):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Code*/
+.skills__item--content--tools--i:nth-child(14):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Responsive*/
+.skills__item--content--tools--i:nth-child(15):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
@@ -701,6 +711,10 @@ html, body {
 	background-image: url('../images/icons/skills/gulp.svg');
 }
 
+.skills__item--content--tools--i--icon.webpack {
+	background-image: url('../images/icons/skills/webpack.svg');
+}
+
 .skills__item--content--tools--i--icon.php {
 	background-image: url('../images/icons/skills/php.svg');
 }
@@ -715,6 +729,10 @@ html, body {
 
 .skills__item--content--tools--i--icon.pug {
 	background-image: url('../images/icons/skills/pug.svg');
+}
+
+.skills__item--content--tools--i--icon.pwa {
+	background-image: url('../images/icons/skills/pwa.svg');
 }
 
 .skills__item--content--tools--i--icon.git {
@@ -1114,7 +1132,7 @@ html, body {
 
 
 /*Media query for responsive designe*/
-@media only screen and (max-width: 425px), (max-width: 375px), (max-width: 320px) {
+@media only screen and (max-width: 768px), (max-width: 425px), (max-width: 375px), (max-width: 320px) {
 
 	/*Hide scrollbar on mobile devices*/
 	body::-webkit-scrollbar {
@@ -1260,5 +1278,12 @@ html, body {
 	/*Footer*/
 	.grid__footer {
 		grid-column: span 2;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.grid__header--nav--item--mobile {
+		margin: 2% 3% 0 0;
 	}
 }
