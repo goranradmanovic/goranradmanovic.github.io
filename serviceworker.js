@@ -1,7 +1,7 @@
 //Configuration
 const version = '1.0.0',
 	  CACHE = version + '::PWAsite',
-	  //An array of essential files to install, which ensure the site functions offline 
+	  //An array of essential files to install, which ensure the site functions offline
 	  installFilesEssential = [
 	  	'/',
 	  	'/index.html',
@@ -45,11 +45,13 @@ const version = '1.0.0',
 	  	'/assets/images/icons/skills/css3.svg',
 	  	'/assets/images/icons/skills/git.svg',
 	  	'/assets/images/icons/skills/gulp.svg',
+	  	'/assets/images/icons/skills/webpack.svg',
 	  	'/assets/images/icons/skills/html5.svg',
 	  	'/assets/images/icons/skills/js.svg',
 	  	'/assets/images/icons/skills/laravel.svg',
 	  	'/assets/images/icons/skills/php.svg',
 	  	'/assets/images/icons/skills/pug.svg',
+	  	'/assets/images/icons/skills/pwa.svg',
 	  	'/assets/images/icons/skills/responsive-design.svg',
 	  	'/assets/images/icons/skills/sass.svg',
 	  	'/assets/images/icons/skills/vuejs.svg',
@@ -67,7 +69,7 @@ const version = '1.0.0',
 	  ];
 
 //Install Static Files
-//The installStaticFiles() function adds files to the cache using the promise-based Cache API. 
+//The installStaticFiles() function adds files to the cache using the promise-based Cache API.
 //A return value is only generated when the essential files are cached
 function installStaticFiles() {
 
@@ -124,7 +126,7 @@ function offlineAssets(url) {
 
 /*** SW Listeners ***/
 
-//Install event listener. The waitUntil method ensures the service worker won’t install until all enclosed code has executed. 
+//Install event listener. The waitUntil method ensures the service worker won’t install until all enclosed code has executed.
 //It runs installStaticFiles() then self.skipWaiting() to make the service worker active
 self.addEventListener('install', event => {
 	//console.log('Service worker: install');
