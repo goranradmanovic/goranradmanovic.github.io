@@ -570,10 +570,10 @@ html, body {
 
 .skills__item--content--tools {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
-	height: 50px;
 	margin-bottom: 50px;
 }
 
@@ -581,8 +581,9 @@ html, body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 50px;
+	width: 60px;
 	height: 50px;
+	margin-bottom: 3%;
 }
 
 .skills__item--content--tools--i:before {
@@ -615,52 +616,52 @@ html, body {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
-/*SASS*/
+/*Pug Template Engine*/
 .skills__item--content--tools--i:nth-child(3):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
-/*JavaScript*/
+/*SASS*/
 .skills__item--content--tools--i:nth-child(4):before {
-	background-image: url('../images/icons/rating/star-4.svg');
-}
-
-/*Gulp*/
-.skills__item--content--tools--i:nth-child(5):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
-/*Webpack*/
-.skills__item--content--tools--i:nth-child(6):before {
-	background-image: url('../images/icons/rating/star-4.svg');
-}
-
-/*PHP*/
-.skills__item--content--tools--i:nth-child(7):before {
-	background-image: url('../images/icons/rating/star-4.svg');
-}
-
-/*Laravel*/
-.skills__item--content--tools--i:nth-child(8):before {
+/*JavaScript*/
+.skills__item--content--tools--i:nth-child(5):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
 /*VueJS*/
+.skills__item--content--tools--i:nth-child(6):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Gulp*/
+.skills__item--content--tools--i:nth-child(7):before {
+	background-image: url('../images/icons/rating/star-5.svg');
+}
+
+/*Webpack*/
+.skills__item--content--tools--i:nth-child(8):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Firebase*/
 .skills__item--content--tools--i:nth-child(9):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Pug Template Engine*/
+/*PHP*/
 .skills__item--content--tools--i:nth-child(10):before {
-	background-image: url('../images/icons/rating/star-5.svg');
+	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*PWA*/
+/*MySql*/
 .skills__item--content--tools--i:nth-child(11):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*GIT*/
+/*Laravel*/
 .skills__item--content--tools--i:nth-child(12):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
@@ -670,13 +671,23 @@ html, body {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Code*/
+/*PWA*/
 .skills__item--content--tools--i:nth-child(14):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Responsive*/
+/*GIT*/
 .skills__item--content--tools--i:nth-child(15):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Code*/
+.skills__item--content--tools--i:nth-child(16):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Responsive*/
+.skills__item--content--tools--i:nth-child(17):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
@@ -717,8 +728,16 @@ html, body {
 	background-image: url('../images/icons/skills/php.svg');
 }
 
+.skills__item--content--tools--i--icon.mysql {
+	background-image: url('../images/icons/skills/mysql.svg');
+}
+
 .skills__item--content--tools--i--icon.laravel {
 	background-image: url('../images/icons/skills/laravel.svg');
+}
+
+.skills__item--content--tools--i--icon.firebase {
+	background-image: url('../images/icons/skills/firebase.svg');
 }
 
 .skills__item--content--tools--i--icon.vuejs {
@@ -1241,8 +1260,7 @@ html, body {
 
 	/*Skils*/
 	.skills__item--content--tools {
-		flex-wrap: wrap;
-		height: auto;
+		justify-content: space-evenly;
 	}
 
 	.skills__item--content--tools--i {
