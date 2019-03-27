@@ -233,7 +233,7 @@ body::-webkit-scrollbar-thumb {
 html, body {
 	width: calc(100vw - 10px); /*Calcualte working width of the page (10px widtho of scrollbar)*/
 	-webkit-tap-highlight-color: #eee;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 /*Main grid wrapper*/
@@ -258,12 +258,9 @@ html, body {
 
 /*Navigation*/
 .grid__header--nav {
-	position: sticky;
-	/*top: 20vh;*/
+	position: sticky; /*Sticky works only without overflow*/
 	top: 15vh;
 	width: 100%;
-	height: auto;
-	margin: 0 auto;
 }
 
 /*Profile image*/
