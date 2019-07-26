@@ -851,6 +851,22 @@ html, body {
 	background-image: url('../images/projects/hydrometeorological-institute.webp');
 }
 
+.projects__item--img:nth-child(11) {
+	background-image: url('../images/projects/b2b.webp');
+}
+
+.projects__item--img:nth-child(12) {
+	background-image: url('../images/projects/oomovers.webp');
+}
+
+.projects__item--img:nth-child(13) {
+	background-image: url('../images/projects/jatheon.webp');
+}
+
+.projects__item--img:nth-child(14) {
+	background-image: url('../images/projects/keno.webp');
+}
+
 .projects__item--img--overlay {
 	display: flex;
 	justify-content: center;
