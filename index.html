@@ -76,8 +76,13 @@
 		<link rel="preload" as="font" type="font/woff2" href="assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-600.woff2" crossorigin>
 		<link rel="preload" as="font" type="font/woff2" href="assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-700.woff2" crossorigin>
 		<!--Assets-->
-		<link rel="preload" href="assets/css/sal.css" as="style" onload="this.rel='stylesheet'" id="sal">
+		<link rel="preload" href="assets/css/sal.css" as="style" onload="this.onload=null;this.rel='stylesheet'" id="sal">
 		<link rel="stylesheet" href="assets/css/main.min.css" id="main">
+		<link rel="preload" href="assets/js/sal.js" as="script" crossorigin="anonymous">
+		<link rel="preload" href="assets/js/main.min.js" as="script" crossorigin="anonymous">
+		<noscript>
+			<link rel="stylesheet" href="assets/css/sal.css" id="sal">
+		</noscript>
 	</head>
 	<body>
 		<div class="grid" id="top">
@@ -518,11 +523,27 @@
 			</footer>
 		</div>
 
-		<script rel="preload" as="script" type="text/javascript" src="assets/js/sal.js" crossorigin="anonymous"></script>
-		<script rel="preload" as="script" type="text/javascript" src="assets/js/main.min.js" crossorigin="anonymous"></script>
-		<!-- Install Service Worker -->
+		<noscript>
+			<script src="assets/js/sal.js" defer></script>
+			<script src="assets/js/main.min.js" defer></script>
+		</noscript>
+
+		<!--Loading JS scripts and Install Service Worker -->
 		<script>
 			window.addEventListener('load', () => {
+
+				//Using preload JS files
+				let sal = document.createElement('script'),
+						main = document.createElement('script');
+
+				sal.src = 'assets/js/sal.js';
+				main.src = 'assets/js/main.min.js';
+				sal.defer = true;
+				main.defer = true;
+				document.body.appendChild(sal);
+				document.body.appendChild(main);
+
+				//Check if serviceWorker is enabled in browser
 				if ('serviceWorker' in navigator) {
 
 					navigator.serviceWorker.register('./serviceworker.min.js').then(reg => {
