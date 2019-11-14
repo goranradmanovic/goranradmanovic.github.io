@@ -633,58 +633,63 @@ html, body {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Gulp*/
+/*NodeJS*/
 .skills__item--content--tools--i:nth-child(7):before {
+	background-image: url('../images/icons/rating/star-3.svg');
+}
+
+/*Gulp*/
+.skills__item--content--tools--i:nth-child(8):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
 /*Webpack*/
-.skills__item--content--tools--i:nth-child(8):before {
-	background-image: url('../images/icons/rating/star-4.svg');
-}
-
-/*Firebase*/
 .skills__item--content--tools--i:nth-child(9):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*PHP*/
+/*Firebase*/
 .skills__item--content--tools--i:nth-child(10):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*MySql*/
+/*PHP*/
 .skills__item--content--tools--i:nth-child(11):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Laravel*/
+/*MySql*/
 .skills__item--content--tools--i:nth-child(12):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*API*/
+/*Laravel*/
 .skills__item--content--tools--i:nth-child(13):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*PWA*/
+/*API*/
 .skills__item--content--tools--i:nth-child(14):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*GIT*/
+/*PWA*/
 .skills__item--content--tools--i:nth-child(15):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Code*/
+/*GIT*/
 .skills__item--content--tools--i:nth-child(16):before {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
-/*Responsive*/
+/*Code*/
 .skills__item--content--tools--i:nth-child(17):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Responsive*/
+.skills__item--content--tools--i:nth-child(18):before {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
@@ -711,6 +716,10 @@ html, body {
 
 .skills__item--content--tools--i--icon.js {
 	background-image: url('../images/icons/skills/js.svg');
+}
+
+.skills__item--content--tools--i--icon.nodejs {
+	background-image: url('../images/icons/skills/nodejs.svg');
 }
 
 .skills__item--content--tools--i--icon.gulp {
