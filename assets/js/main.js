@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	//Calling the funcitons
 	addActiveClass();
 
-	//addMenuActiveClassOnScrolling();
+	addMenuActiveClassOnScrolling();
 
 	scrollToTopBtn();
 
@@ -157,48 +157,59 @@ function validateContact() {
 
 
 //Adding/removing actve class to the menu items when page is scrolling
-/*function addMenuActiveClassOnScrolling() {
+function addMenuActiveClassOnScrolling() {
 
-	window.addEventListener('scroll', function() {
+	//Grab sections (targets) and menu links (trigers) for menu items to apply active links styles to
+	const sections = document.querySelectorAll('.resume__section'),
+				menu_links = document.querySelectorAll('.grid__header--nav--item');
 
-		/*let scrollDistance = window.pageYOffset, //Scroll page offest
-			pageSections = document.querySelectorAll('.resume__section'); //All page sections
-			//navActiveLinks = document.querySelectorAll('.grid__header--nav--item');
+	//Functions for adding and removing active class from links as appropriate
+	const makeActive = link => menu_links[link].classList.add('active');
 
-		for (let i = 0; i < pageSections.length; i++) {
+	const removeActive = link => menu_links[link].classList.remove('active');
 
-			if (pageSections[i].offsetTop <= scrollDistance) {
+	const removeAllActive = () => [...Array(sections.length).keys()].forEach(link => removeActive(link));
 
-				$('.grid__header--nav .grid__header--nav--item.active').removeClass('active');
-				$('.grid__header--nav .grid__header--nav--item').eq(i).addClass('active');
-			}
+	// change the active link a bit above the actual section
+	// this way it will change as you're approaching the section rather
+	// than waiting until the section has passed the top of the screen
+	const sectionMargin = 100;
+
+	// keep track of the currently active link
+  // use this so as not to change the active link over and over
+  // as the user scrolls but rather only change when it becomes
+  // necessary because the user is in a new section of the page
+	let currentActive = 0;
+
+	window.addEventListener('scroll', () => {
+		/*
+			// check in reverse order so we find the last section
+			// that's present - checking in non-reverse order would
+			// report true for all sections up to and including
+			// the section currently in view
+			//
+			// Data in play:
+			// window.scrollY    - is the current vertical position of the window
+			// sections          - is a list of the dom nodes of the sections of the page
+			//                     [...sections] turns this into an array so we can
+			//                     use array options like reverse() and findIndex()
+			// section.offsetTop - is the vertical offset of the section from the top of the page
+			//
+			// basically this lets us compare each section (by offsetTop) against the
+			// viewport's current position (by window.scrollY) to figure out what section
+		*/
+
+		// the user is currently viewing
+		const current = sections.length - [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - sectionMargin) - 1;
+
+		// only if the section has changed
+    // remove active class from all menu links
+    // and then apply it to the link for the current section
+
+		if (current !== currentActive) {
+			removeAllActive();
+			currentActive = current;
+			makeActive(current);
 		}
-
-
-		$('.resume__section').each(function(i) {
-			if ($(this).position().top <= scrollDistance) {
-				$('.grid__header--nav .grid__header--nav--item.active').removeClass('active');
-				$('.grid__header--nav .grid__header--nav--item').eq(i).addClass('active');
-			}
-		});
-	});
+	}, false);
 }
-
-$(window).scroll(function() {
-		var scrollDistance = $(window).scrollTop();
-
-		// Show/hide menu on scroll
-		//if (scrollDistance >= 850) {
-		//		$('nav').fadeIn("fast");
-		//} else {
-		//		$('nav').fadeOut("fast");
-		//}
-
-		// Assign active class to nav links while scolling
-		$('.resume__section').each(function(i) {
-			if ($(this).position().top <= scrollDistance) {
-				$('.grid__header--nav .grid__header--nav--item.active').removeClass('active');
-				$('.grid__header--nav .grid__header--nav--item').eq(i).addClass('active');
-			}
-		});
-}).scroll();*/
