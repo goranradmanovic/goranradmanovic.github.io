@@ -312,8 +312,8 @@ html, body {
 .grid__header--nav--item--mobile {
 	display: none;
 	flex-wrap: wrap;
-  	justify-content: flex-end;
-  	align-items: center;
+	justify-content: flex-end;
+	align-items: center;
 	width: 50px;
 	height: 50px;
 	margin: 5% 6% 0 0;
@@ -359,7 +359,6 @@ html, body {
 	display: flex !important;
 	background-color: rgb(189,93,56, .95);
 }
-
 
 /*Main content*/
 .grid__content {
@@ -804,11 +803,65 @@ html, body {
 }
 
 /*Projects*/
+.projects {
+	position: relative;
+	min-height: unset;
+	height: 750px;
+	overflow: hidden;
+	transition: height 400ms ease-in-out;
+}
+
+.projects__open {
+	height: auto;
+}
+
 .projects__item {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
 	grid-column-gap: 10px;
 	grid-row-gap: 20px;
+}
+
+.projects__btncontainer {
+	position: absolute;
+	top: 645px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 105px;
+	background-color: white;
+}
+
+.projects__btncontainer--open {
+	position: unset;
+}
+
+.projects__btncontainer--btn {
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+	border-style: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+	transition: box-shadow 500ms linear;
+	background-color: var(--bg-primary);
+	color: var(--white-color);
+}
+
+.projects__btncontainer--btn:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.projects__btncontainer--btn:active {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.projects__btncontainer--btn:focus {
+	outline: none;
 }
 
 .projects__item--img {
@@ -876,7 +929,16 @@ html, body {
 	background-image: url('../images/projects/keno.webp');
 }
 
+.projects__item--img:nth-child(15) {
+	background-image: url('../images/projects/nikom.webp');
+}
+
+.projects__item--img:nth-child(16) {
+	background-image: url('../images/projects/airquality.webp');
+}
+
 .projects__item--img--overlay {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -892,6 +954,7 @@ html, body {
 	font-weight: var(--font-light);
 	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 	color: var(--white-color);
 	transition: color 200ms ease-in-out;
 }
@@ -903,6 +966,24 @@ html, body {
 .projects__item--img:hover .projects__item--img--overlay {
 	opacity: 1;
 	animation: flipInX 1s;
+}
+
+.projects__item--img--overlay--info {
+	position: absolute;
+	top: 80%;
+	left: 90%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-image: url('../images/icons/addition/info.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: transform 300ms ease-in-out;
+}
+
+.projects__item--img--overlay--info:hover {
+	transform: scale(1.05);
 }
 
 .projects__item--text {
@@ -1077,6 +1158,106 @@ html, body {
 	height: 17px;
 }
 
+/*Info Modal section*/
+.infomodal {
+	opacity: 0;
+	position: fixed;
+	z-index: -10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	-webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, .5);
+	transition: opacity 400ms ease-in-out, backdrop-filter 400ms ease-in-out;
+}
+
+.open {
+	opacity: 1;
+	backdrop-filter: blur(5px);
+	z-index: 10;
+}
+
+.infomodal__card {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	height: 550px;
+	box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .5);
+	background-color: #FFFFFF;
+}
+
+.infomodal__close {
+	position: absolute;
+	top: 10px;
+	left: 97%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: transform 400ms ease-in-out;
+}
+
+.infomodal__close:hover {
+	transform: rotate(90deg);
+}
+
+.infomodal__card--img {
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.infomodal__card--img.img-contain {
+	object-fit: contain;
+}
+
+.infomodal__card--content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+	padding: 25px;
+	color: var(--white-color);
+	background-color: var(--icon-color);
+}
+
+.infomodal__card--content--title {
+	height: 90px;
+  font-size: 5em;
+	line-height: 1
+}
+
+.infomodal__card--content--title, .infomodal__card--content--subtitle {
+	width: 100%;
+	padding: 10px 0;
+	font-family: 'Saira Extra Condensed', sans-serif, Arial;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.infomodal__card--content--subtitle {
+  font-size: 1.2em;
+}
+
+.infomodal__card--content--textbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-evenly;
+	height: 200px;
+}
+
+.infomodal__card--content--textbox, .infomodal__card--content--textbox--text {
+	width: 100%;
+}
+
+.infomodal__card--content--textbox--text {
+	margin: 10px 0;
+}
 
 /*Animation Section*/
 
@@ -1294,6 +1475,10 @@ html, body {
 		width: 100%;
 	}
 
+	.projects__item--img--overlay--info {
+		left: 86%;
+	}
+
 	/*Contact*/
 	.contact__item--form {
 		flex-wrap: wrap;
@@ -1317,6 +1502,41 @@ html, body {
 	.grid__footer {
 		grid-column: span 2;
 	}
+
+	/* Info modal */
+
+	.infomodal__card {
+		width: 95%;
+		height: 89%;
+		margin-top: 11%;
+		overflow-y: scroll;
+	}
+
+	.infomodal__close {
+		left: 10px;
+	}
+
+	.infomodal__card--img, .infomodal__card--content {
+    width: 100%;
+	}
+
+	.infomodal__card--img {
+    height: 40%;
+	}
+
+	.infomodal__card--content {
+		min-height: 600px;
+    height: 60%;
+		padding: 0 10px 10px 10px;
+	}
+
+	.infomodal__card--content--title {
+		font-size: 3em;
+	}
+
+	.infomodal__card--content--textbox {
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1324,4 +1544,30 @@ html, body {
 	.grid__header--nav--item--mobile {
 		margin: 2% 3% 0 0;
 	}
+
+	/*.infomodal__card--img {
+		height: 40%;
+	}
+
+	.infomodal__card--content {
+		height: 60%;
+		padding: 25px;
+	}
+
+	.infomodal__card--content--title, .infomodal__card--content--subtitle {
+		width: 100%;
+		text-align: center;
+	}
+
+	.infomodal__card--content--title {
+		font-size: 5em;
+	}
+
+	.infomodal__card--content--text {
+		font-size: 1.1em;
+	}
+
+	.infomodal__card--content--subtitle {
+		font-size: 1.5em;
+	}*/
 }
