@@ -1203,6 +1203,11 @@ html, body {
 	transform: rotate(90deg);
 }
 
+.infomodal__close:focus {
+	outline: none;
+	background-color: transparent;
+}
+
 .infomodal__card--img {
 	width: 50%;
 	height: 100%;
