@@ -860,8 +860,9 @@ html, body {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.projects__btncontainer--btn:focus {
+.projects__btncontainer--btn:focus, .projects__btncontainer--btn:focus-within, .projects__btncontainer--btn:active, .projects__btncontainer--btn:visited {
 	outline: none;
+	background-color: transparent;
 }
 
 .projects__item--img {
@@ -1203,7 +1204,7 @@ html, body {
 	transform: rotate(90deg);
 }
 
-.infomodal__close:focus {
+.infomodal__close:focus, .infomodal__close:focus-within, .infomodal__close:active, .infomodal__close:visited {
 	outline: none;
 	background-color: transparent;
 }
