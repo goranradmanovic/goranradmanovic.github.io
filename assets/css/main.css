@@ -850,6 +850,7 @@ html, body {
 	transition: box-shadow 500ms linear;
 	background-color: var(--bg-primary);
 	color: var(--white-color);
+	-webkit-tap-highlight-color: transparent;
 }
 
 .projects__btncontainer--btn:hover {
@@ -1199,6 +1200,7 @@ html, body {
 	height: 30px;
 	cursor: pointer;
 	transition: transform 400ms ease-in-out;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .infomodal__close:hover {
