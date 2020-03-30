@@ -983,10 +983,17 @@ html, body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: transform 300ms ease-in-out;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .projects__item--img--overlay--info:hover {
 	transform: scale(1.05);
+}
+
+.projects__item--img--overlay--info:focus, .projects__item--img--overlay--info:focus-within,
+.projects__item--img--overlay--info:active, .projects__item--img--overlay--info:visited {
+	outline: none;
+	background-color: transparent;
 }
 
 .projects__item--text {
