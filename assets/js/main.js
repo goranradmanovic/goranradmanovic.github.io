@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			img: './assets/images/popup/aleabetlists.webp',
 			title: 'AleaBet Lists',
 			text: [
-				'Alea Control is IT company for creating online betting games and systems from Bosnia and Herzegovina.',
 				'Aleabet lists is a project for betting house, I was working on web version and also on printing versions of those lists for daily or weekly sports events.',
 				'Beside of aleabet lists I was working also on the admin panel for this lists, so that admin can configure output of the lists and some graphic elements.'
 			],
@@ -284,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			title: 'The Fruits Of The Village',
 			text: [
 				'This application helps to promote local organic product and manufacturer.',
-				'It\'s connecting small and large agricultural producers with suppliers and local markets, and help to build businesses and agricultural clusters.',
+				//'It\'s connecting small and large agricultural producers with suppliers and local markets, and help to build businesses and agricultural clusters.',
 				'On this project I was working as frontend developer for ministry of agriculture, forestry and water management.'
 			],
 			tech: [
