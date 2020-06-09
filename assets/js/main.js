@@ -277,6 +277,24 @@ document.addEventListener('DOMContentLoaded', function() {
 				'Netlify',
 				'GIT',
 			]
+		},
+
+		{
+			img: './assets/images/popup/thefruitsofthevillage.webp',
+			title: 'The Fruits Of The Village',
+			text: [
+				'This application helps to promote local organic product and manufacturer.',
+				'It\'s connecting small and large agricultural producers with suppliers and local markets, and help to build businesses and agricultural clusters.',
+				'On this project I was working as frontend developer for ministry of agriculture, forestry and water management.'
+			],
+			tech: [
+				'PUG & SASS',
+				'JavaScript (ES6)',
+				'VueJS',
+				'Vuex & Vue Router',
+				'Google Map API',
+				'GIT',
+			]
 		}
 	];
 
