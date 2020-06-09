@@ -940,6 +940,10 @@ html, body {
 	background-image: url('../images/projects/airquality.webp');
 }
 
+.projects__item--img:nth-child(17) {
+	background-image: url('../images/projects/thefruitsofthevillage.webp');
+}
+
 .projects__item--img--overlay {
 	position: relative;
 	display: flex;
