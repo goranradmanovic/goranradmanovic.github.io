@@ -855,6 +855,8 @@ html, body {
 
 .projects__btncontainer--btn:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	color: var(--bg-primary);
+	border: 1px solid var(--bg-primary);
 	background-color: transparent;
 }
 
@@ -1248,7 +1250,7 @@ html, body {
 
 .infomodal__card--content--title {
 	height: 90px;
-  font-size: 5em;
+  font-size: 4.5em;
 	line-height: 1
 }
 
