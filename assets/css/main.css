@@ -692,6 +692,11 @@ html, body {
 	background-image: url('../images/icons/rating/star-5.svg');
 }
 
+/*PrestaShop*/
+.skills__item--content--tools--i:nth-child(19):before {
+	background-image: url('../images/icons/rating/star-3.svg');
+}
+
 .skills__item--content--tools--i--icon {
 	width: 45px;
 	height: 45px;
@@ -773,6 +778,10 @@ html, body {
 	background-image: url('../images/icons/skills/responsive-design.svg');
 }
 
+.skills__item--content--tools--i--icon.prestashop {
+	background-image: url('../images/icons/skills/prestashop.svg');
+}
+
 .skills__item--content--tools--i--icon:hover {
 	filter: invert(43%) sepia(50%) saturate(739%) hue-rotate(331deg) brightness(89%) contrast(85%);
 }
@@ -806,7 +815,6 @@ html, body {
 .projects {
 	position: relative;
 	min-height: unset;
-	height: 750px;
 	overflow: hidden;
 	transition: height 400ms ease-in-out;
 }
@@ -823,9 +831,6 @@ html, body {
 }
 
 .projects__btncontainer {
-	position: absolute;
-	top: 645px;
-	left: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -839,25 +844,24 @@ html, body {
 }
 
 .projects__btncontainer--btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 150px;
 	height: 50px;
 	margin: 0 auto;
-	border-style: none;
+	border: 1px solid var(--bg-primary);
 	font-size: 1.2em;
 	text-transform: uppercase;
+	text-decoration: none;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	cursor: pointer;
-	transition: all 500ms ease-in-out;
-	background-color: var(--bg-primary);
-	color: var(--white-color);
+	color: var(--bg-primary);
 	-webkit-tap-highlight-color: transparent;
+	transition: box-shadow 400ms ease-in-out;
 }
 
 .projects__btncontainer--btn:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	color: var(--bg-primary);
-	border: 1px solid var(--bg-primary);
-	background-color: transparent;
 }
 
 .projects__btncontainer--btn:active {
@@ -866,88 +870,37 @@ html, body {
 	border: 1px solid var(--bg-primary);
 }
 
-.projects__btncontainer--btn:focus, .projects__btncontainer--btn:focus-within, .projects__btncontainer--btn:active, .projects__btncontainer--btn:visited {
-	outline: none;
-	color: var(--bg-primary);
-	border: 1px solid var(--bg-primary);
-	background-color: transparent;
-}
-
 .projects__item--img {
 	justify-self: center;
 	width: 90%;
 	box-shadow: -3px 3px 10px 3px #ddd;
 	background-repeat: repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 }
 
 .projects__item--img:nth-child(1) {
-	background-image: url('../images/projects/stealio.webp');
+	background-image: url('../images/main-projects/examiz.webp');
 }
 
 .projects__item--img:nth-child(2) {
-	background-image: url('../images/projects/betting-panel.webp');
+	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
 }
 
 .projects__item--img:nth-child(3) {
-	background-image: url('../images/projects/lists.webp');
+	background-image: url('../images/main-projects/prettyballerinas.webp');
 }
 
 .projects__item--img:nth-child(4) {
-	background-image: url('../images/projects/bplace.webp');
+	background-image: url('../images/main-projects/betting-panel.webp');
 }
 
 .projects__item--img:nth-child(5) {
-	background-image: url('../images/projects/einfo.webp');
+	background-image: url('../images/main-projects/keno.webp');
 }
 
 .projects__item--img:nth-child(6) {
-	background-image: url('../images/projects/oldportfolio.webp');
-}
-
-.projects__item--img:nth-child(7) {
-	background-image: url('../images/projects/dynamic-layout.webp');
-}
-
-.projects__item--img:nth-child(8) {
-	background-image: url('../images/projects/chatty.webp');
-}
-
-.projects__item--img:nth-child(9) {
-	background-image: url('../images/projects/mondrian.webp');
-}
-
-.projects__item--img:nth-child(10) {
-	background-image: url('../images/projects/hydrometeorological-institute.webp');
-}
-
-.projects__item--img:nth-child(11) {
-	background-image: url('../images/projects/b2b.webp');
-}
-
-.projects__item--img:nth-child(12) {
-	background-image: url('../images/projects/oomovers.webp');
-}
-
-.projects__item--img:nth-child(13) {
-	background-image: url('../images/projects/jatheon.webp');
-}
-
-.projects__item--img:nth-child(14) {
-	background-image: url('../images/projects/keno.webp');
-}
-
-.projects__item--img:nth-child(15) {
-	background-image: url('../images/projects/nikom.webp');
-}
-
-.projects__item--img:nth-child(16) {
 	background-image: url('../images/projects/airquality.webp');
-}
-
-.projects__item--img:nth-child(17) {
-	background-image: url('../images/projects/thefruitsofthevillage.webp');
 }
 
 .projects__item--img--overlay {
@@ -978,22 +931,24 @@ html, body {
 
 .projects__item--img:hover .projects__item--img--overlay {
 	opacity: 1;
-	animation: flipInX 1s;
+	animation: flipInX 800ms;
 }
 
 .projects__item--img--overlay--info {
 	position: absolute;
 	top: 80%;
-	left: 90%;
+	left: 93%;
 	width: 30px;
 	height: 30px;
+	border-radius: 50%;
 	cursor: pointer;
 	background-image: url('../images/icons/addition/info.svg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	transition: transform 300ms ease-in-out;
+	transition: transform 200ms ease-in-out;
 	-webkit-tap-highlight-color: transparent;
+	animation: pulse-white 1s linear 2s infinite;
 }
 
 .projects__item--img--overlay--info:hover {
@@ -1188,15 +1143,14 @@ html, body {
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	-webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
-  background-color: rgba(0, 0, 0, .5);
-	transition: opacity 400ms ease-in-out, backdrop-filter 400ms ease-in-out;
+	-webkit-backdrop-filter: blur(5px);
+  	backdrop-filter: blur(5px);
+  	background-color: rgba(0, 0, 0, .5);
+	transition: opacity 200ms ease-in-out;
 }
 
 .open {
 	opacity: 1;
-	backdrop-filter: blur(5px);
 	z-index: 10;
 }
 
@@ -1216,7 +1170,7 @@ html, body {
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	transition: transform 400ms ease-in-out;
+	transition: transform 200ms ease-in-out;
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -1254,7 +1208,7 @@ html, body {
 
 .infomodal__card--content--title {
 	height: 90px;
-  font-size: 4.5em;
+  	font-size: 4.5em;
 	line-height: 1
 }
 
@@ -1377,6 +1331,20 @@ html, body {
     60% { transform: translateY(0) }
 }
 
+/*White pulse*/
+@keyframes pulse-white {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
 
 /*Media query for responsive designe*/
 @media only screen and (max-width: 768px), (max-width: 425px), (max-width: 375px), (max-width: 320px) {
