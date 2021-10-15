@@ -195,84 +195,87 @@ html, body {
 	background-position: center;
 }
 
-
 .projects__item--img:nth-child(1) {
-	background-image: url('../images/projects/examiz.webp');
+	background-image: url('../images/projects/niota.webp');
 }
 
 .projects__item--img:nth-child(2) {
-	background-image: url('../images/projects/thefruitsofthevillage.webp');
+	background-image: url('../images/projects/examiz.webp');
 }
 
 .projects__item--img:nth-child(3) {
-	background-image: url('../images/projects/keno.webp');
+	background-image: url('../images/projects/thefruitsofthevillage.webp');
 }
 
 .projects__item--img:nth-child(4) {
-	background-image: url('../images/projects/airquality.webp');
+	background-image: url('../images/projects/keno.webp');
 }
 
 .projects__item--img:nth-child(5) {
-	background-image: url('../images/projects/prettyballerinas.webp');
+	background-image: url('../images/projects/airquality.webp');
 }
 
 .projects__item--img:nth-child(6) {
-	background-image: url('../images/projects/mascaro.webp');
+	background-image: url('../images/projects/prettyballerinas.webp');
 }
 
 .projects__item--img:nth-child(7) {
-	background-image: url('../images/projects/betting-panel.webp');
+	background-image: url('../images/projects/mascaro.webp');
 }
 
 .projects__item--img:nth-child(8) {
-	background-image: url('../images/projects/lists.webp');
+	background-image: url('../images/projects/betting-panel.webp');
 }
 
 .projects__item--img:nth-child(9) {
-	background-image: url('../images/projects/stealio.webp');
+	background-image: url('../images/projects/lists.webp');
 }
 
 .projects__item--img:nth-child(10) {
-	background-image: url('../images/projects/bplace.webp');
+	background-image: url('../images/projects/stealio.webp');
 }
 
 .projects__item--img:nth-child(11) {
-	background-image: url('../images/projects/einfo.webp');
+	background-image: url('../images/projects/bplace.webp');
 }
 
 .projects__item--img:nth-child(12) {
-	background-image: url('../images/projects/oldportfolio.webp');
+	background-image: url('../images/projects/einfo.webp');
 }
 
 .projects__item--img:nth-child(13) {
-	background-image: url('../images/projects/dynamic-layout.webp');
+	background-image: url('../images/projects/oldportfolio.webp');
 }
 
 .projects__item--img:nth-child(14) {
-	background-image: url('../images/projects/chatty.webp');
+	background-image: url('../images/projects/dynamic-layout.webp');
 }
 
 .projects__item--img:nth-child(15) {
-	background-image: url('../images/projects/mondrian.webp');
+	background-image: url('../images/projects/chatty.webp');
 }
 
 .projects__item--img:nth-child(16) {
-	background-image: url('../images/projects/hydrometeorological-institute.webp');
+	background-image: url('../images/projects/mondrian.webp');
 }
 
 .projects__item--img:nth-child(17) {
-	background-image: url('../images/projects/b2b.webp');
+	background-image: url('../images/projects/hydrometeorological-institute.webp');
 }
 
 .projects__item--img:nth-child(18) {
-	background-image: url('../images/projects/oomovers.webp');
+	background-image: url('../images/projects/b2b.webp');
 }
 
 .projects__item--img:nth-child(19) {
-	background-image: url('../images/projects/jatheon.webp');
+	background-image: url('../images/projects/oomovers.webp');
 }
 
 .projects__item--img:nth-child(20) {
+	background-image: url('../images/projects/jatheon.webp');
+}
+
+.projects__item--img:nth-child(21) {
 	background-image: url('../images/projects/nikom.webp');
 }
 

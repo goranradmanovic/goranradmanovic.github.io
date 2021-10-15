@@ -697,6 +697,21 @@ html, body {
 	background-image: url('../images/icons/rating/star-3.svg');
 }
 
+/*Bootstrap*/
+.skills__item--content--tools--i:nth-child(20):before {
+	background-image: url('../images/icons/rating/star-5.svg');
+}
+
+/*Vuetify*/
+.skills__item--content--tools--i:nth-child(21):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
+/*Nuxt*/
+.skills__item--content--tools--i:nth-child(22):before {
+	background-image: url('../images/icons/rating/star-4.svg');
+}
+
 .skills__item--content--tools--i--icon {
 	width: 45px;
 	height: 45px;
@@ -780,6 +795,18 @@ html, body {
 
 .skills__item--content--tools--i--icon.prestashop {
 	background-image: url('../images/icons/skills/prestashop.svg');
+}
+
+.skills__item--content--tools--i--icon.bootstrap {
+	background-image: url('../images/icons/skills/bootstrap.svg');
+}
+
+.skills__item--content--tools--i--icon.vuetify {
+	background-image: url('../images/icons/skills/vuetify.svg');
+}
+
+.skills__item--content--tools--i--icon.nuxt {
+	background-image: url('../images/icons/skills/nuxt.svg');
 }
 
 .skills__item--content--tools--i--icon:hover {
@@ -880,23 +907,23 @@ html, body {
 }
 
 .projects__item--img:nth-child(1) {
-	background-image: url('../images/main-projects/examiz.webp');
+	background-image: url('../images/main-projects/niota.webp');
 }
 
 .projects__item--img:nth-child(2) {
-	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
+	background-image: url('../images/main-projects/examiz.webp');
 }
 
 .projects__item--img:nth-child(3) {
-	background-image: url('../images/main-projects/prettyballerinas.webp');
+	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
 }
 
 .projects__item--img:nth-child(4) {
-	background-image: url('../images/main-projects/betting-panel.webp');
+	background-image: url('../images/main-projects/prettyballerinas.webp');
 }
 
 .projects__item--img:nth-child(5) {
-	background-image: url('../images/main-projects/keno.webp');
+	background-image: url('../images/main-projects/betting-panel.webp');
 }
 
 .projects__item--img:nth-child(6) {
