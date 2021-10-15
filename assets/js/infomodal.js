@@ -9,6 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
 //Info popup data
 const popupInfoData = [
 	{
+		img: './assets/images/popup/niota.webp',
+		title: 'Niota',
+		text: [
+			'Niota is enterprise application for IoT industry.',
+			'The Internet of Things is the technology that is already fundamentally changing our world and our lives.',
+			'The rapid development of the Internet of Things in recent years leads to a complexity in technology.',
+			'I was working as frontend developer on IoT software and developing new features and options for the system.'
+		],
+		tech: [
+			'JavaScript (ES6)',
+			'VueJS',
+			'Vuex & Vue Router',
+			'Vuetify',
+			'SASS',
+			'GIT',
+		]
+	},
+	{
 		img: './assets/images/popup/examiz.webp',
 		title: 'Examiz',
 		text: [
