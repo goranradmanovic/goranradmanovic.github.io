@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const popupInfoData = [
 	{
 		img: './assets/images/popup/niota.webp',
-		title: 'Niota',
+		title: 'Niotix',
 		text: [
 			'Niota is enterprise application for IoT industry.',
 			'The Internet of Things is the technology that is already fundamentally changing our world and our lives.',
