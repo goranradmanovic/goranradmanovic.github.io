@@ -16,17 +16,17 @@ const version = '1.0.0',
 	  ],
 	  //Optionally, an array of desirable files. These will be downloaded, if possible, but won’t make the installation abort on failure.
 	  installFilesDesirable = [
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-300.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-regular.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-italic.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-600.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-600italic.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-700.woff2',
-	  	'assets/fonts/OpenSans/open-sans-v15-latin-700italic.woff2',
-	  	'assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-regular.woff2',
-	  	'assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-500.woff2',
-	  	'assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-600.woff2',
-	  	'assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-700.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-300.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-regular.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-italic.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-600.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-600italic.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-700.woff2',
+	  	'/assets/fonts/OpenSans/open-sans-v15-latin-700italic.woff2',
+	  	'/assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-regular.woff2',
+	  	'/assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-500.woff2',
+	  	'/assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-600.woff2',
+	  	'/assets/fonts/SairaExtraCondensed/saira-extra-condensed-v3-latin-700.woff2',
 	  	'/assets/images/icons/favicon.ico',
 	  	'/assets/images/icons/addition/caret-up.svg',
 	  	'/assets/images/icons/addition/check-mark.svg',
@@ -80,6 +80,7 @@ const version = '1.0.0',
 	  	'/assets/images/projects/mascaro.webp',
 	  	'/assets/images/projects/prettyballerinas.webp',
 	  	'/assets/images/projects/niota.webp',
+	  	'/assets/images/projects/tsd.webp',
 	  	'/assets/images/popup/airquality.webp',
 	  	'/assets/images/popup/aleabet.webp',
 	  	'/assets/images/popup/aleabetlist.webp',
@@ -95,17 +96,17 @@ const version = '1.0.0',
 	  	'/assets/images/popup/oldportfolio.webp',
 	  	'/assets/images/popup/oomovers.webp',
 	  	'/assets/images/popup/rhmzrs.webp',
-	  	'/assets/images/popup/stealio.svg',
+	  	'/assets/images/popup/stealio.webp',
 	  	'/assets/images/popup/examiz.webp',
 	  	'/assets/images/popup/mascaro.webp',
 	  	'/assets/images/popup/prettyballerinas.webp',
 	  	'/assets/images/popup/niota.webp',
+	  	'/assets/images/popup/tsd.webp',
 	  	'/assets/images/main-projects/examiz.webp',
-	  	'/assets/images/main-projects/mascaro.webp',
-	  	'/assets/images/main-projects/prettyballerinas.webp',
-	  	'/assets/images/main-projects/keno.webp',
-	  	'/assets/images/main-projects/betting-panel.webp',
 	  	'/assets/images/main-projects/thefruitsofthevillage.webp',
+	  	'/assets/images/main-projects/prettyballerinas.webp',
+	  	'/assets/images/main-projects/betting-panel.webp',
+	  	'/assets/images/main-projects/tsd.webp',
 	  	'/assets/images/main-projects/niota.webp',
 	  	'/assets/pdf/cv.pdf'
 	  ];
@@ -220,7 +221,7 @@ self.addEventListener('fetch', event => {
 				//Make network request
 				return fetch(event.request).then(newReq => {
 
-					//console.log('Network fetch: ', url);
+					console.log('Network fetch: ', url);
 
 					if (newReq.ok) cache.put(event.request, newReq.clone());
 

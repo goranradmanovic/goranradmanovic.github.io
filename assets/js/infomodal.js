@@ -8,6 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Info popup data
 const popupInfoData = [
+{
+		img: './assets/images/popup/tsd.webp',
+		title: 'TSD',
+		text: [
+			'The Site Doctor - TSD is England e-commerce company.',
+			'The redesign and new website will help company to find more clients and present them in best possible light.',
+			'Beside of the website this is also web app with many features like improved SEO and SSR.',
+			'I was my pleasure working as frontend developer on this project from start to finish.'
+		],
+		tech: [
+			'JavaScript (ES6)',
+			'NUXTJS 3',
+			'SCSS',
+			'SEO',
+			'Figma',
+			'GIT',
+		]
+	},
 	{
 		img: './assets/images/popup/niota.webp',
 		title: 'Niotix',
@@ -166,7 +184,7 @@ const popupInfoData = [
 	},
 
 	{
-		img: './assets/images/popup/stealio.svg',
+		img: './assets/images/popup/stealio.webp',
 		title: 'Stealio',
 		text: [
 			'Stealio is project that I was building for Helium10 company from USA/California.',

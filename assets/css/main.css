@@ -907,27 +907,27 @@ html, body {
 }
 
 .projects__item--img:nth-child(1) {
-	background-image: url('../images/main-projects/niota.webp');
+	background-image: url('../images/projects/tsd.webp');
 }
 
 .projects__item--img:nth-child(2) {
-	background-image: url('../images/main-projects/examiz.webp');
+	background-image: url('../images/main-projects/niota.webp');
 }
 
 .projects__item--img:nth-child(3) {
-	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
+	background-image: url('../images/main-projects/examiz.webp');
 }
 
 .projects__item--img:nth-child(4) {
-	background-image: url('../images/main-projects/prettyballerinas.webp');
+	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
 }
 
 .projects__item--img:nth-child(5) {
-	background-image: url('../images/main-projects/betting-panel.webp');
+	background-image: url('../images/main-projects/prettyballerinas.webp');
 }
 
 .projects__item--img:nth-child(6) {
-	background-image: url('../images/projects/airquality.webp');
+	background-image: url('../images/main-projects/betting-panel.webp');
 }
 
 .projects__item--img--overlay {
