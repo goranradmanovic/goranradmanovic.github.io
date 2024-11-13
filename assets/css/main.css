@@ -712,6 +712,16 @@ html, body {
 	background-image: url('../images/icons/rating/star-4.svg');
 }
 
+/*Primevue*/
+.skills__item--content--tools--i:nth-child(23):before {
+	background-image: url('../images/icons/rating/star-5.svg');
+}
+
+/*Shopify App*/
+.skills__item--content--tools--i:nth-child(24):before {
+	background-image: url('../images/icons/rating/star-3.svg');
+}
+
 .skills__item--content--tools--i--icon {
 	width: 45px;
 	height: 45px;
@@ -807,6 +817,14 @@ html, body {
 
 .skills__item--content--tools--i--icon.nuxt {
 	background-image: url('../images/icons/skills/nuxt.svg');
+}
+
+.skills__item--content--tools--i--icon.primevue {
+	background-image: url('../images/icons/skills/primevue.svg');
+}
+
+.skills__item--content--tools--i--icon.shopify {
+	background-image: url('../images/icons/skills/shopify.svg');
 }
 
 .skills__item--content--tools--i--icon:hover {
@@ -907,27 +925,35 @@ html, body {
 }
 
 .projects__item--img:nth-child(1) {
-	background-image: url('../images/projects/tsd.webp');
+	background-image: url('../images/main-projects/trivial.webp');
 }
 
 .projects__item--img:nth-child(2) {
-	background-image: url('../images/main-projects/niota.webp');
+	background-image: url('../images/main-projects/trendseam.webp');
 }
 
 .projects__item--img:nth-child(3) {
-	background-image: url('../images/main-projects/examiz.webp');
+	background-image: url('../images/main-projects/tsd.webp');
 }
 
 .projects__item--img:nth-child(4) {
-	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
+	background-image: url('../images/main-projects/niota.webp');
 }
 
 .projects__item--img:nth-child(5) {
-	background-image: url('../images/main-projects/prettyballerinas.webp');
+	background-image: url('../images/main-projects/examiz.webp');
 }
 
 .projects__item--img:nth-child(6) {
+	background-image: url('../images/main-projects/thefruitsofthevillage.webp');
+}
+
+.projects__item--img:nth-child(7) {
 	background-image: url('../images/main-projects/betting-panel.webp');
+}
+
+.projects__item--img:nth-child(8) {
+	background-image: url('../images/main-projects/prettyballerinas.webp');
 }
 
 .projects__item--img--overlay {

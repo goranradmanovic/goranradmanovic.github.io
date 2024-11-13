@@ -8,7 +8,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Info popup data
 const popupInfoData = [
-{
+	{
+		img: './assets/images/popup/trivial.webp',
+		title: 'Trivial',
+		text: [
+			'Trivial is USD fintech company.',
+			'Trivial optimize 3PL billing with data-driven efficiency.',
+			'I was working on the new innovative system for managing billing and invoicing and make whole process efficient.',
+			'This was a very interesting project where I learned a lot about fintech.'
+		],
+		tech: [
+			'JavaScript (ES6)',
+			'Vue 3',
+			'Vuex',
+			'PrimeVue',
+			'PrimeVue Flex',
+			'GIT',
+		]
+	},
+	{
+		img: './assets/images/popup/trendseam.webp',
+		title: 'TrendSeam',
+		text: [
+			'The Site Doctor - TSD is England e-commerce company.',
+			'TrendSeam is Shopify app for analize e-commerce store data and represent that data in appealing visual form for clients.',
+			'It was very challenging to work on the new TrendSeam app and to create it with Remix framework and integrate it with Shopify.',
+			'In the end I have successfully finish this project and created new TrensSeam app.'
+		],
+		tech: [
+			'JavaScript (ES6)',
+			'Remix',
+			'Polaris UI',
+			'Shopify App',
+			'Fly.io',
+			'GIT',
+		]
+	},
+	{
 		img: './assets/images/popup/tsd.webp',
 		title: 'TSD',
 		text: [
