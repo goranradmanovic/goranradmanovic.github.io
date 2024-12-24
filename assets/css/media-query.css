@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	main {
+		border: unset;
+	}
 
 	.header {
 		padding: 1rem;
