@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Trivial",
+    "url": "https://www.trivialapps.io/",
+    "img": "./assets/images/popup/trivial.webp",
+    "text": [
+      "Trivial is USD fintech company.",
+      "Trivial optimize 3PL billing with data-driven efficiency.",
+      "I was working on the new innovative system for managing billing and invoicing and make whole process efficient.",
+      "This was a very interesting project where I learned a lot about fintech."
+    ],
+    "tech": ["JavaScript (ES6)", "Vue 3", "Vuex", "PrimeVue", "PrimeVue Flex", "GIT"]
+  },
+  {
+    "name": "TrendSeam",
+    "url": "https://trendseam.com/",
+    "img": "./assets/images/popup/trendseam.webp",
+    "text": [
+      "TrendSeam is Shopify app for analize e-commerce store data and represent that data in appealing visual form for clients.",
+      "It was very challenging to work on the new TrendSeam app and to create it with Remix framework and integrate it with Shopify.",
+      "In the end I have successfully finish this project and created new TrensSeam app."
+    ],
+    "tech": ["Remix", "JavaScript (ES6)", "Polaris UI", "Shopify App", "Fly.io", "GIT"]
+  },
+  {
+    "name": "TSD",
+    "url": "https://tsd.digital/",
+    "img": "./assets/images/popup/tsd.webp",
+    "text": [
+      "The Site Doctor - TSD is England e-commerce company.",
+      "The redesign and new website will help company to find more clients and present them in best possible light.",
+      "Beside of the website this is also web app with many features like improved SEO and SSR.",
+      "I was my pleasure working as frontend developer on this project from start to finish."
+    ],
+    "tech": ["JavaScript (ES6)", "Nuxt 3", "SEO", "SCSS", "Figma", "GIT"]
+  },
+  {
+    "name": "Niotix",
+    "url": "https://niota.io/",
+    "img": "./assets/images/popup/niota.webp",
+    "text": [
+      "Niota is enterprise application for IoT industry.",
+      "The Internet of Things is the technology that is already fundamentally changing our world and our lives.",
+      "The rapid development of the Internet of Things in recent years leads to a complexity in technology.",
+      "I was working as frontend developer on IoT software and developing new features and options for the system."
+    ],
+    "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Vuetify", "SASS", "GIT"]
+  },
+  {
+    "name": "Examiz",
+    "url": "https://app.examiz.net/",
+    "img": "./assets/images/popup/examiz.webp",
+    "text": [
+      "Examiz is enterprise application for HR managers with powerful people analytics and unique set of exceptional capabilities.",
+      "Hire Smarter: Find the best-matching talent faster. More Talent: Recruit more high-performers, while avoiding bad hires.",
+      "Develop Potential: Understand and enable the true potential of your talents.",
+      "Make the Right Decisions: make smarter, analytics-driven hiring decisions – eliminating bias and lowering your compliance risks."
+    ],
+    "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Google Map API", "SCSS", "GIT"]
+  },
+  {
+    "name": "AleaBet",
+    "url": "https://aleabet.com/",
+    "img": "./assets/images/popup/aleabet.webp",
+    "text": [
+      "AleaBet is a comprehensive betting platform designed to provide users with a seamless and enjoyable betting experience.",
+      "I contributed to the development of its dynamic UI and integrated API-driven features."
+    ],
+    "tech": ["HTML & CSS", "JavaScript & AngularJS", "PHP & MySQL", "NodeJS", "GIT", "JIRA"]
+  },
+  {
+    "name": "AleaBet Lists",
+    "url": "https://aleabetlists.com/",
+    "img": "./assets/images/popup/aleabetlists.webp",
+    "text": [
+      "This application complements AleaBet by offering curated betting lists and insights.",
+      "Aleabet lists is a project for betting house, I was working on web version and also on printing versions of those lists for daily or weekly sports events.",
+      "Beside of aleabet lists I was working also on the admin panel for this lists, so that admin can configure output of the lists and some graphic elements.",
+      "My role focused on enhancing data presentation and optimizing performance."
+    ],
+    "tech": ["HTML & CSS", "JavaScript & AngularJS", "PHP & MySQL", "NodeJS", "GIT", "JIRA"]
+  },
+  {
+    "name": "Keno",
+    "url": "https://keno.com/",
+    "img": "./assets/images/popup/keno.webp",
+    "text": [
+      "Keno is a lottery-style gambling game platform.",
+      "I worked on implementing game logic, ensuring scalability, and developing responsive interfaces.",
+      "Also this is only sample of the game and it's not functional."
+    ],
+    "tech": ["PUG & SASS", "JavaScript (ES6)", "VueJS", "Vuex & Vue Router", "Netlify", "GIT"]
+  },
+  {
+    "name": "The Fruits Of The Village",
+    "url": "https://plodovisela.com/",
+    "img": "./assets/images/popup/thefruitsofthevillage.webp",
+    "text": [
+      "This application helps to promote local organic product and manufacturer.",
+      "On this project I was working as frontend developer for ministry of agriculture, forestry and water management."
+    ],
+    "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Google Map API", "PUG & SASS"]
+  },
+  {
+    "name": "Pretty Ballerinas",
+    "url": "https://www.prettyballerinas.com/en/",
+    "img": "./assets/images/popup/prettyballerinas.webp",
+    "text": [
+      "Pretty Ballerinas is one of the biggest Spanish shoe brand and they have they stores all over the world.",
+      "I was working there primarily as front end developer on this project, and I was part of the team.",
+      "This e-commerc website is build using PrestShop system and solution"
+    ],
+    "tech": ["HTML & CSS", "JavaScript", "PHP & MySQL", "PrestaShop", "GIT", "JIRA"]
+  },
+  {
+    "name": "Mascaro",
+    "url": "https://www.mascaro.com/en/",
+    "img": "./assets/images/popup/mascaro.webp",
+    "text": [
+      "Mascaro is the oldest Spanish shoe brand and manufacturer with a long history of making shoes.",
+      "I was working there primarily as front end developer on this project, and I was part of the team.",
+      "This e-commerc website is build using PrestShop system and solution"
+    ],
+    "tech": ["HTML & CSS", "JavaScript", "PHP & MySQL", "PrestaShop", "GIT", "JIRA"]
+  },
+  {
+    "name": "RHMZRS",
+    "url": "https://rhmzrs.com/",
+    "img": "./assets/images/popup/rhmzrs.webp",
+    "text": [
+      "I was working on this project for hydrometeorological institute of Republic of Srpska.",
+      "On this project I was working mainly as a front end developer, focusing on integrating google maps with hydrometeorological, seismic, air quality and other kind of data.",
+      "I learned a lot about google map API working on this project."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "jQuery", "PHP", "WordPress", "Google Map API", "GIT"]
+  },
+  {
+    "name": "Nikom",
+    "url": "https://milovan-gibaca.com/goran/nikom/",
+    "img": "./assets/images/popup/nikom.webp",
+    "text": [
+      "Nikom is CNC company from Bosnia and Herzegovina.",
+      "I created this presentational website for them with WordPress CMS.",
+      "On this project I was mostly using WordPress and I was learning about new things from WP."
+    ],
+    "tech": ["HTML & CSS", "PHP & MySQL", "JavaScript (ES6)", "jQuery", "WordPress"]
+  },
+  {
+    "name": "OOMovers",
+    "url": "https://www.oomovers.com/",
+    "img": "./assets/images/popup/oomovers.webp",
+    "text": [
+      "OOMovers is Canadian transportation company based in Vancouver.",
+      "I working with them as a full stack web developer on their website and also for their transportation management system.",
+      "As a full stack web developer I was working on variety of tasks."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "jQuery", "SASS", "PHP & YAML", "Silex", "GIT"]
+  },
+  {
+    "name": "Goran Radmanovic",
+    "url": "https://dynamicpagelayout.firebaseapp.com/",
+    "img": "./assets/images/popup/goranradmanovic.webp",
+    "text": [
+      "This is my old portfolio website.",
+      "I have successfully created it with plain HTML & CSS and JavaScript.",
+      "Also I have implemented PWA options with nativ Service Workers.",
+      "This portfolio webpage is possible to install to the mobile phone as a PWA web app."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "GIT", "ServiceWorkers", "SEO", "PWA", "SVG"]
+  },
+  {
+    "name": "Jatheon Cloud",
+    "url": "https://table-app-63709.web.app/",
+    "img": "./assets/images/popup/jatheon.webp",
+    "text": [
+      "This is a test project for Jatheon Cloud company.",
+      "Main goal of this project was to create table with dynamic data and with options to manipulate with that data.",
+      "On this project I was using JavaScript and VueJS framework for creating this project."
+    ],
+    "tech": ["PUG & SASS", "JavaScript (ES6)", "VueJS", "Vuex", "Netlify", "GIT"]
+  },
+  {
+    "name": "Stealio",
+    "url": "https://www.youtube.com/watch?v=rTAJl8HsQsI",
+    "img": "./assets/images/popup/stealio.webp",
+    "text": [
+      "Stealio is project that I was building for Helium10 company from USA/California.",
+      "Main goal of this project is to create cupon system for Amazon purches.",
+      "I was mainly working on the front end part of the application, but also I was doing some backend and helping my team with PHP."
+    ],
+    "tech": ["HTML & CSS", "JavaScript & jQuery", "PHP & MySQL", "Yii Framework", "GIT"]
+  },
+  {
+    "name": "Einfo",
+    "url": "http://www.einfo.byethost13.com/",
+    "img": "./assets/images/popup/einfo.webp",
+    "text": [
+      "E-info is IT company based in Bosnia and Herzegovina, with focus on creating and maintaining large databases for their clients.",
+      "I was there on Internship, learning about MSSQL servers and SQL language.",
+      "Also I created this presentation website for them as a sign of gratitude for everything they learned me."
+    ],
+    "tech": ["HTML & CSS", "JavaScript", "AJAX"]
+  },
+  {
+    "name": "B2B Platform",
+    "url": "#",
+    "img": "./assets/images/popup/b2b.webp",
+    "text": [
+      "KompITenz GmbH is German IT company with office in Banja Luka, Bosnia and Herzegovina.",
+      "I was working with them on B2B platform for German dairy industry, that platform connecting producers with buyers of milk.",
+      "My main task is to maintain front end part of the application."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "jQuery", "SASS", "PHP & MySQL", "Laravel & VueJS", "GIT"]
+  },
+  {
+    "name": "Old Portfolio",
+    "url": "http://goranradmanovic.byethost13.com/",
+    "img": "./assets/images/popup/oldportfolio.webp",
+    "text": [
+      "This is my old portfolio website.",
+      "I was in need for good portfolio website to show my current state of knowledge and projects.",
+      "On this website you can find some of my first ever created apps and websites."
+    ],
+    "tech": ["HTML & CSS", "JavaScript", "AJAX"]
+  },
+  {
+    "name": "Air Quality",
+    "url": "https://cocky-jones-a58ae7.netlify.com/",
+    "img": "./assets/images/popup/airquality.webp",
+    "text": [
+      "This is one of my example application for monitoring air qualitiy in my hometown.",
+      "With this project I wanted to help my neighbors and all city people to easily watch for air quality over winter days in our town.",
+      "On this project I was learning about Nuxt.js."],
+    "tech": ["PUG & SASS", "JavaScript (ES6)", "Nuxt 2", "Vuex & Vue Router", "Netlify", "GIT"]
+  },
+  {
+    "name": "Mondrian",
+    "url": "https://goranradmanovic.github.io/Mondrian/",
+    "img": "./assets/images/popup/mondrian.webp",
+    "text": [
+      "This is one of my example project.",
+      "In this project I tried to recreate two art pieces from Mondrian using web technologies, especially CSS grid.",
+      "This is join of programming and art."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "GIT"]
+  },
+  {
+    "name": "Chatty",
+    "url": "https://chat-vue-b194f.firebaseapp.com/#/",
+    "img": "./assets/images/popup/chatty.webp",
+    "text": [
+      "This is one of my example project.",
+      "In this project I created simple realtime chat for everyone to use for fun, this is only example show case.",
+      "In process of creating this app I was learning about VueJS and Firebase."
+    ],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "VueJS", "Firebase", "Webpack", "GIT"]
+  },
+  {
+    "name": "Bplace",
+    "url": "http://www.bplace.byethost13.com/",
+    "img": "./assets/images/popup/bplace.webp",
+    "text": [
+      "This was my final project on my advance PHP & MySQL course.",
+      "My main goal on this project it was to create custom CMS with admin panel and with the front end part of the app.",
+      "Everything on this project was built with plain PHP, MySQL and with little bit of JavaScript."
+    ],
+    "tech": ["HTML & CSS", "PHP & MySQL", "JavaScript", "AJAX"]
+  }
+]

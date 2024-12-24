@@ -1,0 +1,38 @@
+@layer about {
+	/* About section */
+	.about {
+		padding-block: 6rem;
+		padding-inline: 4rem;
+
+		& .about__title {
+			margin-top: unset;
+			font-size: 3rem;
+			font-weight: 500;
+			font-family: 'Lora', sans-serif;
+			color: var(--white);
+		}
+
+		& .about__content {
+			display: flex;
+			gap: 1rem;
+
+			& .about__content__dash {
+				width: 4rem;
+				height: 2px;
+				margin-top: 1rem;
+				background-color: var(--secondary);
+			}
+
+			& .about__content__txt {
+				margin: unset;
+				font-size: 1.4rem;
+				text-wrap: balance;
+				color: var(--white);
+
+				& .about__content__txt--highlight {
+					color: var(--secondary);
+				}
+			}
+		}
+	}
+}

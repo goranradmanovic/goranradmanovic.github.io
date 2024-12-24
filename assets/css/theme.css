@@ -1,0 +1,11 @@
+/* theme colors */
+
+@layer theme {
+	:root {
+		--primary: #31333B;
+		--secondary: #ffc86b;
+		--white: #fefefe;
+		--light-gray: #3d3e42;
+		--gray: #AEAEAE;
+	}
+}

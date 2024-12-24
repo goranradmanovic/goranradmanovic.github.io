@@ -1,0 +1,78 @@
+@layer contact {
+
+	.contact {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding-block: 6rem;
+		padding-inline: 4rem;
+		border-top: 1px solid var(--secondary);
+		background-color: var(--light-gray);
+
+		& .contact__title {
+			position: absolute;
+			top: -2rem;
+			z-index: 1;
+			margin: unset;
+			padding-inline: 2rem;
+			font-size: 3rem;
+			font-weight: 500;
+			font-family: 'Lora', sans-serif;
+			color: var(--white);
+			background: linear-gradient(to bottom, rgba(49,51,59,1) 0%, rgba(49,51,59,1) 50%, rgba(61,62,66,1) 51%, rgba(61,62,66,1) 100%);
+		}
+
+		& .contact__info {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			width: 100%;
+
+			& .contact__info__link {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+				width: 31rem;
+				padding-block: 1rem;
+				padding-inline: 1.4rem;
+				border-radius: .5rem;
+				font-size: clamp(1.1rem, 4vw, 1.4rem);
+				text-decoration: none;
+				color: var(--secondary);
+				background-color: var(--primary);
+				transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+
+				&:hover {
+					color: var(--primary);
+					background-color: rgba(255, 200, 107, .8);
+				}
+
+				& .contact__info__link__icon {
+					display: flex;
+					width: 3.125rem;
+					height: 3.125rem;
+					background-size: contain;
+					background-repeat: no-repeat;
+
+					&.envelope-outline {
+						background-image: url('../images/icons/addition/envelope-outline.svg');
+					}
+
+					&.phone {
+						background-image: url('../images/icons/addition/phone.svg');
+					}
+
+					&.pin {
+						background-image: url('../images/icons/addition/map-pin.svg');
+					}
+				}
+			}
+		}
+	}
+}

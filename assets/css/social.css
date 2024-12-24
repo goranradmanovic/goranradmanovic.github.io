@@ -1,0 +1,40 @@
+@layer social {
+	.social__links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+
+		& .social__link {
+			display: inline-block;
+			width: 2rem;
+			height: 2rem;
+
+			& .social__link__icon {
+				display: inline-block;
+				width: 2rem;
+				height: 2rem;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				transition: all 400ms ease-in-out;
+
+				&.linkedin {
+					background-image: url('../images/icons/social-media/linkedin.svg');
+				}
+
+				&.gmail {
+					background-image: url('../images/icons/social-media/envelope.svg');
+				}
+
+				&.github {
+					background-image: url('../images/icons/social-media/github.svg');
+				}
+
+				&.x {
+					background-image: url('../images/icons/social-media/x.svg');
+				}
+			}
+		}
+	}
+}

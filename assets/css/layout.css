@@ -1,0 +1,39 @@
+/* layout */
+
+@layer layout {
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 2rem;
+	}
+
+	/*Browser scroller bar*/
+	body::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	body::-webkit-scrollbar-track {
+		background-color: #343a40;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: #868e96;
+	}
+
+	body {
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+		font-variation-settings: "wdth" 100;
+		background-color: var(--primary);
+
+		& main {
+			width: 1440px;
+			margin: 0 auto;
+			padding-top: 1rem;
+			padding-bottom: .3rem;
+			border-radius: 4px;
+			border: 1px groove var(--secondary);
+		}
+	}
+}
