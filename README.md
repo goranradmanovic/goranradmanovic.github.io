@@ -29,7 +29,7 @@ Hello! I'm Goran Radmanovic, a passionate web developer dedicated to crafting mo
 
 Feel free to explore my work, and don't hesitate to reach out if you'd like to collaborate! 🚀
 
-🌐 **Screenshot Off My Portfolio**
+🌐 **Screenshot Of My Portfolio**
 
 ![Desktop version](./assets/images/screenshots/desktop/desktop-home.webp)
 ---
