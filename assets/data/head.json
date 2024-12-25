@@ -335,26 +335,6 @@
         "content": "Goran Radmanovic"
       },
       {
-        "name": "msapplication-TileColor",
-        "content": "#31333B"
-      },
-      {
-        "name": "msapplication-square70x70logo",
-        "content": "assets/images/pwa-icons/win-tiles/small.jpg"
-      },
-      {
-        "name": "msapplication-square150x150logo",
-        "content": "assets/images/pwa-icons/win-tiles/medium.jpg"
-      },
-      {
-        "name": "msapplication-wide310x150logo",
-        "content": "assets/images/pwa-icons/win-tiles/wide.jpg"
-      },
-      {
-        "name": "msapplication-square310x310logo",
-        "content": "assets/images/pwa-icons/win-tiles/large.jpg"
-      },
-      {
         "property": "fb:app_id",
         "content": "520777261683868"
       },
@@ -388,11 +368,11 @@
       },
       {
         "property": "og:image:secure_url",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
       },
       {
         "property": "og:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
       },
       {
         "property": "og:image:alt",
@@ -408,7 +388,7 @@
       },
       {
         "name": "twitter:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
       },
       {
         "name": "twitter:image:alt",
