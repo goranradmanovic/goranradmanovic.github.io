@@ -31,6 +31,16 @@ Feel free to explore my work, and don't hesitate to reach out if you'd like to c
 
 🌐 **Screenshot Of My Portfolio**
 
-![Desktop version](./assets/images/screenshots/desktop/desktop-home.webp)
+![Desktop version](./assets/images/screenshots/desktop/intro.webp)
+![Desktop version](./assets/images/screenshots/desktop/about.webp)
+![Desktop version](./assets/images/screenshots/desktop/skills.webp)
+![Desktop version](./assets/images/screenshots/desktop/experience.webp)
+![Desktop version](./assets/images/screenshots/desktop/portfolio.webp)
+![Desktop version](./assets/images/screenshots/desktop/contact.webp)
 ---
-![Mobile version](./assets/images/screenshots/mobile/mobile-home.webp)
+![Mobile version](./assets/images/screenshots/mobile/intro.webp)
+![Mobile version](./assets/images/screenshots/mobile/menu.webp)
+![Mobile version](./assets/images/screenshots/mobile/skills.webp)
+![Mobile version](./assets/images/screenshots/mobile/experience.webp)
+![Mobile version](./assets/images/screenshots/mobile/portfolio.webp)
+![Mobile version](./assets/images/screenshots/mobile/contact.webp)
