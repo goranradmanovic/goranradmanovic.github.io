@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.goranradmanovic.github\.io$
+RewriteRule ^/?$ "http\:\/\/goranradmanovic.github\.io\/" [R=301,L]
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+<IfModule>

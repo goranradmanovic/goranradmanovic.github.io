@@ -1,6 +1,6 @@
 {
   "head": {
-    "title": "oran Radmanovic",
+    "title": "Goran Radmanovic - Web Developer",
     "link": [
       {
         "rel": "shortcut icon",
@@ -13,7 +13,7 @@
       },
       {
         "rel": "canonical",
-        "href": "https://goranradmanovic.github.io"
+        "href": "https://goranradmanovic.github.io/"
       },
       {
         "rel": "apple-touch-icon",
@@ -304,7 +304,7 @@
       },
       {
         "name": "keywords",
-        "content": "CV, perosnal, professional, template, portfolio, website, developer"
+        "content": "CV, portfolio, contact, experience, portfolio, skills, developer, html, frontend, senior, vuejs, javascript, remotly, nuxtjs, technology"
       },
       {
         "name": "author",
