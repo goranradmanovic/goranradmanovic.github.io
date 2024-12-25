@@ -31,7 +31,7 @@ Feel free to explore my work, and don't hesitate to reach out if you'd like to c
 
 🌐 **Screenshot Of My Portfolio**
 
-Desktop version
+#### Desktop version
 ---
 ![Desktop version](./assets/images/screenshots/desktop/intro.webp)
 ![Desktop version](./assets/images/screenshots/desktop/about.webp)
@@ -41,7 +41,7 @@ Desktop version
 ![Desktop version](./assets/images/screenshots/desktop/contact.webp)
 ---
 
-Mobile version
+#### Mobile version
 ---
 ![Mobile version](./assets/images/screenshots/mobile/intro.webp)
 ![Mobile version](./assets/images/screenshots/mobile/menu.webp)
