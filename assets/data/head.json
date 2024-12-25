@@ -368,11 +368,11 @@
       },
       {
         "property": "og:image:secure_url",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
       },
       {
         "property": "og:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
       },
       {
         "property": "og:image:alt",
@@ -388,7 +388,7 @@
       },
       {
         "name": "twitter:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.jpg"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
       },
       {
         "name": "twitter:image:alt",
