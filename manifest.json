@@ -6,22 +6,92 @@
   "scope": "/",
   "description": "Goran Radmanovic Portfolio Website",
   "theme_color": "#31333B",
-  "background_color": "#FFF",
+  "background_color": "#FFFFFF",
   "orientation": "portrait-primary",
   "screenshots": [
     {
-      "src": "./assets/images/screenshots/desktop/desktop-home.webp",
-      "sizes": "1280x638",
+      "src": "./assets/images/screenshots/desktop/intro.webp",
+      "sizes": "1440x717",
       "type": "image/webp",
       "form_factor": "wide",
-      "label": "Home screen showing main navigation and featured content on desktop"
+      "label": "Intro screen showing main navigation on desktop"
     },
     {
-      "src": "./assets/images/screenshots/mobile/mobile-home.webp",
-      "sizes": "453x916",
+      "src": "./assets/images/screenshots/desktop/about.webp",
+      "sizes": "1440x710",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "About screen showing about content on desktop"
+    },
+    {
+      "src": "./assets/images/screenshots/desktop/skills.webp",
+      "sizes": "1440x710",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Skills screen showing skills content on desktop"
+    },
+    {
+      "src": "./assets/images/screenshots/desktop/experience.webp",
+      "sizes": "1440x716",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Experience screen showing experience content on desktop"
+    },
+    {
+      "src": "./assets/images/screenshots/desktop/portfolio.webp",
+      "sizes": "1440x713",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Portfolio screen showing portfolio content on desktop"
+    },
+    {
+      "src": "./assets/images/screenshots/desktop/contact.webp",
+      "sizes": "1440x707",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Contact screen showing contact content on desktop"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/intro.webp",
+      "sizes": "1080x2400",
       "type": "image/webp",
       "form_factor": "narrow",
-      "label": "Home screen showing main navigation and featured content on mobile"
+      "label": "Home screen on mobile"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/menu.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Menu navigation on mobile"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/skills.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Skills screen on mobile"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/experience.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Experience screen on mobile"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/portfolio.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Portfolio screen on mobile"
+    },
+    {
+      "src": "./assets/images/screenshots/mobile/contact.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Contact screen on mobile"
     }
   ],
   "icons": [
