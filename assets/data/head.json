@@ -354,10 +354,6 @@
         "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
       },
       {
-        "property": "og:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
-      },
-      {
         "property": "og:image:alt",
         "content": "Social thumbnail image"
       },
@@ -368,10 +364,6 @@
       {
         "name": "twitter:description",
         "content": "Explore my professional portfolio as a web developer. Contact me for web development projects and collaborations."
-      },
-      {
-        "name": "twitter:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
       },
       {
         "name": "twitter:image:alt",
