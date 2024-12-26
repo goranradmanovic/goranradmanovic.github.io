@@ -11,10 +11,6 @@
       },
       {
         "rel": "apple-touch-icon",
-        "href": "assets/images/pwa/apple-touch-icons/apple-touch-icon.png"
-      },
-      {
-        "rel": "apple-touch-icon",
         "sizes": "57x57",
         "href": "assets/images/pwa/apple-touch-icons/apple-touch-icon-57x57.png"
       },
@@ -276,14 +272,6 @@
       {
         "http-equiv": "Content-Language",
         "content": "en-us"
-      },
-      {
-        "name": "viewport",
-        "content": "width=device-width, initial-scale=1.0"
-      },
-      {
-        "name": "viewport",
-        "content": "initial-scale=1, viewport-fit=cover"
       },
       {
         "name": "robots",
