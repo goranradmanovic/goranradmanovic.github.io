@@ -59,13 +59,6 @@
       "label": "Home screen on mobile"
     },
     {
-      "src": "./assets/images/screenshots/mobile/menu.webp",
-      "sizes": "1080x2400",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "Menu navigation on mobile"
-    },
-    {
       "src": "./assets/images/screenshots/mobile/skills.webp",
       "sizes": "1080x2400",
       "type": "image/webp",
