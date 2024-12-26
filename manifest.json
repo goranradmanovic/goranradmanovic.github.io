@@ -60,35 +60,35 @@
     },
     {
       "src": "./assets/images/screenshots/mobile/intro.webp",
-      "sizes": "1080x2400",
+      "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Home screen on mobile"
     },
     {
       "src": "./assets/images/screenshots/mobile/skills.webp",
-      "sizes": "1080x2400",
+      "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Skills screen on mobile"
     },
     {
       "src": "./assets/images/screenshots/mobile/experience.webp",
-      "sizes": "1080x2400",
+      "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Experience screen on mobile"
     },
     {
       "src": "./assets/images/screenshots/mobile/portfolio.webp",
-      "sizes": "1080x2400",
+      "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Portfolio screen on mobile"
     },
     {
       "src": "./assets/images/screenshots/mobile/contact.webp",
-      "sizes": "1080x2400",
+      "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Contact screen on mobile"
