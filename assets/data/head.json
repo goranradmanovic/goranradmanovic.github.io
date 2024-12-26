@@ -2,11 +2,6 @@
   "head": {
     "link": [
       {
-        "rel": "shortcut icon",
-        "href": "assets/images/icons/favicon.ico",
-        "type": "image/x-icon"
-      },
-      {
         "rel": "manifest",
         "href": "/manifest.json"
       },
@@ -271,9 +266,6 @@
     ],
     "meta": [
       {
-        "charset": "utf-8"
-      },
-      {
         "http-equiv": "Content-Type",
         "content": "text/html; charset=utf-8"
       },
@@ -296,14 +288,6 @@
       {
         "name": "robots",
         "content": "index, follow"
-      },
-      {
-        "name": "description",
-        "content": "This is a professional and personal portfolio website that serves for my assistance as a web developer and attracting clients who are interested in my work."
-      },
-      {
-        "name": "keywords",
-        "content": "CV, portfolio, contact, experience, portfolio, skills, developer, html, frontend, senior, vuejs, javascript, remotly, nuxtjs, technology"
       },
       {
         "name": "author",
@@ -339,7 +323,7 @@
       },
       {
         "property": "og:title",
-        "content": "Goran Radmanovic"
+        "content": "Goran Radmanovic - Web Developer"
       },
       {
         "property": "og:site_name",
@@ -359,19 +343,19 @@
       },
       {
         "property": "og:image:width",
-        "content": "776"
+        "content": "1416"
       },
       {
         "property": "og:image:height",
-        "content": "616"
+        "content": "672"
       },
       {
         "property": "og:image:secure_url",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
       },
       {
         "property": "og:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
       },
       {
         "property": "og:image:alt",
@@ -379,7 +363,7 @@
       },
       {
         "name": "twitter:title",
-        "content": "Goran Radmanovic"
+        "content": "Goran Radmanovic - Web Developer"
       },
       {
         "name": "twitter:description",
@@ -387,7 +371,7 @@
       },
       {
         "name": "twitter:image",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.png"
+        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
       },
       {
         "name": "twitter:image:alt",
