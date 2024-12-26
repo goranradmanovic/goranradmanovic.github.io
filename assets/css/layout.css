@@ -29,6 +29,7 @@
 
 		& main {
 			width: 1440px;
+			max-width: 95%;
 			margin: 0 auto;
 			padding-top: 1rem;
 			padding-bottom: .3rem;
