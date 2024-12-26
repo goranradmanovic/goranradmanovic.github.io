@@ -316,54 +316,6 @@
       {
         "name": "application-name",
         "content": "Goran Radmanovic"
-      },
-      {
-        "property": "fb:app_id",
-        "content": "520777261683868"
-      },
-      {
-        "property": "og:title",
-        "content": "Goran Radmanovic - Web Developer"
-      },
-      {
-        "property": "og:site_name",
-        "content": "Goran Radmanovic Portfolio"
-      },
-      {
-        "property": "og:url",
-        "content": "https://goranradmanovic.github.io/"
-      },
-      {
-        "property": "og:type",
-        "content": "website"
-      },
-      {
-        "property": "og:image:width",
-        "content": "1416"
-      },
-      {
-        "property": "og:image:height",
-        "content": "672"
-      },
-      {
-        "property": "og:image:secure_url",
-        "content": "https://goranradmanovic.github.io/assets/images/meta/gr-thumbnail-1.webp"
-      },
-      {
-        "property": "og:image:alt",
-        "content": "Social thumbnail image"
-      },
-      {
-        "name": "twitter:title",
-        "content": "Goran Radmanovic - Web Developer"
-      },
-      {
-        "name": "twitter:image:alt",
-        "content": "Social thumbnail image"
-      },
-      {
-        "name": "twitter:card",
-        "content": "summary_large_image"
       }
     ]
   }
