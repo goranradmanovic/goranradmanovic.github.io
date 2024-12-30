@@ -3,6 +3,7 @@
   "name": "Goran Radmanovic",
   "id": "https://goranradmanovic.github.io/v1",
   "start_url": "https://goranradmanovic.github.io",
+  "display_override": ["fullscreen", "minimal-ui"],
   "display": "standalone",
   "scope": "/",
   "description": "Goran Radmanovic Portfolio Website",
