@@ -2,103 +2,103 @@
   {
     "role": "Lead Senior Frontend Developer",
     "company": "Trivial",
-    "description": "I was working on the cutting edge invoice and billing app from the fintech industry and creating beautiful UI for the app and clients to use it and simplify creating and tracking of their invoices. The technology I'm using are JavaScript, HTML & SCSS, VueJS 3, Vuex, ChartJS, PrimeVue, PrimeVueFlex, GIT, Trello ect.",
+    "description": "Built cutting-edge invoice & billing app (FinTech). Designed beautiful UI for simplified invoice creation & tracking. (JS, HTML, SCSS, VueJS 3, Vuex, ChartJS, PrimeVue)",
     "date": "Apr. 2024 - Dec. 2024"
   },
   {
     "role": "Senior Frontend Developer",
     "company": "TSD - The Site Doctor",
-    "description": "I was creating a TrendSeam e-commerce Shopify app for TSD company that analyzes data from Shopify stores and represents data in a visually compelling view. The technologies I was using are JavaScript, Shopify App, Remix, Polaris UI, ChartJS, HTML & SCSS, Fly.io, GIT, JIRA ect.",
+    "description": "Developed TrendSeam e-commerce Shopify app for data visualization. (JS, Shopify App, Remix, Polaris UI, ChartJS)",
     "date": "May 2024 - Sep. 2024"
   },
   {
-    "role": "Frontend Developer",
+    "role": "Freelance Frontend Developer",
     "company": "Freelance",
-    "description": "As freelance frontend developer I'm working remotely on various web applications and websites. The technology I was using are JavaScript, HTML & SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP, GIT, JIRA ect.",
+    "description": "Remote work on various web applications. (JS, HTML, SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP)",
     "date": "Mar. 2024 - May 2024"
   },
   {
     "role": "Frontend Developer",
     "company": "TSD - The Site Doctor",
-    "description": "I was working remotely as frontend developer on the project for company websites and web app from Figma designs to finished product. Technology that I was using are JavaScript, HTML & SCSS, NuxtJS 3, NuxtJS Modules, Figma, GIT, JIRA ect.",
+    "description": "Remote frontend dev: Figma designs to finished products. (JS, HTML, SCSS, NuxtJS 3, NuxtJS Modules)",
     "date": "Dec. 2023 - Feb. 2024"
   },
   {
-    "role": "Frontend Developer",
+    "role": "Freelance Frontend Developer",
     "company": "Freelance",
-    "description": "As freelance frontend developer I was working remotely on various web applications and websites. Technology that I was using are JavaScript, HTML & SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP, GIT, JIRA ect.",
+    "description": "Remote work on various web applications. (JS, HTML, SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP)",
     "date": "May 2022 - Dec. 2023"
   },
   {
-    "role": "Frontend Web Developer",
+    "role": "Frontend Developer",
     "company": "Digimondo",
-    "description": "I was working remotely as frontend developer on the enterprise web application for IoT industry. The Internet of Things is already fundamentally changing our world and our lives. Technology that I was using are JavaScript, HTML & SCSS, VueJS, Vuex, Vuetify, GIT, JIRA ect.",
+    "description": "Remote frontend dev: enterprise web app for IoT. (JS, HTML, SCSS, VueJS, Vuex, Vuetify)",
     "date": "May 2021 - May 2023"
   },
   {
     "role": "Frontend Web Developer",
     "company": "Examiz",
-    "description": "I was working remotely as a freelance frontend developer for Examiz company. As a frontend developer I was working on the enterprise app solution for HR managers inside big companies. Technology that I was using are VueJS, Vuex, JavaScript, HTML & SCSS, BootstrapVue, GIT, JIRA ect.",
+    "description": "Remote freelance frontend dev: enterprise app for HR. (VueJS, Vuex, JS, HTML, SCSS, BootstrapVue)",
     "date": "Dec. 2020 - Aug. 2021"
   },
   {
     "role": "Web Developer",
     "company": "Webimpacto",
-    "description": "I was working remotely as a web developer for Spanish company specialize in E-commerce solutions. I was creating E-commerce websites for clients, installing modules, and also maintaining and upgrading others clients' shops. Technology that I was using are PHP & MySQL, JS, HTML & CSS, PrestaShop, GIT ect.",
+    "description": "Remote web dev for Spanish E-commerce. (E-commerce websites, modules, maintenance) (PHP, MySQL, JS, HTML, CSS, PrestaShop)",
     "date": "Jun. 2020 - May 2021"
   },
   {
     "role": "Senior Full Stack Web Developer",
     "company": "OOMovers",
-    "description": "I was working remotely as a full stack web developer for company specialize in moving. My responsibility is to develop, maintain and upgrade company’s website. Technology that I’m using are PHP & Silex framework, JS, HTML & CSS, SCSS, GIT ect.",
+    "description": "Remote full-stack dev: company website development, maintenance, upgrades. (PHP, Silex, JS, HTML, CSS, SCSS)",
     "date": "May 2019 - Mar. 2021"
   },
   {
     "role": "Senior Frontend Web Developer",
     "company": "KompITenz d.o.o",
-    "description": "I worked on the frontend part of the B2B application for Germany dairy industry. And one of my responsibility was to develop and maintain company's website. Main technology which I used was JS and VueJS, HTML & CSS, PHP & Laravel, GIT.",
+    "description": "Frontend dev for B2B app (Germany dairy industry). Company website dev & maintenance. (JS, VueJS, HTML, CSS, PHP, Laravel)",
     "date": "Apr. 2019 - Jun. 2019"
   },
   {
     "role": "Full Stack Web Developer",
     "company": "Freelancer",
-    "description": "I worked as full stack web developer on various web projects. Main technology which I used was PHP & MySql, JS and VueJS, HTML & CSS, GIT, Pug, SASS, Firebase ect.",
+    "description": "Full-stack dev on various web projects. (PHP, MySQL, JS, VueJS, HTML, CSS)",
     "date": "Nov. 2018 - Apr. 2019"
   },
   {
     "role": "Lecturer at the course",
     "company": "Business Garden",
-    "description": "I worked as a lecturer at the initial course of web development where I taught students to the basics of HTML and CSS technology.",
+    "description": "Taught students the basics of HTML and CSS.",
     "date": "Jul. 2018 - Sep. 2018"
   },
   {
     "role": "Lecturer at the course",
     "company": "Business Garden",
-    "description": "I worked as a lecturer at the initial course of web development where I taught students to the basics of HTML and CSS technology.",
+    "description": "Taught students the basics of HTML and CSS.",
     "date": "Sep. 2017 - Nov. 2017"
   },
   {
     "role": "Senior Frontend Web Developer",
     "company": "Alea Control d.o.o",
-    "description": "I worked on the frontend part of the betting and gambling apps for casinos and bookmaker. Also I was in contact with programmers from partner's company and with our clients from casinos and betting house. And one of my responsibility was to develop and maintain company's website. Main technology which I used was JS and AngularJS, HTML & CSS, GIT.",
+    "description": "Frontend dev for betting & gambling apps. Worked with partners & clients. Company website dev & maintenance. (JS, AngularJS, HTML, CSS)",
     "date": "Apr. 2016 - Nov. 2018"
   },
   {
     "role": "Web Developer",
     "company": "Bitlab d.o.o",
-    "description": "I worked on the web pages and web apps for clients. I also maintained legacy code. In addition, I worked in a team of developers and the main technologies that I used were PHP & Laravel framework, HTML & CSS, and also JavaScript.",
+    "description": "Developed web pages & apps for clients. Maintained legacy code. Worked in a team. (PHP, Laravel, HTML, CSS, JavaScript)",
     "date": "Oct. 2015 - Mar. 2016"
   },
   {
     "role": "Web Developer Internship",
     "company": "OGO Sense",
-    "description": "I have successfully completed the program OGO Sense practices in the field of IT support and maintenance with focus on Client training and communication, Joomla CMS website management and CentOS administration.",
+    "description": "Completed IT support & maintenance program. Focus on client training, Joomla CMS, CentOS administration.",
     "date": "Nov. 2014 - Dec. 2014"
   },
   {
     "role": "Web Developer Internship",
     "company": "E info",
-    "description": "In this practice, I worked with MSSQL databases, I was introduced to the basics of Delphi programming language and creating a form for entering and collecting data from the database via the Delphi. Also, I was introduced to the design of the database via MSSQL, installing Windows and Linux OS systems and MSSQL Server installation. I also worked in Embarcadero Framework.",
+    "description": "Worked with MSSQL databases, Delphi programming, database design. Introduced to Windows/Linux OS & MSSQL Server installation. Embarcadero Framework experience.",
     "date": "Oct. 2014 - Nov. 2014"
   }
 ]

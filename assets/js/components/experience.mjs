@@ -31,11 +31,11 @@ export default customElements.define('experience-list', class extends HTMLElemen
     onclick(event) {
       event.preventDefault()
 
-      this.showMoreItems(event)
+      this.showMoreItems()
     }
 
     // Handle "View more" button clicks
-    showMoreItems(event) {
+    showMoreItems() {
       for (let i = 0; i < 2 && this.hiddenListItems.length; i++) {
         this.hiddenListItems[0].classList.remove('hide')
       }

@@ -1,12 +1,21 @@
 const toggleMenu = () => {
-    const toggle = document.querySelector('.header__menu__toggle')
+    const toggleBtn = document.querySelector('.header__menu__toggle'),
+        navLink = document.querySelectorAll('.header__nav__link')
 
-    if (toggle && !toggle.dataset.listenerAdded) { // Ensure the listener is added only once
-        toggle.addEventListener('click', () => {
-            const isOpen = toggle.getAttribute('data-open') === 'true'
-            toggle.setAttribute('data-open', isOpen ? 'false' : 'true')
+    if (toggleBtn && !toggleBtn.dataset.listenerAdded) { // Ensure the listener is added only once
+        toggleBtn.addEventListener('click', () => {
+            const isOpen = toggleBtn.getAttribute('data-open') === 'true'
+            toggleBtn.setAttribute('data-open', isOpen ? 'false' : 'true')
         })
-        toggle.dataset.listenerAdded = true // Mark listener as added
+        toggleBtn.dataset.listenerAdded = true // Mark listener as added
+
+        navLink.forEach(link => {
+            link.addEventListener('click', () => {
+                const isOpen = toggleBtn.getAttribute('data-open') === 'true'
+                toggleBtn.setAttribute('data-open', isOpen ? 'false' : 'true')
+            })
+            toggleBtn.dataset.listenerAdded = true // Mark listener as added
+        })
     }
 }
 

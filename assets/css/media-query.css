@@ -23,6 +23,10 @@
 
 	.header {
 		padding: 1rem;
+
+		.header__nav {
+			max-width: 70%;
+		}
 	}
 	
 	.intro, .about, .skills, .experience, .portfolio, .contact {
@@ -36,12 +40,6 @@
 		& .intro__content {
 			place-self: center;
 			text-align: center;
-
-			& .intro__content__title {
-				& span {
-					display: none;
-				}
-			}
 		}
 
 		& .intro__picture {
@@ -68,8 +66,14 @@
 		text-align: center;
 
 		& .about__content {
-			& .about__content__dash {
-				display: none;
+			& p:first-child {
+				&::before {
+					display: none;
+				}
+			}
+
+			& .about__content__txt {
+				padding-left: unset;
 			}
 		}
 	}
@@ -130,6 +134,8 @@
 /* Large mobile phones  */
 @media screen and (max-width: 435px) {
 	.header {
+		position: relative;
+		backdrop-filter: unset;
 
 		.header__menu__toggle {
 			display: block;
@@ -151,6 +157,7 @@
 			justify-content: center;
 			gap: 1rem;
 			width: 100%;
+			max-width: unset;
 			height: 30rem;
 			padding-block: 1rem;
 			opacity: 0;

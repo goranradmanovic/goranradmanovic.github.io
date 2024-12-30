@@ -1,12 +1,15 @@
 @layer header {
 	/** Header section **/
 	.header {
-		position: relative;
+		position: sticky;
+		top: 0;
+		z-index: 100;
 		display: grid;
 		grid-template-columns: 50px 1fr 50px;
 		align-items: center;
 		padding-block: 2rem;
 		padding-inline: 4rem;
+		backdrop-filter: blur(1rem);
 
 		& .header__logo {
 			grid-column: 1;
@@ -39,6 +42,10 @@
 				transition: color 400ms ease-in-out;
 
 				&:hover {
+					color: var(--white);
+				}
+
+				&.active__link {
 					color: var(--white);
 				}
 			}
