@@ -44,8 +44,8 @@ Feel free to explore my work, and don't hesitate to reach out if you'd like to c
 #### Mobile version
 ---
 ![Mobile version](./assets/images/screenshots/mobile/intro.webp)
+![Mobile version](./assets/images/screenshots/mobile/about.webp)
 ![Mobile version](./assets/images/screenshots/mobile/skills.webp)
-![Mobile version](./assets/images/screenshots/mobile/experience.webp)
 ![Mobile version](./assets/images/screenshots/mobile/portfolio.webp)
 ![Mobile version](./assets/images/screenshots/mobile/contact.webp)
 ---

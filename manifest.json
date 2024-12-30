@@ -66,18 +66,18 @@
       "label": "Home screen on mobile"
     },
     {
+      "src": "./assets/images/screenshots/mobile/about.webp",
+      "sizes": "396x878",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Experience screen on mobile"
+    },
+    {
       "src": "./assets/images/screenshots/mobile/skills.webp",
       "sizes": "396x878",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Skills screen on mobile"
-    },
-    {
-      "src": "./assets/images/screenshots/mobile/experience.webp",
-      "sizes": "396x878",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "Experience screen on mobile"
     },
     {
       "src": "./assets/images/screenshots/mobile/portfolio.webp",
