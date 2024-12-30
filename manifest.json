@@ -1,7 +1,8 @@
 {
   "short_name": "GR",
   "name": "Goran Radmanovic",
-  "start_url": "/index.html",
+  "id": "https://goranradmanovic.github.io/v1",
+  "start_url": "https://goranradmanovic.github.io",
   "display": "standalone",
   "scope": "/",
   "description": "Goran Radmanovic Portfolio Website",
@@ -11,49 +12,49 @@
   "screenshots": [
     {
       "src": "./assets/images/screenshots/desktop/intro.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Intro screen showing main navigation on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/about.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "About screen showing about content on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/skills.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Skills screen showing skills content on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/experience.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Experience screen showing experience content on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/portfolio.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Portfolio screen showing portfolio content on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/dialog.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Dialog for Portfolio screen showing portfolio dialog content on desktop"
     },
     {
       "src": "./assets/images/screenshots/desktop/contact.webp",
-      "sizes": "1280x720",
+      "sizes": "1920x953",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Contact screen showing contact content on desktop"
