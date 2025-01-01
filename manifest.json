@@ -3,13 +3,76 @@
   "name": "Goran Radmanovic",
   "id": "https://goranradmanovic.github.io/v1",
   "start_url": "https://goranradmanovic.github.io",
-  "display_override": ["fullscreen", "minimal-ui"],
+  "display_override": ["fullscreen", "minimal-ui", "window-controls-overlay"],
   "display": "standalone",
   "scope": "/",
   "description": "Goran Radmanovic Portfolio Website",
   "theme_color": "#31333B",
   "background_color": "#FFFFFF",
   "orientation": "portrait-primary",
+  "categories": ["business"],
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "url": "#about",
+      "description": "Access About section",
+      "icons": [
+        {
+          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Skills",
+      "short_name": "Skills",
+      "url": "#skills",
+      "description": "Access Skills section",
+      "icons": [
+        {
+          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Experience",
+      "short_name": "Experience",
+      "url": "#experience",
+      "description": "Access Experience section",
+      "icons": [
+        {
+          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "url": "#portfolio",
+      "description": "Access Portfolio section",
+      "icons": [
+        {
+          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "url": "#contact",
+      "description": "Access Contact section",
+      "icons": [
+        {
+          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
   "screenshots": [
     {
       "src": "./assets/images/screenshots/desktop/intro.webp",
