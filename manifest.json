@@ -25,18 +25,6 @@
       ]
     },
     {
-      "name": "Skills",
-      "short_name": "Skills",
-      "url": "#skills",
-      "description": "Access Skills section",
-      "icons": [
-        {
-          "src": "./assets/images/pwa/android/android-launchericon-96-96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
       "name": "Experience",
       "short_name": "Experience",
       "url": "#experience",
