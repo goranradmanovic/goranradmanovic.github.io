@@ -1,6 +1,7 @@
 @media screen and (max-width: 1024px) {
 	main {
 		width: 100%;
+		max-width: unset;
 	}
 
 	.portfolio__gallery__dialog {
@@ -134,7 +135,8 @@
 /* Large mobile phones  */
 @media screen and (max-width: 435px) {
 	.header {
-		position: relative;
+		background-color: var(--primary);
+		box-shadow: 0 -6px 6px 0 rgba(49,51,59,1);
 		backdrop-filter: unset;
 
 		.header__menu__toggle {
@@ -180,7 +182,7 @@
 
 	.skills {
 		padding-bottom: 10rem;
-		background-position: 97% 97%;
+		background-position: 97% 102%;
 
 		& .skills__list {
 			grid-template-columns: repeat(2, 1fr);
@@ -208,7 +210,7 @@
 	}
 
 	.portfolio {
-		background-position: 0rem 4rem;
+		background-position: 0rem 5rem;
 
 		.portfolio__gallery {
 			grid-template-columns: repeat(2, 1fr);
@@ -232,7 +234,11 @@
 	}
 
 	.contact {
-		
+		& .contact__title {
+			padding-inline: 1rem;
+			font-size: 2.9rem;
+		}
+
 		& .contact__info {
 			width: 100%;
 
