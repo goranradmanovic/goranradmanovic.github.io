@@ -2,103 +2,103 @@
   {
     "role": "Lead Senior Frontend Developer",
     "company": "Trivial",
-    "description": "Built cutting-edge invoice & billing app (FinTech). Designed beautiful UI for simplified invoice creation & tracking. (JS, HTML, SCSS, VueJS 3, Vuex, ChartJS, PrimeVue)",
+    "description": "Played a key role in developing the front-end architecture for a next-generation invoice and billing application in the competitive fintech landscape. My responsibilities included designing and implementing intuitive UI components using Vue.js 3, Vuex for state management, and styling with HTML, SCSS, and PrimeVue/PrimeVueFlex. Integrated Chart.js for data visualization and utilized Git for version control and Trello for project management. Focused on creating a simplified and efficient experience for clients to create and track their invoices.",
     "date": "Apr. 2024 - Dec. 2024"
   },
   {
     "role": "Senior Frontend Developer",
     "company": "TSD - The Site Doctor",
-    "description": "Developed TrendSeam e-commerce Shopify app for data visualization. (JS, Shopify App, Remix, Polaris UI, ChartJS)",
+    "description": "Developed the front-end architecture for TrendSeam, a Shopify app visualizing key data insights for e-commerce store owners. Utilized JavaScript, the Shopify App framework, and Remix to create a dynamic and responsive user experience. Integrated Polaris UI components for seamless integration within the Shopify ecosystem and employed Chart.js for compelling data visualization. Leveraged HTML and SCSS for structuring and styling, and deployed the application using Fly.io. Utilized Git and Jira for version control and project management, ensuring efficient collaboration and timely project delivery.",
     "date": "May 2024 - Sep. 2024"
   },
   {
     "role": "Freelance Frontend Developer",
     "company": "Freelance",
-    "description": "Remote work on various web applications. (JS, HTML, SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP)",
+    "description": "Developed and maintained a variety of web applications and websites for diverse clients as a freelance front-end developer. Specialized in building modern, responsive user interfaces using JavaScript, HTML, and SCSS. Leveraged Vue.js 3, Pinia for state management, and Nuxt.js 3 for server-side rendering and improved performance. Utilized Node.js and PHP for back-end integration where needed. Employed Git and Jira for version control and project management across all projects, ensuring efficient workflows and timely delivery.",
     "date": "Mar. 2024 - May 2024"
   },
   {
     "role": "Frontend Developer",
     "company": "TSD - The Site Doctor",
-    "description": "Remote frontend dev: Figma designs to finished products. (JS, HTML, SCSS, NuxtJS 3, NuxtJS Modules)",
+    "description": "Developed company websites and web applications from Figma designs to finished product as a remote front-end developer. Translated design specifications into functional and responsive user interfaces using JavaScript, HTML, and SCSS. Leveraged Nuxt.js 3 and Nuxt.js Modules to build performant and scalable applications. Utilized Figma for design collaboration and Git/Jira for version control and project management, ensuring seamless integration between design and development. Delivered high-quality, user-centric web experiences that met client requirements and business objectives.",
     "date": "Dec. 2023 - Feb. 2024"
   },
   {
     "role": "Freelance Frontend Developer",
     "company": "Freelance",
-    "description": "Remote work on various web applications. (JS, HTML, SCSS, VueJS 3, Pinia, NuxtJS 3, Node, PHP)",
+    "description": "Developed and maintained a range of web applications and websites for diverse clients as a freelance front-end developer. Built modern and responsive user interfaces using core web technologies: JavaScript, HTML, and SCSS. Specialized in Vue.js 3, leveraging Pinia for state management and Nuxt.js 3 for server-side rendering and enhanced performance. Integrated with back-end systems using Node.js and PHP as needed. Managed projects effectively using Git for version control and Jira for task management and collaboration.",
     "date": "May 2022 - Dec. 2023"
   },
   {
     "role": "Frontend Developer",
     "company": "Digimondo",
-    "description": "Remote frontend dev: enterprise web app for IoT. (JS, HTML, SCSS, VueJS, Vuex, Vuetify)",
+    "description": "Developed the front-end for an enterprise web application serving the rapidly evolving IoT industry. Focused on creating a user-friendly interface for managing and visualizing data within the Internet of Things ecosystem. Utilized JavaScript, HTML, and SCSS to build the core structure and styling of the application. Leveraged Vue.js and Vuex for state management and data flow, and implemented Vuetify components for a polished and consistent user experience. Managed code and collaborated with the team using Git and Jira for version control and project tracking.",
     "date": "May 2021 - May 2023"
   },
   {
     "role": "Frontend Web Developer",
     "company": "Examiz",
-    "description": "Remote freelance frontend dev: enterprise app for HR. (VueJS, Vuex, JS, HTML, SCSS, BootstrapVue)",
+    "description": "Developed front-end components for an enterprise-level HR management application as a freelance developer for Examiz. Focused on building a robust and user-friendly solution for HR managers within large organizations. Utilized Vue.js and Vuex for a dynamic and maintainable front-end architecture. Implemented core web technologies JavaScript, HTML, and SCSS for structure and styling, and integrated BootstrapVue for UI components. Managed code and collaborated with the team using Git and Jira for version control and project management.",
     "date": "Dec. 2020 - Aug. 2021"
   },
   {
     "role": "Web Developer",
     "company": "Webimpacto",
-    "description": "Remote web dev for Spanish E-commerce. (E-commerce websites, modules, maintenance) (PHP, MySQL, JS, HTML, CSS, PrestaShop)",
+    "description": "Developed and maintained e-commerce websites for clients of a Spanish company specializing in online retail solutions. Built new e-commerce sites, including module installation and configuration, using PHP, MySQL, JavaScript, HTML, and CSS. Provided ongoing maintenance and upgrades for existing client shops, ensuring optimal performance and functionality. Leveraged the PrestaShop platform for e-commerce development. Utilized Git for version control and code management.",
     "date": "Jun. 2020 - May 2021"
   },
   {
-    "role": "Senior Full Stack Web Developer",
+    "role": "Full Stack Web Developer",
     "company": "OOMovers",
-    "description": "Remote full-stack dev: company website development, maintenance, upgrades. (PHP, Silex, JS, HTML, CSS, SCSS)",
+    "description": "Developed, maintained, and upgraded the company website as a remote full-stack web developer. Built and maintained the website's back-end using PHP and the Silex framework. Developed front-end features using JavaScript, HTML, CSS, and SCSS for a modern and responsive user experience. Managed code and deployments using Git for version control. Ensured the website's performance, security, and functionality through regular maintenance and upgrades.",
     "date": "May 2019 - Mar. 2021"
   },
   {
     "role": "Senior Frontend Web Developer",
     "company": "KompITenz d.o.o",
-    "description": "Frontend dev for B2B app (Germany dairy industry). Company website dev & maintenance. (JS, VueJS, HTML, CSS, PHP, Laravel)",
+    "description": "Developed the front-end for a B2B application serving the German dairy industry. Contributed to the development and maintenance of the company website. Utilized JavaScript and Vue.js to create a dynamic and interactive user experience. Employed HTML and CSS for structuring and styling the application and website. Integrated with the back-end using PHP and the Laravel framework. Managed code and collaborated with the team using Git for version control.",
     "date": "Apr. 2019 - Jun. 2019"
   },
   {
     "role": "Full Stack Web Developer",
     "company": "Freelancer",
-    "description": "Full-stack dev on various web projects. (PHP, MySQL, JS, VueJS, HTML, CSS)",
+    "description": "Developed a range of web projects as a full-stack web developer. Built and maintained back-end systems using PHP and MySQL. Created dynamic and interactive front-end interfaces with JavaScript and Vue.js. Utilized HTML, CSS, Pug, and SASS for structuring and styling web pages. Integrated with various services, including Firebase, as needed. Managed code and collaborated with teams using Git for version control.",
     "date": "Nov. 2018 - Apr. 2019"
   },
   {
     "role": "Lecturer at the course",
     "company": "Business Garden",
-    "description": "Taught students the basics of HTML and CSS.",
+    "description": "Taught introductory web development courses, instructing students on the fundamentals of HTML and CSS.",
     "date": "Jul. 2018 - Sep. 2018"
   },
   {
     "role": "Lecturer at the course",
     "company": "Business Garden",
-    "description": "Taught students the basics of HTML and CSS.",
+    "description": "Taught introductory web development courses, instructing students on the fundamentals of HTML and CSS.",
     "date": "Sep. 2017 - Nov. 2017"
   },
   {
     "role": "Senior Frontend Web Developer",
     "company": "Alea Control d.o.o",
-    "description": "Frontend dev for betting & gambling apps. Worked with partners & clients. Company website dev & maintenance. (JS, AngularJS, HTML, CSS)",
+    "description": "Developed the front-end for betting and gambling applications for casinos and bookmakers. Created and maintained the company website. Built user interfaces using JavaScript and AngularJS. Utilized HTML and CSS for structuring and styling the applications and website. Collaborated with partner company programmers and communicated directly with casino and betting house clients. Managed code using Git for version control.",
     "date": "Apr. 2016 - Nov. 2018"
   },
   {
     "role": "Web Developer",
     "company": "Bitlab d.o.o",
-    "description": "Developed web pages & apps for clients. Maintained legacy code. Worked in a team. (PHP, Laravel, HTML, CSS, JavaScript)",
+    "description": "Developed web pages and applications for clients, including maintenance of legacy code. Collaborated within a development team. Utilized PHP and the Laravel framework for back-end development. Employed HTML, CSS, and JavaScript for front-end development.",
     "date": "Oct. 2015 - Mar. 2016"
   },
   {
     "role": "Web Developer Internship",
     "company": "OGO Sense",
-    "description": "Completed IT support & maintenance program. Focus on client training, Joomla CMS, CentOS administration.",
+    "description": "Completed the OGO Sense internship program, gaining practical experience in IT support and maintenance. Focused on client training and communication, Joomla CMS website management, and CentOS administration.",
     "date": "Nov. 2014 - Dec. 2014"
   },
   {
     "role": "Web Developer Internship",
     "company": "E info",
-    "description": "Worked with MSSQL databases, Delphi programming, database design. Introduced to Windows/Linux OS & MSSQL Server installation. Embarcadero Framework experience.",
+    "description": "Gained practical experience in database management, software development, and system administration during an IT support and maintenance internship. Worked with MSSQL databases, including database design and data manipulation. Learned the fundamentals of Delphi programming and developed data entry forms. Installed Windows and Linux operating systems, along with MSSQL Server. Gained familiarity with the Embarcadero Framework.",
     "date": "Oct. 2014 - Nov. 2014"
   }
 ]
