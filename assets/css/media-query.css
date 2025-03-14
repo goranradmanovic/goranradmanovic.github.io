@@ -180,6 +180,16 @@
 		}
 	}
 
+	.intro {
+		& .intro__content {
+			& .intro__content__headline {
+				& .intro__content__headline--separator {
+					display: none;
+				}
+			}
+		}
+	}
+
 	.skills {
 		padding-bottom: 10rem;
 		background-position: 97% 102%;
