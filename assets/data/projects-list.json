@@ -74,6 +74,17 @@
     "tech": ["HTML & CSS", "JavaScript & AngularJS", "PHP & MySQL", "NodeJS", "GIT", "JIRA"]
   },
   {
+    "name": "XE",
+    "url": "https://xe-app.vercel.app/",
+    "img": "./assets/images/popup/xe.webp",
+    "text": [
+      "This application serves as a demonstration of a main dashboard page, featuring a clean user interface with well-structured graphical elements.",
+      "The dashboard presents blockchain statistics and data retrieved from the JSON Bin service.",
+      "The application is built with a Node.js API service, while the frontend is developed using Vue.js and PrimeVue for the user interface."
+    ],
+    "tech": ["VueJS 3", "JavaScript (ES6)", "PrimeVue", "NodeJS", "Vercel", "GIT", "ChartJS", "Maptiler", "JSON Bin"]
+  },
+  {
     "name": "Keno",
     "url": "https://keno.com/",
     "img": "./assets/images/popup/keno.webp",
@@ -195,7 +206,7 @@
   },
   {
     "name": "Old Portfolio",
-    "url": "http://goranradmanovic.byethost13.com/",
+    "url": "#",
     "img": "./assets/images/popup/oldportfolio.webp",
     "text": "Early portfolio website showcasing my initial web development projects.",
     "tech": ["HTML & CSS", "JavaScript", "AJAX"]
@@ -223,7 +234,7 @@
   },
   {
     "name": "Bplace",
-    "url": "http://www.bplace.byethost13.com/",
+    "url": "#",
     "img": "./assets/images/popup/bplace.webp",
     "text": [
         "This project was the culmination of my advanced PHP & MySQL course.",

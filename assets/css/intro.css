@@ -24,6 +24,7 @@
 			& .intro__content__headline, & .intro__content__subheadline {
 				margin-block: .3rem;
 				font-size: 1.4rem;
+				text-wrap: balance;
 				color: var(--white);
 
 				& .intro__content__headline--highlight {
