@@ -1,7 +1,7 @@
 'use strict';
 
 // Configuration
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const CACHE_NAME = `${VERSION}::PWAsite`;
 
 // Essential files for offline functionality
@@ -54,60 +54,63 @@ const DESIRABLE_FILES = [
     '/assets/images/icons/skills/nodejs.svg',
     '/assets/images/icons/skills/primevue.svg',
     '/assets/images/icons/skills/bootstrap.svg',
+    '/assets/images/icons/skills/livewire.svg',
+    '/assets/images/icons/skills/alpinejs.svg',
     '/assets/images/meta/gr-thumbnail.jpg',
-    '/assets/images/profile/goran.webp',
-    '/assets/images/projects/airquality.webp',
-    '/assets/images/projects/aleabet.webp',
-    '/assets/images/projects/aleabetlists.webp',
-    '/assets/images/projects/b2bplatform.webp',
-    '/assets/images/projects/bplace.webp',
-    '/assets/images/projects/chatty.webp',
-    //'/assets/images/projects/dynamic-layout.webp',
-    '/assets/images/projects/einfo.webp',
-    '/assets/images/projects/examiz.webp',
-    '/assets/images/projects/goranradmanovic.webp',
-    '/assets/images/projects/jatheoncloud.webp',
-    '/assets/images/projects/keno.webp',
-    '/assets/images/projects/mascaro.webp',
-    '/assets/images/projects/mondrian.webp',
-    '/assets/images/projects/nikom.webp',
-    '/assets/images/projects/niotix.webp',
-    '/assets/images/projects/oldportfolio.webp',
-    '/assets/images/projects/oomovers.webp',
-    '/assets/images/projects/prettyballerinas.webp',
-    '/assets/images/projects/rhmzrs.webp',
-    '/assets/images/projects/stealio.webp',
-    '/assets/images/projects/thefruitsofthevillage.webp',
-    '/assets/images/projects/trendseam.webp',
-    '/assets/images/projects/trivial.webp',
-    '/assets/images/projects/tsd.webp',
-    '/assets/images/projects/xe.webp',
-    '/assets/images/popup/airquality.webp',
-    '/assets/images/popup/aleabet.webp',
-    '/assets/images/popup/aleabetlist.webp',
-    '/assets/images/popup/b2b.webp',
-    '/assets/images/popup/bplace.webp',
-    '/assets/images/popup/chatty.webp',
-    //'/assets/images/popup/dynamiclayout.webp',
-    '/assets/images/popup/einfo.webp',
-    '/assets/images/popup/examiz.webp',
-    '/assets/images/popup/goranradmanovic.webp',
-    '/assets/images/popup/jatheon.webp',
-    '/assets/images/popup/keno.webp',
-    '/assets/images/popup/mascaro.webp',
-    '/assets/images/popup/mondrian.webp',
-    '/assets/images/popup/nikom.webp',
-    '/assets/images/popup/niotix.webp',
-    '/assets/images/popup/oldportfolio.webp',
-    '/assets/images/popup/oomovers.webp',
-    '/assets/images/popup/prettyballerinas.webp',
-    '/assets/images/popup/rhmzrs.webp',
+    '/assets/images/profile/goran.avif',
+    '/assets/images/projects/airquality.avif',
+    '/assets/images/projects/aleabet.avif',
+    '/assets/images/projects/aleabetlists.avif',
+    '/assets/images/projects/b2bplatform.avif',
+    '/assets/images/projects/bplace.avif',
+    '/assets/images/projects/chatty.avif',
+    //'/assets/images/projects/dynamic-layout.avif',
+    '/assets/images/projects/einfo.avif',
+    '/assets/images/projects/examiz.avif',
+    '/assets/images/projects/goranradmanovic.avif',
+    '/assets/images/projects/jatheoncloud.avif',
+    '/assets/images/projects/keno.avif',
+    '/assets/images/projects/mascaro.avif',
+    '/assets/images/projects/mondrian.avif',
+    '/assets/images/projects/nikom.avif',
+    '/assets/images/projects/niotix.avif',
+    '/assets/images/projects/oldportfolio.avif',
+    '/assets/images/projects/oomovers.avif',
+    '/assets/images/projects/prettyballerinas.avif',
+    '/assets/images/projects/rhmzrs.avif',
+    '/assets/images/projects/stealio.avif',
+    '/assets/images/projects/thefruitsofthevillage.avif',
+    '/assets/images/projects/trendseam.avif',
+    '/assets/images/projects/trivial.avif',
+    '/assets/images/projects/tsd.avif',
+    '/assets/images/projects/xe.avif',
+    '/assets/images/popup/airquality.avif',
+    '/assets/images/popup/aleabet.avif',
+    '/assets/images/popup/aleabetlist.avif',
+    '/assets/images/popup/b2b.avif',
+    '/assets/images/popup/bplace.avif',
+    '/assets/images/popup/chatty.avif',
+    //'/assets/images/popup/dynamiclayout.avif',
+    '/assets/images/popup/einfo.avif',
+    '/assets/images/popup/examiz.avif',
+    '/assets/images/popup/goranradmanovic.avif',
+    '/assets/images/popup/jatheon.avif',
+    '/assets/images/popup/keno.avif',
+    '/assets/images/popup/mascaro.avif',
+    '/assets/images/popup/mondrian.avif',
+    '/assets/images/popup/nikom.avif',
+    '/assets/images/popup/niotix.avif',
+    '/assets/images/popup/oldportfolio.avif',
+    '/assets/images/popup/oomovers.avif',
+    '/assets/images/popup/prettyballerinas.avif',
+    '/assets/images/popup/rhmzrs.avif',
     '/assets/images/popup/stealio.svg',
-    '/assets/images/popup/thefruitsofthevillage.webp',
-    '/assets/images/popup/trendseam.webp',
-    '/assets/images/popup/trivial.webp',
-    '/assets/images/popup/tsd.webp',
-    '/assets/images/popup/xe.webp',
+    '/assets/images/popup/stealio.avif',
+    '/assets/images/popup/thefruitsofthevillage.avif',
+    '/assets/images/popup/trendseam.avif',
+    '/assets/images/popup/trivial.avif',
+    '/assets/images/popup/tsd.avif',
+    '/assets/images/popup/xe.avif',
     '/assets/images/screenshots/desktop/desktop-home.webp',
     '/assets/images/screenshots/mobile/desktop-mobile.webp',
     '/assets/pdf/cv.pdf',
@@ -117,7 +120,7 @@ const DESIRABLE_FILES = [
 ];
 
 // Helper Functions
-const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg']);
+const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg', 'avif']);
 
 /**
  * Checks if a URL corresponds to an image.
@@ -144,13 +147,10 @@ function isSupportedScheme(url) {
  */
 function offlineImageResponse() {
     const svg = `
-        <svg role="img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <title>Offline</title>
-            <rect width="400" height="300" fill="#eee"/>
-            <text x="200" y="150" text-anchor="middle" 
-                  dominant-baseline="middle" font-family="sans-serif" 
-                  font-size="20" fill="#ccc">
-                  Offline
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#eee" d="M0 0h400v300H0z"/>
+            <text x="200" y="150" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="20" fill="#ccc">
+                Offline
             </text>
         </svg>`;
     return new Response(svg, {

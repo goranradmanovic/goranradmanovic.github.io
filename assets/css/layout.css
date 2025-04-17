@@ -2,8 +2,9 @@
 
 @layer layout {
 	html {
-		scroll-behavior: smooth;
+		scroll-behavior: smooth !important;
 		scroll-padding-top: 2rem;
+		scrollbar-gutter: stable;
 	}
 
 	/*Browser scroller bar*/

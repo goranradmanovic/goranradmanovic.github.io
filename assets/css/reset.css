@@ -9,6 +9,10 @@
     interpolate-size: allow-keywords;
   }
 
+  html {
+    color-scheme: system;
+  }
+
   body {
     margin: unset;
   }

@@ -44,16 +44,18 @@ export default customElements.define('skills-list', class extends HTMLElement {
         'JavaScript',
         'Vue',
         'Nuxt',
-        'Sass',
         'PHP',
         'MySQL',
         'Laravel',
         'NodeJS',
         'Git',
+        'Sass',
         'PWA',
         'Primevue',
         'Vuetify',
         'Bootstrap',
+        'Livewire',
+        'AlpineJS',
       ]
 
       const fragment = document.createDocumentFragment()

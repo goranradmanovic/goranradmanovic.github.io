@@ -2,7 +2,7 @@
   {
     "name": "Trivial",
     "url": "https://www.trivialapps.io/",
-    "img": "./assets/images/popup/trivial.webp",
+    "img": "./assets/images/popup/trivial.avif",
     "text": [
       "Built a cutting-edge invoice & billing app for FinTech company Trivial.",
       "Designed a beautiful UI for simplified invoice creation and tracking.",
@@ -13,7 +13,7 @@
   {
     "name": "TrendSeam",
     "url": "https://trendseam.com/",
-    "img": "./assets/images/popup/trendseam.webp",
+    "img": "./assets/images/popup/trendseam.avif",
     "text": [
       "Developed TrendSeam, a Shopify app for e-commerce data visualization.",
       "Challenged myself by working with Remix framework and integrating it with Shopify.",
@@ -24,7 +24,7 @@
   {
     "name": "TSD",
     "url": "https://tsd.digital/",
-    "img": "./assets/images/popup/tsd.webp",
+    "img": "./assets/images/popup/tsd.avif",
     "text": [
       "Redesigned the website for The Site Doctor (TSD), an England-based e-commerce company.",
       "Improved SEO and user experience with Nuxt 3, SCSS, and Figma.",
@@ -35,7 +35,7 @@
   {
     "name": "Niotix",
     "url": "https://niota.io/",
-    "img": "./assets/images/popup/niotix.webp",
+    "img": "./assets/images/popup/niotix.avif",
     "text": [
       "Developed new features and options for an enterprise IoT application.",
       "Worked as a frontend developer using JavaScript (ES6), Vue 2, Vuex & Vue Router, Vuetify, and GIT."
@@ -45,7 +45,7 @@
   {
     "name": "Examiz",
     "url": "https://app.examiz.net/",
-    "img": "./assets/images/popup/examiz.webp",
+    "img": "./assets/images/popup/examiz.avif",
     "text": [
       "Contributed to the development of Examiz, an HR application with powerful features.",
       "Used JavaScript (ES6), Vue 2, Vuex & Vue Router, and Google Map API in development."
@@ -55,7 +55,7 @@
   {
     "name": "AleaBet",
     "url": "https://aleabet.com/",
-    "img": "./assets/images/popup/aleabet.webp",
+    "img": "./assets/images/popup/aleabet.avif",
     "text": [
       "Developed a dynamic UI and integrated API-driven features for the AleaBet betting platform.",
       "Utilized HTML, CSS, JavaScript & AngularJS, PHP & MySQL, NodeJS, and GIT."
@@ -65,7 +65,7 @@
   {
     "name": "AleaBet Lists",
     "url": "https://aleabetlists.com/",
-    "img": "./assets/images/popup/aleabetlists.webp",
+    "img": "./assets/images/popup/aleabetlists.avif",
     "text": [
       "Developed curated betting lists and insights for the AleaBet platform.",
       "Worked on both web and print versions of the lists for daily/weekly sports events.",
@@ -76,7 +76,7 @@
   {
     "name": "XE",
     "url": "https://xe-app.vercel.app/",
-    "img": "./assets/images/popup/xe.webp",
+    "img": "./assets/images/popup/xe.avif",
     "text": [
       "This application serves as a demonstration of a main dashboard page, featuring a clean user interface with well-structured graphical elements.",
       "The dashboard presents blockchain statistics and data retrieved from the JSON Bin service.",
@@ -85,9 +85,20 @@
     "tech": ["VueJS 3", "JavaScript (ES6)", "PrimeVue", "NodeJS", "Vercel", "GIT", "ChartJS", "Maptiler", "JSON Bin"]
   },
   {
+    "name": "Healtcare",
+    "url": "https://hc-app-pi.vercel.app/",
+    "img": "./assets/images/popup/healtcare.avif",
+    "text": [
+      "This application functions as a demonstrative implementation of a primary dashboard interface, characterized by a streamlined user experience and logically organized visual components.",
+      "The dashboard environment provides a visualization of healthcare metrics and user-specific data, sourced from structured JSON datasets.",
+      "The application is built with HTML/CSS, JavaScript, and JSON data, deployed on Vercel."
+    ],
+    "tech": ["HTML", "CSS", "JavaScript (ES6)", "JSON", "Vercel", "GIT", "ChartJS"]
+  },
+  {
     "name": "Keno",
     "url": "https://keno.com/",
-    "img": "./assets/images/popup/keno.webp",
+    "img": "./assets/images/popup/keno.avif",
     "text": [
       "Implemented game logic and developed responsive interfaces for a lottery-style gambling game platform.",
       "Ensured scalability and a smooth user experience."
@@ -97,7 +108,7 @@
   {
     "name": "The Fruits Of The Village",
     "url": "https://plodovisela.com/",
-    "img": "./assets/images/popup/thefruitsofthevillage.webp",
+    "img": "./assets/images/popup/thefruitsofthevillage.avif",
     "text": [
       "Developed a frontend for an application promoting local organic products.",
       "Worked as a frontend developer for the Ministry of Agriculture, Forestry, and Water Management."
@@ -107,7 +118,7 @@
   {
     "name": "Pretty Ballerinas",
     "url": "https://www.prettyballerinas.com/en/",
-    "img": "./assets/images/popup/prettyballerinas.webp",
+    "img": "./assets/images/popup/prettyballerinas.avif",
     "text": [
       "Contributed to the development of the Pretty Ballerinas e-commerce website.",
       "Worked as a frontend developer within a team, utilizing PrestaShop for the platform."
@@ -117,7 +128,7 @@
   {
     "name": "Mascaro",
     "url": "https://www.mascaro.com/en/",
-    "img": "./assets/images/popup/mascaro.webp",
+    "img": "./assets/images/popup/mascaro.avif",
     "text": [
       "Contributed to the development of the Mascaro e-commerce website.",
       "Worked as a frontend developer within a team, utilizing PrestaShop for the platform."
@@ -127,7 +138,7 @@
   {
     "name": "RHMZRS",
     "url": "https://rhmzrs.com/",
-    "img": "./assets/images/popup/rhmzrs.webp",
+    "img": "./assets/images/popup/rhmzrs.avif",
     "text": [
       "Integrated Google Maps with hydrometeorological, seismic, and air quality data for the RHMZRS website.",
       "Gained extensive experience with the Google Maps API."
@@ -137,7 +148,7 @@
   {
     "name": "Nikom",
     "url": "https://milovan-gibaca.com/goran/nikom/",
-    "img": "./assets/images/popup/nikom.webp",
+    "img": "./assets/images/popup/nikom.avif",
     "text": [
       "Created a presentational website for Nikom, a CNC company, using WordPress CMS.",
       "Gained valuable experience with WordPress and its functionalities."
@@ -147,7 +158,7 @@
   {
     "name": "OOMovers",
     "url": "https://www.oomovers.com/",
-    "img": "./assets/images/popup/oomovers.webp",
+    "img": "./assets/images/popup/oomovers.avif",
     "text": [
       "Worked as a full-stack developer on the OOMovers website and transportation management system.",
       "Handled a variety of tasks, including frontend and backend development."
@@ -157,7 +168,7 @@
   {
     "name": "Goran Radmanovic",
     "url": "https://dynamicpagelayout.firebaseapp.com/",
-    "img": "./assets/images/popup/goranradmanovic.webp",
+    "img": "./assets/images/popup/goranradmanovic.avif",
     "text": [
       "Created a personal portfolio website with plain HTML, CSS, and JavaScript.",
       "Implemented PWA options with native Service Workers for enhanced user experience."
@@ -167,7 +178,7 @@
     {
     "name": "Jatheon Cloud",
     "url": "https://table-app-63709.web.app/",
-    "img": "./assets/images/popup/jatheon.webp",
+    "img": "./assets/images/popup/jatheon.avif",
     "text": [
       "Built a dynamic table app with VueJS to manipulate data.",
       "Enhanced user interaction with features for adding, removing, and editing data within the table."
@@ -177,7 +188,7 @@
   {
     "name": "Stealio",
     "url": "https://www.youtube.com/watch?v=rTAJl8HsQsI",
-    "img": "./assets/images/popup/stealio.webp",
+    "img": "./assets/images/popup/stealio.avif",
     "text": [
       "Developed a coupon system for Amazon purchases as part of the Stealio project for Helium10 (USA).",
       "Contributed to both frontend and backend development, utilizing HTML, CSS, JavaScript, jQuery, PHP, and Yii Framework."
@@ -187,7 +198,7 @@
   {
     "name": "Einfo",
     "url": "http://www.einfo.byethost13.com/",
-    "img": "./assets/images/popup/einfo.webp",
+    "img": "./assets/images/popup/einfo.avif",
     "text": [
       "Interned at E-info, a Bosnian IT company specializing in large databases.",
       "Gained experience with MSSQL servers and SQL language. Built a presentation website to showcase my learnings."
@@ -197,7 +208,7 @@
   {
     "name": "B2B Platform",
     "url": "#",
-    "img": "./assets/images/popup/b2b.webp",
+    "img": "./assets/images/popup/b2b.avif",
     "text": [
       "Maintained the frontend of a B2B platform connecting German dairy producers and buyers for KompITenz GmbH (Germany/Bosnia and Herzegovina).",
       "Utilized HTML, CSS, JavaScript (ES6), jQuery, SASS, PHP & MySQL, Laravel & VueJS, and GIT."
@@ -207,39 +218,39 @@
   {
     "name": "Old Portfolio",
     "url": "#",
-    "img": "./assets/images/popup/oldportfolio.webp",
-    "text": "Early portfolio website showcasing my initial web development projects.",
+    "img": "./assets/images/popup/oldportfolio.avif",
+    "text": ["Early portfolio website showcasing my initial web development projects."],
     "tech": ["HTML & CSS", "JavaScript", "AJAX"]
   },
   {
     "name": "Air Quality",
     "url": "https://cocky-jones-a58ae7.netlify.com/",
-    "img": "./assets/images/popup/airquality.webp",
-    "text": "Built an air quality monitoring application for my hometown to inform residents during winter.",
+    "img": "./assets/images/popup/airquality.avif",
+    "text": ["Built an air quality monitoring application for my hometown to inform residents during winter."],
     "tech": ["PUG & SASS", "JavaScript (ES6)", "Nuxt 2", "Vuex & Vue Router", "Netlify", "GIT"]
   },
   {
     "name": "Mondrian",
     "url": "https://goranradmanovic.github.io/Mondrian/",
-    "img": "./assets/images/popup/mondrian.webp",
-    "text": "Recreated two Mondrian art pieces using HTML, CSS (especially CSS grid), showcasing the intersection of art and programming.",
+    "img": "./assets/images/popup/mondrian.avif",
+    "text": ["Recreated two Mondrian art pieces using HTML, CSS (especially CSS grid), showcasing the intersection of art and programming."],
     "tech": ["HTML & CSS", "JavaScript (ES6)", "GIT"]
   },
   {
     "name": "Chatty",
     "url": "https://chat-vue-b194f.firebaseapp.com/#/",
-    "img": "./assets/images/popup/chatty.webp",
-    "text": "Developed a simple real-time chat application using VueJS and Firebase to experiment with these technologies.",
-    "tech": ["HTML & CSS", "JavaScript (ES6)", "VueJS", "Firebase", "Webpack", "GIT"]
+    "img": "./assets/images/popup/chatty.avif",
+    "text": ["Developed a simple real-time chat application using VueJS and Firebase to experiment with these technologies."],
+    "tech": ["HTML & CSS", "JavaScript (ES6)", "VueJS", "Firebase", "avifack", "GIT"]
   },
   {
     "name": "Bplace",
     "url": "#",
-    "img": "./assets/images/popup/bplace.webp",
+    "img": "./assets/images/popup/bplace.avif",
     "text": [
-        "This project was the culmination of my advanced PHP & MySQL course.",
-        "My primary objective was to develop a custom Content Management System (CMS) with an administrative panel and a user-facing frontend.",
-        "The entire project was built using primarily PHP, MySQL, and a minimal amount of JavaScript." 
+      "This project was the culmination of my advanced PHP & MySQL course.",
+      "My primary objective was to develop a custom Content Management System (CMS) with an administrative panel and a user-facing frontend.",
+      "The entire project was built using primarily PHP, MySQL, and a minimal amount of JavaScript." 
     ],
     "tech": ["HTML & CSS", "PHP & MySQL", "JavaScript", "AJAX"]
   }
