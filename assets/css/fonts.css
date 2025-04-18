@@ -1,0 +1,19 @@
+@layer fonts {
+  /* lora-500 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/lora/lora-v35-latin-500.woff2') format('woff2')
+  }
+
+  /* montserrat-400 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat/montserrat-v29-latin-400.woff2') format('woff2')
+  }
+}

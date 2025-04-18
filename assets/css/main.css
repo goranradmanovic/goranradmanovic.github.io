@@ -1,5 +1,5 @@
-@layer reset, theme, layout, header, intro, about, social, skills, experience, portfolio, contact, footer;
-
+@import 'layers.css';
+@import 'fonts.css' layer(fonts);
 @import 'reset.css' layer(reset);
 @import 'theme.css' layer(theme);
 @import 'layout.css' layer(layout);
@@ -12,4 +12,4 @@
 @import 'portfolio.css' layer(portfolio);
 @import 'contact.css' layer(contact);
 @import 'footer.css' layer(footer);
-@import 'media-query.css';
+@import 'media-query.css'
