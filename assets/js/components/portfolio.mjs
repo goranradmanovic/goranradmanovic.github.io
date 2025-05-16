@@ -61,6 +61,7 @@ export default customElements.define('portfolio-list', class extends HTMLElement
       desc.innerHTML = ''
       tech.innerHTML = ''
       img.src = './assets/images/icons/addition/photo-placeholder.svg'
+      link.classList.remove('disabled-link')
     })
 
     content.append(closeBtn, title, desc, sub, tech, link)
@@ -91,6 +92,10 @@ export default customElements.define('portfolio-list', class extends HTMLElement
         img.src = item.img
         img.loading = 'lazy'
         link.href = item.url
+        link.role = 'link'
+        link.ariaDisabled = !item.url ? true : false
+        link.title = !item.url ? 'No active page' : ''
+        link.classList.add(`${!item.url ? 'disabled-link' : 'enabled-link'}`)
         link.textContent = 'See Project'
         title.textContent = item.name
         desc.innerHTML = tech.innerHTML = ''

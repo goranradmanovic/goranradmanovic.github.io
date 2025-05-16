@@ -227,6 +227,12 @@
 						text-decoration: none;
 						color: var(--primary);
 						background-color: var(--secondary);
+
+						&.disabled-link {
+							pointer-events: none;
+							cursor: not-allowed;
+							opacity: .7;
+						}
 					}
 				}
 			}

@@ -1,7 +1,7 @@
 [
   {
     "name": "Trivial",
-    "url": "https://www.trivialapps.io/",
+    "url": "",
     "img": "./assets/images/popup/trivial.avif",
     "text": [
       "Built a cutting-edge invoice & billing app for FinTech company Trivial.",
@@ -54,7 +54,7 @@
   },
   {
     "name": "AleaBet",
-    "url": "https://aleabet.com/",
+    "url": "https://www.aleapartners.io/",
     "img": "./assets/images/popup/aleabet.avif",
     "text": [
       "Developed a dynamic UI and integrated API-driven features for the AleaBet betting platform.",
@@ -64,7 +64,7 @@
   },
   {
     "name": "AleaBet Lists",
-    "url": "https://aleabetlists.com/",
+    "url": "https://liste.aleacontrol.net/#/",
     "img": "./assets/images/popup/aleabetlists.avif",
     "text": [
       "Developed curated betting lists and insights for the AleaBet platform.",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Keno",
-    "url": "https://keno.com/",
+    "url": "https://www.youtube.com/watch?v=MV8YwHapMX0",
     "img": "./assets/images/popup/keno.avif",
     "text": [
       "Implemented game logic and developed responsive interfaces for a lottery-style gambling game platform.",
@@ -107,7 +107,7 @@
   },
   {
     "name": "The Fruits Of The Village",
-    "url": "https://plodovisela.com/",
+    "url": "",
     "img": "./assets/images/popup/thefruitsofthevillage.avif",
     "text": [
       "Developed a frontend for an application promoting local organic products.",
@@ -167,7 +167,7 @@
   },
   {
     "name": "Goran Radmanovic",
-    "url": "https://dynamicpagelayout.firebaseapp.com/",
+    "url": "",
     "img": "./assets/images/popup/goranradmanovic.avif",
     "text": [
       "Created a personal portfolio website with plain HTML, CSS, and JavaScript.",
@@ -197,7 +197,7 @@
   },
   {
     "name": "Einfo",
-    "url": "http://www.einfo.byethost13.com/",
+    "url": "",
     "img": "./assets/images/popup/einfo.avif",
     "text": [
       "Interned at E-info, a Bosnian IT company specializing in large databases.",
@@ -207,7 +207,7 @@
   },
   {
     "name": "B2B Platform",
-    "url": "#",
+    "url": "",
     "img": "./assets/images/popup/b2b.avif",
     "text": [
       "Maintained the frontend of a B2B platform connecting German dairy producers and buyers for KompITenz GmbH (Germany/Bosnia and Herzegovina).",
@@ -217,14 +217,14 @@
   },
   {
     "name": "Old Portfolio",
-    "url": "#",
+    "url": "",
     "img": "./assets/images/popup/oldportfolio.avif",
     "text": ["Early portfolio website showcasing my initial web development projects."],
     "tech": ["HTML & CSS", "JavaScript", "AJAX"]
   },
   {
     "name": "Air Quality",
-    "url": "https://cocky-jones-a58ae7.netlify.com/",
+    "url": "",
     "img": "./assets/images/popup/airquality.avif",
     "text": ["Built an air quality monitoring application for my hometown to inform residents during winter."],
     "tech": ["PUG & SASS", "JavaScript (ES6)", "Nuxt 2", "Vuex & Vue Router", "Netlify", "GIT"]
@@ -245,7 +245,7 @@
   },
   {
     "name": "Bplace",
-    "url": "#",
+    "url": "",
     "img": "./assets/images/popup/bplace.avif",
     "text": [
       "This project was the culmination of my advanced PHP & MySQL course.",
