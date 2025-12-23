@@ -82,5 +82,14 @@
 			font-weight: 500;
 			color: var(--white);
 		}
+
+		& .footer__link {
+      position: absolute;
+      top: 70%;
+      left: 96.5%;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+		}
 	}
 }

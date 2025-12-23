@@ -1,6 +1,12 @@
 [
   {
     "role": "Lead Senior Frontend Developer",
+    "company": "SquaredFinancial",
+    "description": "I developed an onboarding application for a fintech company, focusing on streamlining client conversion and product sign-ups through enhanced UI/UX. Additionally, I designed and built marketing websites and landing pages to drive product promotions. My technical stack for these projects included Nuxt.js, Pinia, PrimeVue, SASS, JavaScript and PHP.",
+    "date": "May 2025 - Dec. 2025"
+  },
+  {
+    "role": "Lead Senior Frontend Developer",
     "company": "Trivial",
     "description": "Played a key role in developing the front-end architecture for a next-generation invoice and billing application in the competitive fintech landscape. My responsibilities included designing and implementing intuitive UI components using Vue.js 3, Vuex for state management, and styling with HTML, SCSS, and PrimeVue/PrimeVueFlex. Integrated Chart.js for data visualization and utilized Git for version control and Trello for project management. Focused on creating a simplified and efficient experience for clients to create and track their invoices.",
     "date": "Apr. 2024 - Dec. 2024"

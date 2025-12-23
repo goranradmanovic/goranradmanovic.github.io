@@ -1,5 +1,16 @@
 [
   {
+    "name": "Onboarding App",
+    "url": "https://my.sqfin.com/register",
+    "img": "./assets/images/popup/onboardingapp.avif",
+    "text": [
+      "Engineered a streamlined onboarding experience that increased new client conversions by eliminating critical points of friction.",
+      "Improved the user experience by developing an intuitive multi-step form, utilizing fluid transitions to reduce cognitive load and simplify the data entry process.",
+      "Leveraged a modern tech stack including Nuxt 3, Pinia, and PrimeVue, with JavaScript (ES6) and PHP for development, and Git for version control."
+    ],
+    "tech": ["JavaScript (ES6)", "Nuxt 3", "Pina", "PrimeVue", "Tailwind", "PHP", "GIT"]
+  },
+  {
     "name": "Trivial",
     "url": "",
     "img": "./assets/images/popup/trivial.avif",
@@ -43,16 +54,6 @@
     "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Vuetify", "SASS", "GIT"]
   },
   {
-    "name": "Examiz",
-    "url": "https://app.examiz.net/",
-    "img": "./assets/images/popup/examiz.avif",
-    "text": [
-      "Contributed to the development of Examiz, an HR application with powerful features.",
-      "Used JavaScript (ES6), Vue 2, Vuex & Vue Router, and Google Map API in development."
-    ],
-    "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Google Map API", "SCSS", "GIT"]
-  },
-  {
     "name": "AleaBet",
     "url": "https://www.aleapartners.io/",
     "img": "./assets/images/popup/aleabet.avif",
@@ -72,6 +73,16 @@
       "Enhanced data presentation and optimized performance."
     ],
     "tech": ["HTML & CSS", "JavaScript & AngularJS", "PHP & MySQL", "NodeJS", "GIT", "JIRA"]
+  },
+  {
+    "name": "Examiz",
+    "url": "https://app.examiz.net/",
+    "img": "./assets/images/popup/examiz.avif",
+    "text": [
+      "Contributed to the development of Examiz, an HR application with powerful features.",
+      "Used JavaScript (ES6), Vue 2, Vuex & Vue Router, and Google Map API in development."
+    ],
+    "tech": ["JavaScript (ES6)", "Vue 2", "Vuex & Vue Router", "Google Map API", "SCSS", "GIT"]
   },
   {
     "name": "XE",
@@ -107,7 +118,7 @@
   },
   {
     "name": "The Fruits Of The Village",
-    "url": "",
+    "url": "https://www.facebook.com/plodovisela",
     "img": "./assets/images/popup/thefruitsofthevillage.avif",
     "text": [
       "Developed a frontend for an application promoting local organic products.",
@@ -250,7 +261,7 @@
     "text": [
       "This project was the culmination of my advanced PHP & MySQL course.",
       "My primary objective was to develop a custom Content Management System (CMS) with an administrative panel and a user-facing frontend.",
-      "The entire project was built using primarily PHP, MySQL, and a minimal amount of JavaScript." 
+      "The entire project was built using primarily PHP, MySQL, and a minimal amount of JavaScript."
     ],
     "tech": ["HTML & CSS", "PHP & MySQL", "JavaScript", "AJAX"]
   }

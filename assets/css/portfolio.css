@@ -48,7 +48,7 @@
 					opacity: .5;
 				}
 
-				&:hover > .portfolio__gallery__item__title, 
+				&:hover > .portfolio__gallery__item__title,
 				&:hover > .portfolio__gallery__item__btn {
 					opacity: 1;
 				}
@@ -203,6 +203,10 @@
 						list-style-type: none;
 						font-size: 1.1rem;
 						line-height: 1.4;
+
+						& .portfolio__gallery__dialog__wrapper__content__desc-list__item {
+						  margin-top: .5rem;
+						}
 					}
 
 					& .portfolio__gallery__dialog__wrapper__content__subtitle {
@@ -210,9 +214,23 @@
 					}
 
 					& .portfolio__gallery__dialog__wrapper__content__tech-list {
+			      display: flex;
+						flex-wrap: wrap;
+						justify-content: flex-start;
+						align-items: center;
+						gap: .25rem;
 						margin: unset;
-						font-size: 1.1rem;
+						padding: 1rem 0;
+						font-size: .8rem;
 						line-height: 1.4;
+						list-style: none;
+
+						& .portfolio__gallery__dialog__wrapper__content__tech-list__item {
+              padding: .25rem .5rem;
+              border-radius: 50px;
+              color: var(--white);
+              background-image: linear-gradient(to right top, #31333b, #655069, #ad6a7d, #e98f77, #ffc86b);
+						}
 					}
 
 					& .portfolio__gallery__dialog__wrapper__content__link {

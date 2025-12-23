@@ -60,7 +60,7 @@ export default customElements.define('portfolio-list', class extends HTMLElement
       dialog.close()
       desc.innerHTML = ''
       tech.innerHTML = ''
-      img.src = './assets/images/icons/addition/photo-placeholder.svg'
+      // img.src = './assets/images/icons/addition/photo-placeholder.svg'
       link.classList.remove('disabled-link')
     })
 
