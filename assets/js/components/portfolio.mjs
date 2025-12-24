@@ -60,7 +60,7 @@ export default customElements.define('portfolio-list', class extends HTMLElement
       dialog.close()
       desc.innerHTML = ''
       tech.innerHTML = ''
-      // img.src = './assets/images/icons/addition/photo-placeholder.svg'
+      img.src = './assets/images/icons/addition/photo-placeholder.svg'
       link.classList.remove('disabled-link')
     })
 
@@ -82,7 +82,9 @@ export default customElements.define('portfolio-list', class extends HTMLElement
         class: 'portfolio__gallery__item__img',
         alt: 'Portfolio gallery image',
         src: `./assets/images/projects/${item.name.toLowerCase().replaceAll(' ', '')}.avif`,
-        loading: 'lazy'
+        loading: 'lazy',
+        width: "256",
+        height: "256"
       })
 
       const itemTitle = this.createEl('span', { class: 'portfolio__gallery__item__title' }, item.name)
