@@ -274,6 +274,10 @@
         "content": "en-us"
       },
       {
+        "http-equiv": "Content-Security-Policy",
+        "content": "script-src 'none'"
+      },
+      {
         "name": "robots",
         "content": "index, follow"
       },
