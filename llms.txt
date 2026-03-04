@@ -1,0 +1,60 @@
+title: Goran Radmanovic — Senior Web Developer
+
+description: |
+  Senior Web Developer with 8+ years of experience in building high-quality, user-centric web solutions
+  using Vue, Nuxt, JavaScript, and PHP. Passionate about modern technologies and delivering exceptional
+  web projects across industries like IoT, E-commerce, Betting, and Fintech. Available for freelance
+  collaboration.
+
+sections:
+  - about_me:
+      text: |
+        I am a highly motivated and results-oriented web developer with 8+ years of experience. 
+        I embrace new technologies, learn quickly, and excel in delivering user-friendly and 
+        visually appealing websites tailored to client needs.
+
+  - skills:
+      list:
+        - Vue.js
+        - Nuxt.js
+        - JavaScript
+        - PHP
+        - HTML
+        - CSS
+        - Web Development
+        - Modern Frontend Technologies
+        - SPA & PWA Concepts
+        - UI/UX Focused Development
+
+  - experience:
+      text: |
+        Professional experience includes crafting robust web apps and collaborating across diverse industries.
+        Expertise spans frontend development, full stack features, responsive design, performance optimization,
+        and freelance project delivery.
+
+  - portfolio:
+      text: |
+        Portfolio section showcases project work, case studies, or examples of completed web solutions.
+        (Displayed on the portfolio website.)
+
+  - contact:
+      email: goranradmanovic@gmail.com
+      location: Bosnia and Herzegovina
+      additional: |
+        Links to social media and CV download are available on the website.
+
+contact_links:
+  - email: goranradmanovic@gmail.com
+  - website: https://goranradmanovic.github.io/
+  - cv_download: available on site
+
+keywords:
+  - web development
+  - senior developer
+  - Vue
+  - Nuxt
+  - JavaScript
+  - PHP
+  - frontend
+  - freelance
+  - portfolio
