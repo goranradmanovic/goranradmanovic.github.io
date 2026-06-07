@@ -39,7 +39,7 @@
     {
       "name": "Portfolio",
       "short_name": "Portfolio",
-      "url": "#portfolio",
+      "url": "#projects",
       "description": "Access Portfolio section",
       "icons": [
         {
