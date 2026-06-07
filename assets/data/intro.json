@@ -1,0 +1,16 @@
+{
+    "title": "Goran Radmanovic",
+    "headline": [
+        { "text": "Senior Web Developer | ", "highlight": false },
+        { "text": "8+ Years of Experience", "highlight": true }
+    ],
+    "subheadline": [
+        { "text": "Crafting high-quality, user-centric web solutions using cutting-edge technologies like ", "highlight": false },
+        { "text": "Vue, Nuxt, JavaScript, and PHP. ", "highlight": true },
+        { "text": "Proven expertise across diverse industries, including IoT, E-commerce, Betting, and Fintech.", "highlight": false }
+    ],
+    "link": {
+        "url": "#contact",
+        "text": "Let's Collaborate"
+    }
+}

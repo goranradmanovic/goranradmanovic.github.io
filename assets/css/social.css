@@ -10,7 +10,7 @@
 			width: 2rem;
 			height: 2rem;
 
-			& .social__link__icon {
+			& .social__icon {
 				display: inline-block;
 				width: 2rem;
 				height: 2rem;
@@ -19,19 +19,19 @@
 				background-position: center;
 				transition: all 400ms ease-in-out;
 
-				&.linkedin {
+				&.social__icon--linkedin {
 					background-image: url('../images/icons/social-media/linkedin.svg');
 				}
 
-				&.gmail {
+				&.social__icon--gmail {
 					background-image: url('../images/icons/social-media/envelope.svg');
 				}
 
-				&.github {
+				&.social__icon--github {
 					background-image: url('../images/icons/social-media/github.svg');
 				}
 
-				&.x {
+				&.social__icon--x {
 					background-image: url('../images/icons/social-media/x.svg');
 				}
 			}

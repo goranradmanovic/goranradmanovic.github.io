@@ -1,0 +1,21 @@
+{
+    "title": "Contact",
+    "links": [
+        {
+            "href": "mailto:goranradmanovic@gmail.com",
+            "text": "goranradmanovic@gmail.com",
+            "rel": "noreferrer",
+            "label": "Gmail",
+            "target": "_blank",
+            "icon": "envelope-outline"
+        },
+        {
+            "href": "https://www.google.com/maps/place/45.14590321673465,17.24973928890702",
+            "text": "Bosnia and Herzegovina",
+            "rel": "noreferrer",
+            "label": "Google map",
+            "target": "_blank",
+            "icon": "pin"
+        }
+    ]
+}

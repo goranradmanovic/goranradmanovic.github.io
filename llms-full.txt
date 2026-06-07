@@ -1,0 +1,72 @@
+# Goran Radmanovic — Senior Web Developer (Comprehensive Profile)
+
+> Full technical dossier, detailed skill matrix, and project implementation frameworks for Senior Web Developer Goran Radmanovic.
+
+## About Me & Professional Philosophy
+
+I am a highly motivated, results-oriented Senior Web Developer with over 8 years of professional experience. My core expertise lies in architecting user-centric, high-performance web applications using modern frontend and backend technologies. I fast-track the adoption of emerging tech stacks, learn rapidly, and excel at delivering visually appealing, intuitive digital products tailored to precise client specifications. 
+
+### Core Specializations
+- **Architectural Design:** Crafting Single Page Applications (SPAs) and Progressive Web Applications (PWAs) with a heavy focus on performance and SEO optimization.
+- **Industry Experience:** Delivering robust software solutions across highly competitive, high-traffic sectors including IoT (Internet of Things), E-commerce, Sports Betting platforms, and Fintech systems.
+- **Collaboration Model:** Available for specialized freelance collaboration, remote contract engineering, and technical consulting.
+
+---
+
+## Detailed Technical Skill Matrix
+
+### Frontend Ecosystem
+- **Frameworks:** Vue.js (v2/v3), Nuxt.js (Server-Side Rendering & Static Site Generation)
+- **Core Languages:** JavaScript (ES6+), HTML5, CSS3 / Advanced Semantic Web
+- **Styling & UI:** Responsive Design, UI/UX Focused Development, Tailwind CSS, Sass/SCSS
+- **Application Types:** Single Page Applications (SPA), Progressive Web Applications (PWA)
+
+### Backend & Full Stack Integration
+- **Core Languages:** PHP, NodeJS
+- **Concepts:** Full-stack feature integration, RESTful API consumption and development, State Management (Pinia/Vuex), Modern Frontend Technologies integration.
+
+### Performance & Quality Assurance
+- **Optimization:** Code splitting, lazy loading, asset optimization, web vitals enhancement, and cross-browser performance tuning.
+- **UX Engineering:** Component-driven development, semantic accessibility, and clean interface animations.
+
+---
+
+## Professional Experience & Implementation Methodologies
+
+My career spans over eight years of engineering robust web applications, collaborating within cross-functional teams, and managing direct client relationships as a freelancer. 
+
+### Key Technical Competencies Demonstrated:
+- **Scalable Architecture:** Building modular frontend systems utilizing Vue and Nuxt that scale smoothly under heavy user loads.
+- **Cross-Industry Domain Expertise:** 
+  - *IoT:* Engineering dashboards to visualize complex real-time data streaming from connected hardware.
+  - *E-commerce:* Architecting secure, fast checkout funnels and highly responsive product catalog engines.
+  - *Betting & Fintech:* Creating low-latency, real-time data rendering setups capable of handling instant financial transactions or rapid odds updates safely.
+- **Freelance Project Delivery:** Full lifecycle management from initial discovery and wireframing up to deployment, continuous integration, and cloud hosting setup.
+
+---
+
+## Portfolio & Case Studies
+
+*Note: Live project work, interactive case studies, and visual walkthroughs of completed web solutions are dynamically managed and displayed via the main portfolio website.*
+
+### Highlighted Project Typologies Covered:
+1. **Dynamic Content Hubs:** Built with Nuxt.js for optimized server-side rendering, instant page transitions, and automated schema injection.
+2. **Interactive Dashboards:** Developed with Vue.js, utilizing lightweight state management and optimized reactivity pipelines for data-dense interfaces.
+3. **E-commerce Solutions:** High-conversion storefronts integrated with modern checkout systems and headless CMS platforms.
+
+---
+
+## Contact Information & Discoverability
+
+- **Location:** Bosnia and Herzegovina
+- **Email:** goranradmanovic@gmail.com
+- **Main Portfolio Website:** https://goranradmanovic.github.io/
+- **Official Curriculum Vitae (PDF):** https://goranradmanovic.github.io/assets/pdf/cv.pdf
+
+### Additional Resources
+Social media connectivity, deep-dive project repositories, code samples, and direct client recommendations are accessible directly via the web links provided above.
+
+---
+
+### Machine-Readable Index & Keywords
+`web-development` `senior-developer` `vue-js` `nuxt-js` `javascript` `php` `node-js` `ai` `ai agents` `frontend-engineering` `freelance-consulting` `portfolio` `spa` `pwa` `iot-dashboards` `e-commerce-development` `fintech-ui` `betting-platforms`

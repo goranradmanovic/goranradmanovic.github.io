@@ -29,6 +29,7 @@
 		background-color: var(--primary);
 
 		& main {
+			position: relative;
 			width: 1440px;
 			max-width: 95%;
 			margin: 0 auto;
@@ -36,6 +37,31 @@
 			padding-bottom: .3rem;
 			border-radius: 4px;
 			border: 1px groove var(--secondary);
+
+			& section {
+				/* Define the animation name and duration (duration acts as a fallback/scale) */
+				animation-name: fade-out;
+				animation-duration: auto; /* covered by the timeline */
+				/* Link the animation to the element's view timeline */
+				animation-timeline: view();
+				/* Defines WHEN the animation happens. 
+					This starts fading when the element's top exits the screen 
+					and finishes when the element's bottom exits. */
+				animation-range: exit 0% exit 110%;
+				/* Keeps the final state (opacity: 0) when the animation finishes */
+				animation-fill-mode: both;
+			}
+		}
+	}
+
+	@keyframes fade-out {
+		from {
+			opacity: 1;
+			transform: scale(1);
+		}
+		to {
+			opacity: .2;
+			transform: scale(0.95); /* Subtle shrink effect */
 		}
 	}
 }

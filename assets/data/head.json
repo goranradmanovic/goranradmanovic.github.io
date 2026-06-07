@@ -275,7 +275,7 @@
       },
       {
         "http-equiv": "Content-Security-Policy",
-        "content": "script-src 'none'"
+        "content": "default-src 'self'; img-src https://goranradmanovic.github.io/;"
       },
       {
         "name": "robots",

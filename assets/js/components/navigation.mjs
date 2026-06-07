@@ -1,89 +1,111 @@
-export default customElements.define('navigation-links', class extends HTMLElement {
-    constructor() {
-      super()
-      this.render()
-      window.addEventListener('hashchange', this.onHashChange.bind(this))
-      window.addEventListener('scroll', this.onScroll.bind(this))
-    }
+import navigation from '../../data/min/navigation.json' with { type: 'json' }
+import { createElement } from '../utils/create-element.mjs'
 
-    // Render the navigation element and its links
-    render() {
-      this.innerHTML = `<nav role="navigation" class="header__nav"></nav>`
-      this.nav = this.querySelector('.header__nav')
-      this.navLinks = ['about', 'skills', 'experience', 'portfolio', 'contact']
-      this.sections = [...document.querySelectorAll('section')]
-      this.createNavLinks(this.navLinks)
-    }
+class MainNavigation extends HTMLElement {
+  #initialized
+  #nav
+  #sections
+  #navLinks
+  #observer
 
-    // Handle events
-    handleEvent(event) {
-      this[`on${event.type}`]?.(event)
-    }
-
-    // on click event
-    onclick(event) {
-      this.setActiveLink(event)
-    }
-
-    // on hash change event
-    onHashChange() {
-      this.setActiveLink()
-    }
-
-    // on scroll event
-    onScroll() {
-      const scrollY = window.scrollY
-      let currentSectionIndex = 0
-
-      for (let i = 0; i < this.sections.length; i++) {
-        const section = this.sections[i],
-            sectionTop = section.offsetTop,
-            sectionBottom = sectionTop + section.clientHeight
-
-        if (scrollY >= sectionTop && scrollY < sectionBottom) {
-          currentSectionIndex = i
-          break
-        }
-      }
-
-      const currentHash = `#${this.navLinks[currentSectionIndex]}`
-      
-      if (window.location.hash !== currentHash) {
-        history.pushState(null, null, currentHash)
-      }
-
-      this.setActiveLink()
-    }
-
-    // Utility to create links and append to nav
-    createNavLinks(links) {
-      this.nav.append(
-        ...links.map((item) => this.createLink(item))
-      )
-    }
-
-    // Utility to create a single link element
-    createLink(item) {
-      const link = document.createElement('a')
-      link.className = 'header__nav__link'
-      link.href = `#${item}`
-      link.textContent = item
-      link.addEventListener('click', this)
-      return link
-    }
-
-    setActiveLink(event = null) {
-      const currentLink = event ? event.target : this.nav.querySelector(`a[href="${window.location.hash}"]`)
-      
-      if (currentLink) {
-        this.nav.querySelectorAll('.active__link').forEach(link => {
-          link.classList.remove('active__link')
-          link.setAttribute('aria-current', 'false')
-        })
-
-        currentLink.classList.add('active__link')
-        currentLink.setAttribute('aria-current', 'true')
-      }
-    }
+  constructor() {
+    super()
+    this.#initialized = false
+    this.#nav = null
+    this.#observer = null
+    this.#sections = []
+    this.#navLinks = []
   }
-)
+
+  connectedCallback() {
+    if (this.#initialized) return
+
+    this.#initialized = true
+    this.render()
+    this.initObserver()
+    this.setActiveLink(location.hash.slice(1))
+  }
+
+  disconnectedCallback() {
+    this.#observer?.disconnect()
+  }
+
+  // Render the navigation element and its links
+  render() {
+    const nav = createElement('nav', { class: 'header__nav', id: 'main-navigation' })
+    this.replaceChildren(nav)
+    this.#nav = nav
+    this.#navLinks = navigation.items || ['About', 'Skills', 'Experience', 'Projects', 'Contact']
+    this.#sections = this.#navLinks.map(link => document.getElementById(link.name.toLowerCase())).filter(Boolean)
+    this.createNavLinks(this.#navLinks)
+  }
+
+  // Handle events
+  handleEvent(event) {
+    this[`on${event.type}`]?.(event)
+  }
+
+  // on click event
+  onclick(event) {
+    const id = event.target.closest('a')?.hash?.slice(1)
+    if (id) this.setActiveLink(id)
+  }
+
+  // on hash change event
+  /*onHashChange(event) {
+    this.setActiveLink(event.traget.innerText.toLowerCase())
+  }*/
+
+  initObserver() {
+    this.#observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return
+
+          const sectionId = entry.target.id
+          this.setActiveLink(sectionId)
+          history.replaceState(null, '', `#${sectionId}`)
+        })
+      },
+      {
+        threshold: 0.5
+      }
+    )
+
+    this.#sections.forEach(section => {
+      this.#observer.observe(section)
+    })
+  }
+
+  // Utility to create links and append to nav
+  createNavLinks(links) {
+    this.#nav.append(
+      ...links.map((item) => this.createLink(item))
+    )
+  }
+
+  // Utility to create a single link element
+  createLink(item) {
+    const link = createElement('a', { class: 'header__link', href: `${item?.href}` }, item?.name)
+    link.addEventListener('click', this)
+    return link
+  }
+
+  setActiveLink(sectionId) {
+    this.#nav.querySelectorAll('.header__link').forEach(link => {
+      const isActive = link.getAttribute('href') === `#${sectionId}`
+
+      link.classList.toggle('header__link--active', isActive)
+
+      if (isActive) {
+        link.setAttribute('aria-current', 'page')
+      } else {
+        link.removeAttribute('aria-current')
+      }
+    })
+  }
+}
+
+customElements.define('main-navigation', MainNavigation)
+
+export default MainNavigation

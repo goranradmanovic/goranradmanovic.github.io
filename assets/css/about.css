@@ -17,7 +17,7 @@
 			flex-direction: column;
 			gap: 1rem;
 
-			& p:first-child {
+			& p:nth-child(2) {
 				position: relative;
 
 				&::before {
@@ -32,13 +32,13 @@
 				}
 			}
 
-			& .about__content__txt {
+			& .about__text {
 				margin: unset;
 				padding-left: 4rem;
 				font-size: 1.4rem;
 				color: var(--white);
 
-				& .about__content__txt--highlight {
+				& .about__highlight {
 					color: var(--secondary);
 				}
 			}

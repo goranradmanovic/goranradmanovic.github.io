@@ -3,13 +3,16 @@
 @import 'reset.css' layer(reset);
 @import 'theme.css' layer(theme);
 @import 'layout.css' layer(layout);
+@import 'pwa-toast.css' layer(pwatoast);
 @import 'header.css' layer(header);
 @import 'intro.css' layer(intro);
 @import 'about.css' layer(about);
 @import 'social.css' layer(social);
 @import 'skills.css' layer(skills);
 @import 'experience.css' layer(experience);
-@import 'portfolio.css' layer(portfolio);
+@import 'projects.css' layer(projects);
 @import 'contact.css' layer(contact);
 @import 'footer.css' layer(footer);
-@import 'media-query.css'
+@import 'cookie.css' layer(cookie);
+@import 'modal.css' layer(modal);
+@import 'media-query.css';

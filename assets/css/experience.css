@@ -21,6 +21,14 @@
 			font-family: 'Lora', sans-serif;
 		}
 
+		& .experience__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-items: center;
+			gap: 3rem;
+		}
+
 		& .experience__list {
 			position: relative;
 			display: flex;
@@ -31,7 +39,7 @@
 			padding-left: 4rem;
 			list-style-type: none;
 
-			& .experience__list__item {
+			& .experience__item {
 				position: relative;
 				padding-left: 2rem;
 				opacity: 1;
@@ -67,27 +75,22 @@
 					background-color: var(--white);
 				}
 
-				&.hide {
-					display: none;
-					opacity: 0;
-				}
-
-				& .experience__list__item__role {
+				& .experience__role {
 					font-size: clamp(1.2rem, 4vw, 1.6rem);
 					font-weight: 600;
 					margin: unset;
 				}
 
-				& .experience__list__item__company {
+				& .experience__company {
 					font-size: clamp(1rem, 4vw, 1.2rem);
 				}
 
-				& .experience__list__item__description {
+				& .experience__description {
 					font-size: 1rem;
 					color: var(--gray);
 				}
 
-				& .experience__list__item__time {
+				& .experience__time {
 					position: absolute;
 					left: -14rem;
 					padding-block: .35rem;
@@ -105,12 +108,14 @@
 					}
 				}
 			}
+
+			& .experience__item--hidden {
+				display: none;
+				opacity: 0;
+			}
 		}
 
-		& .experience__btn {
-			position: absolute;
-			left: calc(50% - 4.312rem);
-			bottom: 5rem;
+		& .experience__button {
 			padding-block: .4rem;
 			padding-inline: 1rem;
 			border: 2px solid var(--secondary);
@@ -129,10 +134,14 @@
 				opacity: 1;
 			}
 
-			&.hide {
-				display: none;
-				opacity: 0;
+			&:hover {
+				border-color: color-mix(in srgb, var(--secondary) 70%, transparent);
 			}
+		}
+
+		& .experience__button--hidden {
+			display: none;
+			opacity: 0;
 		}
 	}
 }

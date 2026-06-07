@@ -1,5 +1,4 @@
-/* theme colors */
-
+/* Theme colors */
 @layer theme {
 	:root {
 		--primary: #31333B;
@@ -7,5 +6,7 @@
 		--white: #fefefe;
 		--light-gray: #3d3e42;
 		--gray: #AEAEAE;
+		--primary-light: #3b3f49;
+        --primary-dark: #1b2028;
 	}
 }

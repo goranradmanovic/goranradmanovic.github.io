@@ -15,6 +15,7 @@
 		& .contact__title {
 			position: absolute;
 			top: -2rem;
+			left: calc(50% - 121px);
 			z-index: 1;
 			margin: unset;
 			padding-inline: 2rem;
@@ -33,7 +34,7 @@
 			gap: 1rem;
 			width: 100%;
 
-			& .contact__info__link {
+			& .contact__link {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -53,7 +54,7 @@
 					background-color: rgba(255, 200, 107, .8);
 				}
 
-				& .contact__info__link__icon {
+				& .contact__icon {
 					display: flex;
 					width: 3.125rem;
 					height: 3.125rem;

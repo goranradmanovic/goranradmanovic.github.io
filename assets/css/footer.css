@@ -21,6 +21,7 @@
 		}
 
 		& .footer__download {
+			position: relative;
 			display: flex;
 			align-items: baseline;
 			gap: .5rem;
@@ -30,66 +31,55 @@
 			border-radius: 4px;
 			font-weight: 500;
 			text-decoration: none;
+			overflow: hidden;
 			color: var(--primary);
 			background-color: var(--secondary);
-			position: relative;
 
-			&::before {
-				content: '';
+			&:after {
+				content: "";
 				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
+				top: -50px;
+				left: -75px;
 				z-index: 1;
-				transition: all 400ms;
+				transform: rotate(35deg);
+				width: 50px;
+				height: 155px;
+				opacity: .2;
+				background-color: var(--white);
+				transition: all 550ms cubic-bezier(.19, 1, .22, 1);
 			}
 
-			&:hover::before {
-				opacity: 0 ;
-				transform: scale(0.5,0.5);
+			&:hover {
+				&:after {
+					left: 120%;
+				}
 			}
 
-			&::after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 1;
-				opacity: 0;
-				border-radius: 4px;
-				border: 1px solid rgba(255, 200, 107, .5);
-				transition: all 400ms;
-				transform: scale(1.2,1.2);
-			}
-
-			&:hover::after {
-				opacity: 1;
-				transform: scale(1,1);
-			}
-
-			.footer__download__icon {
+			.footer__icon {
 				width: 1.2rem;
 				height: 1.2rem;
 			}
 		}
 
 		& .footer__copy {
-			margin: unset;
+			margin-bottom: unset;
 			font-size: .8rem;
 			font-weight: 500;
+			text-align: center;
 			color: var(--white);
 		}
 
 		& .footer__link {
-      position: absolute;
-      top: 70%;
-      left: 96.5%;
-      display: inline-block;
-      width: 2rem;
-      height: 2rem;
+			position: absolute;
+			top: 70%;
+			left: 97%;
+			display: inline-block;
+			width: 2rem;
+			height: 2rem;
+
+			&:hover {
+				opacity: .9;
+			}
 		}
 	}
 }

@@ -13,7 +13,7 @@
 			place-self:	center;
 			justify-self: end;
 
-			& .intro__content__title {
+			& .intro__title {
 				margin: unset;
 				font-family: 'Lora', sans-serif;
 				font-size: clamp(2.6rem, 4vw, 4rem);
@@ -21,22 +21,22 @@
 				color: var(--secondary);
 			}
 
-			& .intro__content__headline, & .intro__content__subheadline {
+			& .intro__headline, & .intro__subheadline {
 				margin-block: .3rem;
 				font-size: 1.4rem;
 				text-wrap: balance;
 				color: var(--white);
 
-				& .intro__content__headline--highlight {
+				& .intro__headline__highlight, .intro__subheadline__highlight {
 					color: var(--secondary);
 				}
 			}
 
-			& .intro__content__subheadline {
+			& .intro__subheadline {
 				font-size: 1.2rem;
 			}
 
-			& .intro__content__link {
+			& .intro__link {
 				position: relative;
 				display: inline-block;
 				margin-top: 1rem;
@@ -45,7 +45,7 @@
 				border: 2px solid var(--secondary);
 				border-radius: 4px;
 				font-size: 1.2rem;
-				font-weight: 500;
+				font-weight: 600;
 				text-decoration: none;
 				overflow: hidden;
 				color: var(--primary);
@@ -74,14 +74,14 @@
 			}
 		}
 
-		& .intro__picture {
+		& .intro__image-social {
 			position: relative;
 
-			& .intro__img, .intro__social {
+			& .intro__image, .intro__social {
 				grid-column: 2;
 			}
 
-			& .intro__img {
+			& .intro__image {
 				position: relative;
 				height: 51rem;
 				background-image: url('../images/profile/goran.avif');

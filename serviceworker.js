@@ -1,226 +1,126 @@
-'use strict';
+'use strict'
 
-// Configuration
-const VERSION = '1.0.1';
-const CACHE_NAME = `${VERSION}::PWAsite`;
+const VERSION = '1.0.2'
+const CACHE_NAME = `${VERSION}::PWAsite`
 
-// Essential files for offline functionality
 const ESSENTIAL_FILES = [
     '/',
     '/index.html',
     '/404.html',
-    '/manifest.json',
-    '/assets/css/main.min.css',
-    '/assets/js/index.mjs',
-];
-
-// Desirable files to pre-cache if possible
-const DESIRABLE_FILES = [
-    '/assets/images/icons/favicon.ico',
-    '/assets/images/icons/addition/close.svg',
-    '/assets/images/icons/addition/dot-grid.svg',
-    '/assets/images/icons/addition/envelope-outline.svg',
-    '/assets/images/icons/addition/logo.svg',
-    '/assets/images/icons/addition/map-pin.svg',
-    '/assets/images/icons/addition/pdf.svg',
-    '/assets/images/icons/addition/phone.svg',
-    '/assets/images/icons/addition/photo-placeholder.svg',
-    '/assets/images/icons/addition/404.svg',
-    '/assets/images/icons/social-media/envelope.svg',
-    '/assets/images/icons/social-media/github.svg',
-    '/assets/images/icons/social-media/linkedin.svg',
-    '/assets/images/icons/social-media/x.svg',
-    //'/assets/images/icons/skills/api.svg',
-    //'/assets/images/icons/skills/code.svg',
-    //'/assets/images/icons/skills/webpack.svg',
-    //'/assets/images/icons/skills/pug.svg',
-    //'/assets/images/icons/skills/responsive-design.svg',
-    //'/assets/images/icons/skills/prestashop.svg',
-    //'/assets/images/icons/skills/shopify.svg',
-    '/assets/images/icons/skills/css.svg',
-    '/assets/images/icons/skills/firebase.svg',
-    '/assets/images/icons/skills/git.svg',
-    '/assets/images/icons/skills/gulp.svg',
-    '/assets/images/icons/skills/html.svg',
-    '/assets/images/icons/skills/js.svg',
-    '/assets/images/icons/skills/laravel.svg',
-    '/assets/images/icons/skills/mysql.svg',
-    '/assets/images/icons/skills/php.svg',
-    '/assets/images/icons/skills/pwa.svg',
-    '/assets/images/icons/skills/sass.svg',
-    '/assets/images/icons/skills/vuejs.svg',
-    '/assets/images/icons/skills/vuetify.svg',
-    '/assets/images/icons/skills/nuxt.svg',
-    '/assets/images/icons/skills/nodejs.svg',
-    '/assets/images/icons/skills/primevue.svg',
-    '/assets/images/icons/skills/bootstrap.svg',
-    '/assets/images/icons/skills/livewire.svg',
-    '/assets/images/icons/skills/alpinejs.svg',
-    '/assets/images/icons/footer/arrow-top.svg',
-    '/assets/images/meta/gr-thumbnail.jpg',
-    '/assets/images/profile/goran.avif',
-    '/assets/images/projects/airquality.avif',
-    '/assets/images/projects/aleabet.avif',
-    '/assets/images/projects/aleabetlists.avif',
-    '/assets/images/projects/b2bplatform.avif',
-    '/assets/images/projects/bplace.avif',
-    '/assets/images/projects/chatty.avif',
-    //'/assets/images/projects/dynamic-layout.avif',
-    '/assets/images/projects/einfo.avif',
-    '/assets/images/projects/examiz.avif',
-    '/assets/images/projects/goranradmanovic.avif',
-    '/assets/images/projects/jatheoncloud.avif',
-    '/assets/images/projects/keno.avif',
-    '/assets/images/projects/mascaro.avif',
-    '/assets/images/projects/mondrian.avif',
-    '/assets/images/projects/nikom.avif',
-    '/assets/images/projects/niotix.avif',
-    '/assets/images/projects/oldportfolio.avif',
-    '/assets/images/projects/oomovers.avif',
-    '/assets/images/projects/prettyballerinas.avif',
-    '/assets/images/projects/rhmzrs.avif',
-    '/assets/images/projects/stealio.avif',
-    '/assets/images/projects/thefruitsofthevillage.avif',
-    '/assets/images/projects/trendseam.avif',
-    '/assets/images/projects/trivial.avif',
-    '/assets/images/projects/tsd.avif',
-    '/assets/images/projects/xe.avif',
-    '/assets/images/projects/onboardingapp.avif',
-    '/assets/images/popup/airquality.avif',
-    '/assets/images/popup/aleabet.avif',
-    '/assets/images/popup/aleabetlist.avif',
-    '/assets/images/popup/b2b.avif',
-    '/assets/images/popup/bplace.avif',
-    '/assets/images/popup/chatty.avif',
-    //'/assets/images/popup/dynamiclayout.avif',
-    '/assets/images/popup/einfo.avif',
-    '/assets/images/popup/examiz.avif',
-    '/assets/images/popup/goranradmanovic.avif',
-    '/assets/images/popup/jatheon.avif',
-    '/assets/images/popup/keno.avif',
-    '/assets/images/popup/mascaro.avif',
-    '/assets/images/popup/mondrian.avif',
-    '/assets/images/popup/nikom.avif',
-    '/assets/images/popup/niotix.avif',
-    '/assets/images/popup/oldportfolio.avif',
-    '/assets/images/popup/oomovers.avif',
-    '/assets/images/popup/prettyballerinas.avif',
-    '/assets/images/popup/rhmzrs.avif',
-    '/assets/images/popup/stealio.svg',
-    '/assets/images/popup/stealio.avif',
-    '/assets/images/popup/thefruitsofthevillage.avif',
-    '/assets/images/popup/trendseam.avif',
-    '/assets/images/popup/trivial.avif',
-    '/assets/images/popup/tsd.avif',
-    '/assets/images/popup/xe.avif',
-    '/assets/images/popup/onboardingapp.avif',
-    '/assets/images/screenshots/desktop/desktop-home.webp',
-    '/assets/images/screenshots/mobile/desktop-mobile.webp',
+    '/pages/privacy-policy.html',
     '/assets/pdf/cv.pdf',
-    '/assets/data/experience-list.json',
-    '/assets/data/projects-list.json',
-    '/assets/data/head.json'
+    '/manifest.json',
+    
+    // Main Entry Points
+    '/assets/css/main.min.css',
+    '/assets/js/index.min.js',
+
+    // JS Utilities
+    '/assets/js/utils/gtag-cookie.min.js'
 ];
 
-// Helper Functions
-const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg', 'avif']);
+const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg', 'avif'])
 
-/**
- * Checks if a URL corresponds to an image.
- * @param {string} url - The URL to check.
- * @returns {boolean} - True if the URL is an image.
- */
-function isImage(url) {
-    const ext = url.split('.').pop();
-    return IMAGE_EXTENSIONS.has(ext);
+// Helpers
+function isImage(urlStr) {
+    const ext = urlStr.split('.').pop().split('?')[0] // strip query params if any
+    return IMAGE_EXTENSIONS.has(ext)
 }
 
-/**
- * Checks if a URL has a supported scheme.
- * @param {string} url - The URL to check.
- * @returns {boolean} - True if the scheme is supported (http or https).
- */
-function isSupportedScheme(url) {
-    return url.startsWith('http://') || url.startsWith('https://');
+function isDataOrDocument(request, url) {
+    return (
+        request.destination === 'document' || 
+        url.pathname.endsWith('.json') || 
+        url.pathname.includes('/assets/data/')
+    )
 }
 
-/**
- * Provides a placeholder for offline image requests.
- * @returns {Response} - An SVG placeholder response.
- */
 function offlineImageResponse() {
     const svg = `
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#eee" d="M0 0h400v300H0z"/>
-            <text x="200" y="150" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="20" fill="#ccc">
-                Offline
-            </text>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 120 120">
+            <path fill="#eff1f3" d="M0 0h120v120H0z"/>
+            <path fill="#687787" fill-rule="evenodd" d="M33.25 38.482a2.625 2.625 0 0 1 2.604-2.607h47.292a2.606 2.606 0 0 1 2.604 2.607v42.036a2.625 2.625 0 0 1-2.604 2.607H35.854a2.607 2.607 0 0 1-2.604-2.607zm47.25 2.643h-42v36.75l24.392-24.397a2.625 2.625 0 0 1 3.712 0L80.5 67.401zm-36.75 10.5a5.25 5.25 0 1 0 10.5 0 5.25 5.25 0 0 0-10.5 0" clip-rule="evenodd"/>
         </svg>`;
-    return new Response(svg, {
-        headers: {
-            'Content-Type': 'image/svg+xml',
-            'Cache-Control': 'no-store',
-        },
-    });
+    return new Response(svg, { headers: { 'Content-Type': 'image/svg+xml' } })
 }
 
-// Cache Management
-
-/**
- * Caches essential static files.
- * @returns {Promise} - Resolves when caching is complete.
- */
-function cacheEssentialFiles() {
-    return caches.open(CACHE_NAME).then((cache) => cache.addAll(ESSENTIAL_FILES));
+// 1. STRATEGY: Network-First (For HTML, JSON data)
+async function networkFirstStrategy(request) {
+    const cache = await caches.open(CACHE_NAME)
+    try {
+        const networkResponse = await fetch(request)
+        if (networkResponse.ok) {
+            cache.put(request, networkResponse.clone())
+        }
+        return networkResponse
+    } catch (error) {
+        const cachedResponse = await cache.match(request)
+        if (cachedResponse) return cachedResponse
+        
+        // Return 404 page if offline and trying to access a page
+        if (request.destination === 'document') {
+            const errorCache = await caches.match('/404.html')
+            if (errorCache) return errorCache
+        }
+        throw error
+    }
 }
 
-/**
- * Clears old caches.
- * @returns {Promise} - Resolves when old caches are deleted.
- */
-function clearOldCaches() {
-    return caches.keys().then((keys) =>
-        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
-    );
+// 2. STRATEGY: Cache-First (For CSS, JS, Images, PDFs)
+async function cacheFirstStrategy(request, url) {
+    const cache = await caches.open(CACHE_NAME)
+    const cachedResponse = await cache.match(request)
+    if (cachedResponse) return cachedResponse
+
+    try {
+        const networkResponse = await fetch(request)
+        if (networkResponse.ok) {
+            cache.put(request, networkResponse.clone())
+        }
+        return networkResponse
+    } catch (error) {
+        if (isImage(url.pathname)) {
+            return offlineImageResponse()
+        }
+        // If CV or critical asset fails and no cache exists
+        return new Response('Offline content unavailable.', { status: 503, statusText: 'Offline' })
+    }
 }
 
-// Service Worker Event Listeners
-
-// Install
-self.addEventListener('install', (event) => {
+// Lifecycles
+self.addEventListener('install', event => {
     event.waitUntil(
-        cacheEssentialFiles().then(() => self.skipWaiting())
-    );
-});
+        caches.open(CACHE_NAME).then(cache => cache.addAll(ESSENTIAL_FILES))
+    )
+})
 
-// Activate
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
     event.waitUntil(
-        clearOldCaches().then(() => self.clients.claim())
-    );
-});
+        caches.keys()
+            .then(keys => Promise.all(
+                keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
+            ))
+            .then(() => self.clients.claim())
+    )
+})
 
-// Fetch
-self.addEventListener('fetch', (event) => {
-    if (event.request.method !== 'GET') return;
+// Interceptor
+self.addEventListener('fetch', event => {
+    if (event.request.method !== 'GET') return
 
-    const url = event.request.url;
+    const url = new URL(event.request.url)
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return
 
-    // Skip unsupported schemes
-    if (!isSupportedScheme(url)) return;
+    if (isDataOrDocument(event.request, url)) {
+        event.respondWith(networkFirstStrategy(event.request))
+    } else {
+        event.respondWith(cacheFirstStrategy(event.request, url))
+    }
+})
 
-    event.respondWith(
-        caches.open(CACHE_NAME).then((cache) =>
-            cache.match(event.request).then((cachedResponse) => {
-                if (cachedResponse) return cachedResponse;
-
-                return fetch(event.request)
-                    .then((networkResponse) => {
-                        if (networkResponse.ok) cache.put(event.request, networkResponse.clone());
-                        return networkResponse;
-                    })
-                    .catch(() => (isImage(url) ? offlineImageResponse() : null));
-            })
-        )
-    );
-});
+// Listen for messages from the pwa-toast component
+self.addEventListener('message', event => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting()
+    }
+})

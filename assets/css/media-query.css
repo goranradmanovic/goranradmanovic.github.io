@@ -1,10 +1,15 @@
 @media screen and (max-width: 1024px) {
 	main {
-		width: 100%;
+		width: auto;
 		max-width: unset;
 	}
 
-	.portfolio__gallery__dialog {
+	.pwa__toast {
+		position: unset;
+		margin-block: .25rem;
+	}
+
+	.modal {
 		width: 100%;
 	}
 
@@ -30,7 +35,7 @@
 		}
 	}
 	
-	.intro, .about, .skills, .experience, .portfolio, .contact {
+	.intro, .about, .skills, .experience, .projects, .contact {
 		padding-block: 3rem;
 		padding-inline: 1rem;
 	}
@@ -43,10 +48,10 @@
 			text-align: center;
 		}
 
-		& .intro__picture {
+		& .intro__image-social {
 			grid-column: 1;
 
-        	& .intro__img {
+        	& .intro__image {
         		display: none;
         	}
 
@@ -67,13 +72,13 @@
 		text-align: center;
 
 		& .about__content {
-			& p:first-child {
+			& p:nth-child(2) {
 				&::before {
 					display: none;
 				}
 			}
 
-			& .about__content__txt {
+			& .about__text {
 				padding-left: unset;
 			}
 		}
@@ -87,8 +92,7 @@
 	}
 
 	.experience {
-		padding-top: 6rem;
-		padding-bottom: 10rem;
+		padding-block: 6rem;
 		padding-inline: 1rem;
 
 		& .experience__title {
@@ -99,8 +103,8 @@
 			width: 100%;
 			padding-left: .5rem;
 
-			& .experience__list__item {
-				& .experience__list__item__time {
+			& .experience__item {
+				& .experience__time {
 					position: unset;
 					padding-block: .3rem;
 
@@ -113,20 +117,40 @@
 					}
 				}
 
-				& .experience__list__item__role {
+				& .experience__role {
 					margin-top: .5rem;
 				}
 			}
 		}
 	}
 
-	.portfolio {
-		padding-bottom: 12rem;
+	.projects {
+		padding-bottom: 6rem;
 
-		.portfolio__gallery {
-
-			& .portfolio__gallery__item {
+		& .projects__gallery {
+			& .projects__item {
 				width: 100%;
+			}
+		}
+	}
+
+	.footer {
+		& .footer__link {
+			left: 89%;
+		}
+	}
+
+	.modal {
+		& .modal__wrapper {
+			flex-direction: column;
+
+			& .modal__image {
+				width: 100%;
+			}
+
+			& .modal__content {
+				width: 100%;
+				padding-inline: .5rem;
 			}
 		}
 	}
@@ -139,14 +163,8 @@
 		box-shadow: 0 -6px 6px 0 rgba(49,51,59,1);
 		backdrop-filter: unset;
 
-		.header__menu__toggle {
-			display: block;
-
-			&[data-open=true] ~ navigation-links > .header__nav {
-				display: flex;
-				opacity: 1;
-				top: -1.4rem;
-			}
+		.header__menu-toggle {
+			display: flex;
 		}
 
 		& .header__nav {
@@ -174,7 +192,14 @@
 				top: -25rem;
 			}
 
-			& .header__nav__link {
+			&[aria-hidden=false] {
+				display: flex;
+				opacity: 1;
+				top: -1.4rem;
+			}
+
+			& .header__link {
+				font-size: 1.5rem;
 				color: var(--white);
 			}
 		}
@@ -182,64 +207,53 @@
 
 	.intro {
 		& .intro__content {
-			& .intro__content__headline {
-				& .intro__content__headline--separator {
+			& .intro__headline {
+				& .intro__headline--separator {
 					display: none;
 				}
+			}
+
+			& .intro__link {
+				width: 100%;
 			}
 		}
 	}
 
 	.skills {
-		padding-bottom: 10rem;
-		background-position: 97% 102%;
+		padding-bottom: 6rem;
+		background-position: 100% 100%;
 
 		& .skills__list {
 			grid-template-columns: repeat(2, 1fr);
 
-			& .skills__list__item {
+			& .skills__item {
 				width: 100%;
 				height: unset;
 				aspect-ratio: 1;
 			}
 
-			& .skills__list__item.hide {
+			& .skills__item--hidden {
 				display: none;
 				opacity: 0;
 			}
 		}
 
-		& .skills__btn {
+		& .skills__button {
 			display: block;
 		}
 
-		& .skills__btn.hide {
+		& .skills__button--hidden {
 			display: none;
 			opacity: 0;
 		}
 	}
 
-	.portfolio {
+	.projects {
 		background-position: 0rem 5rem;
 
-		.portfolio__gallery {
+		.projects__gallery {
 			grid-template-columns: repeat(2, 1fr);
 			gap: .5rem;
-		}
-	}
-
-	.portfolio__gallery__dialog {
-	
-		& .portfolio__gallery__dialog__wrapper {
-			flex-direction: column;
-
-			& .portfolio__gallery__dialog__wrapper__img {
-				width: 100%;
-			}
-
-			& .portfolio__gallery__dialog__wrapper__content {
-				padding-inline: .5rem;
-			}
 		}
 	}
 
@@ -252,7 +266,7 @@
 		& .contact__info {
 			width: 100%;
 
-			& .contact__info__link {
+			& .contact__link {
 				flex-direction: column;
 				width: 100%;
 				gap: .5rem;

@@ -31,7 +31,7 @@
 			max-width: 50%;
 			margin: 0 auto;
 
-			& .header__nav__link {
+			& .header__link {
 				display: inline-block;
 				font-size: 1.2rem;
 				font-weight: 500;
@@ -45,66 +45,67 @@
 					color: var(--white);
 				}
 
-				&.active__link {
+				&.header__link--active {
 					color: var(--white);
 				}
 			}
 		}
 
-		& .header__menu__toggle {
+		& .header__menu-toggle {
 			--_height: 2px;
 			--_width: 2.3rem;
 			--_center: calc(50% - var(--_height) / 2);
 
-			display: none;
+			position: relative;
 			grid-column: 3;
-			grid-row: 1;
-			place-self: center;
+        	grid-row: 1;
+			display: none;
+			align-items: center;
+			justify-content: center;
 			width: var(--_width);
+			height: 1.5rem;
 			z-index: 2;
 			cursor: pointer;
+			border: none;
+			padding: 0;
+			margin: 0;
+			outline: none;
+			background-color: transparent;
 
-			& .header__menu__toggle__burger {
-				height: 1.5rem;
-				position: relative;
+			& .header__menu-line {
+				position: absolute;
+				width: var(--_width);
+				height: var(--_height);
+				background-color: var(--white);
+				transition: all 200ms;
 
-				& .header__menu__toggle__burger__line {
-					position: absolute;
-					width: var(--_width);
-					height: var(--_height);
-					background-color: var(--white);
-					transition: all 200ms;
+				&:nth-child(1) {
+					top: 0;
+				}
 
-					&:nth-child(1) {
-						top: 0;
-					}
+				&:nth-child(2) {
+					top: var(--_center);
+				}
 
-					&:nth-child(2) {
-						top: var(--_center);
-					}
-
-					&:nth-child(3) {
-						top: calc(100% - var(--_height));
-					}
+				&:nth-child(3) {
+					top: calc(100% - var(--_height));
 				}
 			}
 
-			&[data-open=true] {
-				& .header__menu__toggle__burger {
-					& .header__menu__toggle__burger__line {
-						&:nth-child(1) {
-							top: var(--_center);
-							transform: rotate(45deg);
-						}
+			&[aria-expanded=true] {
+				& .header__menu-line {
+					&:nth-child(1) {
+						top: var(--_center);
+						transform: rotate(45deg);
+					}
 
-						&:nth-child(2) {
-							opacity: 0;
-						}
+					&:nth-child(2) {
+						opacity: 0;
+					}
 
-						&:nth-child(3) {
-							top: var(--_center);
-							transform: rotate(-45deg);
-						}
+					&:nth-child(3) {
+						top: var(--_center);
+						transform: rotate(-45deg);
 					}
 				}
 			}

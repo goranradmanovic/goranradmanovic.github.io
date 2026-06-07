@@ -7,13 +7,25 @@
 
   <url>
     <loc>https://goranradmanovic.github.io/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://goranradmanovic.github.io/assets/pdf/cv.pdf</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://goranradmanovic.github.io/pages/privacy-policy.html</loc>
+    <lastmod>2026-06-07</lastmod>
     <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://goranradmanovic.github.io/404.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.70</priority>
   </url>
 </urlset>

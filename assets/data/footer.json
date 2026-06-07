@@ -1,0 +1,28 @@
+{
+    "paragraph": "Copyright © ",
+    "links": [
+        {
+            "href": "./assets/pdf/cv.pdf",
+            "text": "Download CV",
+            "label": "Download CV",
+            "img": {
+                "src": "./assets/images/icons/addition/pdf.svg",
+                "alt": "PDF icon",
+                "loading": "lazy",
+                "width": "20",
+                "height": "20"
+            }
+        },
+        {
+            "href": "#top",
+            "label": "Back to top",
+            "img": {
+                "src": "./assets/images/icons/footer/arrow-top.svg",
+                "alt": "Arrow top svg image",
+                "loading": "lazy",
+                "width": "32",
+                "height": "32"
+            }
+        }
+    ]
+}

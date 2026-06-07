@@ -16,14 +16,23 @@
 			color: var(--white);
 		}
 
+		& .skills__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-items: center;
+			gap: 3rem;
+		}
+
 		& .skills__list {
 			display: grid;
 			grid-template-columns: repeat(5, 10rem);
 			place-content: center center;
 			gap: 1.6rem;
+			width: 100%;
 			padding: 1rem;
 
-			& .skills__list__item {
+			& .skills__item {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -41,6 +50,17 @@
 				transition: all 800ms ease-in-out;
 				transition-behavior: allow-discrete;
 
+				/* Initial state: hidden and slightly pushed down */
+				opacity: 0;
+				transform: translateY(30px);
+				/* Apply the animation */
+				animation-name: fade-and-rise;
+				animation-duration: .5s;
+				animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); /* Smooth ease-out */
+				animation-delay: calc(var(--card-index) * 0.1s);
+				/* Keeps the card at 'opacity: 1' after the animation finishes */
+				animation-fill-mode: forwards;
+
 				@starting-style {
 					opacity: 0;
 				}
@@ -53,7 +73,7 @@
 					}
 				}
 
-				& .skills__list__item__icon {
+				& .skills__icon {
 					width: 4rem;
 					height: 4rem;
 					object-fit: contain;
@@ -61,10 +81,8 @@
 			}
 		}
 
-		& .skills__btn {
+		& .skills__button {
 			display: none;
-			position: absolute;
-			left: calc(50% - 4.312rem);
 			padding-block: .4rem;
 			padding-inline: 1rem;
 			border: 2px solid var(--secondary);
@@ -82,6 +100,13 @@
 			@starting-style {
 				opacity: 0;
 			}
+		}
+	}
+
+	@keyframes fade-and-rise {
+		to {
+		  opacity: 1;
+		  transform: translateY(0);
 		}
 	}
 }

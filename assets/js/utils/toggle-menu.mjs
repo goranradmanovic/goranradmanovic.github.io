@@ -1,22 +1,51 @@
 const toggleMenu = () => {
-    const toggleBtn = document.querySelector('.header__menu__toggle'),
-        navLink = document.querySelectorAll('.header__nav__link')
+    // Query elements inside the function so they exist when DOMContentLoaded fires
+    const toggleBtn = document.querySelector('#menu-toggle');
+    const mainNav = document.querySelector('#main-navigation');
 
-    if (toggleBtn && !toggleBtn.dataset.listenerAdded) { // Ensure the listener is added only once
-        toggleBtn.addEventListener('click', () => {
-            const isOpen = toggleBtn.getAttribute('data-open') === 'true'
-            toggleBtn.setAttribute('data-open', isOpen ? 'false' : 'true')
-        })
-        toggleBtn.dataset.listenerAdded = true // Mark listener as added
+    // Early exit if the elements don't exist on the current page
+    if (!toggleBtn || !mainNav) return;
 
-        navLink.forEach(link => {
-            link.addEventListener('click', () => {
-                const isOpen = toggleBtn.getAttribute('data-open') === 'true'
-                toggleBtn.setAttribute('data-open', isOpen ? 'false' : 'true')
-            })
-            toggleBtn.dataset.listenerAdded = true // Mark listener as added
-        })
-    }
-}
+    // Prevent adding multiple duplicate listeners if toggleMenu() is ever called twice
+    if (toggleBtn.dataset.listenerAdded) return;
 
-export default toggleMenu
+    const updateMenuState = (isOpen) => {
+        toggleBtn.setAttribute('aria-expanded', isOpen);
+        mainNav.setAttribute('aria-hidden', !isOpen);
+    };
+
+    const openMenu = () => updateMenuState(true);
+
+    const closeMenu = () => {
+        updateMenuState(false);
+        toggleBtn.focus(); // Returns keyboard focus to the burger button
+    };
+
+    const toggleMenuState = () => {
+        const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        isExpanded ? closeMenu() : openMenu();
+    };
+
+    // 1. Toggle Button Event
+    toggleBtn.addEventListener('click', toggleMenuState);
+
+    // 2. Link Click Event (Uses efficient event delegation)
+    mainNav.addEventListener('click', (e) => {
+        if (e.target.closest('.header__link')) {
+            closeMenu();
+        }
+    });
+
+    // 3. Escape Key Support
+    document.addEventListener('keydown', (e) => {
+        const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
+        if (isOpen && e.key === 'Escape') {
+            closeMenu();
+        }
+    });
+
+    // Mark as initialized
+    toggleBtn.dataset.listenerAdded = 'true';
+};
+  
+export default toggleMenu;
