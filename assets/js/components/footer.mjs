@@ -41,8 +41,8 @@ class PortfolioFooter extends HTMLElement {
   }
 
   render() {
-    const date = new Date()
-    const year = date.getFullYear()
+    const date = Temporal.Now.plainDateTimeISO()
+    const year = date.year
     const content = createElement('div', { class: 'footer__content' })
     const links = createElement('div', { class: 'footer__links' })
 
@@ -51,7 +51,7 @@ class PortfolioFooter extends HTMLElement {
     )
 
     const copy = createElement('p', { class: 'footer__copy' }, footerData.paragraph)
-    const time = createElement('time', { class: 'footer__year', datetime: String(date) }, year)
+    const time = createElement('time', { class: 'footer__year', datetime: date.toString() }, year)
 
     copy.append(time)
     content.append(links, copy)
