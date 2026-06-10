@@ -1,6 +1,6 @@
 'use strict'
 
-const VERSION = '1.0.2'
+const VERSION = '1.0.3'
 const CACHE_NAME = `${VERSION}::PWAsite`
 
 const ESSENTIAL_FILES = [
